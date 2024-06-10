@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="keywords" content="@@{siteInfo.siteKwrd}" />
+    <meta name="description" content="@@{siteInfo.siteDc}" />
+    <link rel="stylesheet" type="text/css" href="/common/css/font.css" />
+    <link rel="stylesheet" href="/site/public/css/sub.css">
+    <script src="/common/js/jquery-1.12.4.min.js"></script>
+    <script src="/common/js/plugins.js"></script>
+    <script src="/site/public/js/common.js"></script>
+    <script src="/site/public/js/sub.js"></script>
+    <title>@@{menuInfo.cntntsNm} - @@{siteInfo.siteNm}</title>
+</head>
+<body id="${siteInfo.tmplatId}" class="@@{siteInfo.siteId} page@@{key}">
+<div id="wrapper">
+    <header id="header">
+        <div class="accessibility">
+            <a href="#contents">본문 바로가기</a>
+        </div>
+
+        <div class="gnb">
+            <div class="wrap">
+                <div class="link">
+                    <ul class="link_list">
+                        <li class="link_item login"><a href="#" class="link_anchor">로그인</a></li>
+                        <!-- <li class="link_item logout"><a href="#" class="link_anchor">로그아웃</a></li> -->
+                        <li class="link_item sitemap"><a href="#" class="link_anchor">사이트맵</a></li>
+                        <li class="link_item home"><a href="#" class="link_anchor">충북대학교</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="group">
+            <div class="logo">
+                <div class="wrap">
+                    <a href="./index.do" class="logo_anchor"><img src="/common/images/layout/logo.png" alt="로고alt"><span>사이트명</span></a>
+                </div>
+            </div>
+            <div class="lnb">
+                <div class="menu_show">
+                    <button type="button" class="menu_btn">주메뉴 열기</button>
+                </div>
+                <nav class="menu after eachdown">
+                    <h2 class="skip">주메뉴</h2>
+                    <div class="menu_header">
+                        <a href="./index.do" class="menu_logo"><img src="/common/images/layout/logo_white.png" alt="로고alt"><span>사이트명</span></a>
+                        <div class="link">
+                            <ul class="link_list">
+                                <li class="link_item login"><a href="#" class="link_anchor">로그인</a></li>
+                                <!-- <li class="link_item logout"><a href="#" class="link_anchor">로그아웃</a></li> -->
+                                <li class="link_item home"><a href="#" class="link_anchor">충북대학교</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="depth depth1"><!-- 차수에 맞는 숫자와 조합하여 클래스를 넣어주세요 (예 : depth#, depth#_#) -->
+                            <ul class="depth_list depth1_list cut">
+                                <li class="depth_item depth1_item active"><!-- 현재 선택된 메뉴(상위 메뉴 포함) .depth_item에 active 추가해주세요 -->
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                    <div class="depth depth2">
+                                        <ul class="depth_list depth2_list cut">
+                                            <li class="depth_item depth2_item active">
+                                                <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                                <div class="depth depth3">
+                                                    <ul class="depth_list depth3_list">
+                                                        <li class="depth_item depth3_item active">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                            <div class="depth depth4">
+                                                                <ul class="depth_list depth4_list cut">
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth4_text">4차메뉴명(새창)</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth3_text">3차메뉴(새창)</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                                <div class="depth depth3">
+                                                    <ul class="depth_list depth3_list">
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                            <div class="depth depth4">
+                                                                <ul class="depth_list depth4_list cut">
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth4_text">4차메뉴명(새창)</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth3_text">3차메뉴(새창)</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth2_text">2차메뉴(링크)</a>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_hide">
+                        <button type="button" class="menu_btn">주메뉴 닫기</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="wrap clearfix">
+            <main class="colgroup">
+                <article>
+
+                    <header class="sub_head">
+                        <div class="sub_head_wrap">
+                            <div class="breadcrumbs">
+                                <a href="./index.do" class="home">홈</a>
+                                <ol class="breadcrumbs_list">
+                                    <li class="breadcrumbs_item">
+                                        <button type="button" class="breadcrumbs_select" title="목록열기">1차 선택된 메뉴명 1차 선택된 메뉴명</button>
+                                        <ul>
+                                            <li><a href="#n">1차 메뉴명</a></li>
+                                            <li class="active"><a href="#n">1차 선택된 메뉴명</a></li>
+                                            <li><a href="#n">1차 메뉴명</a></li>
+                                            <li><a href="#n">1차 메뉴명</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="breadcrumbs_item">
+                                        <button type="button" class="breadcrumbs_select" title="목록열기">2차 선택된 메뉴명</button>
+                                        <ul>
+                                            <li><a href="#n">2차 메뉴명</a></li>
+                                            <li class="active"><a href="#n">2차 선택된 메뉴명</a></li>
+                                            <li><a href="#n">2차 메뉴명</a></li>
+                                            <li><a href="#n">2차 메뉴명</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="breadcrumbs_item">
+                                        <button type="button" class="breadcrumbs_select" title="목록열기">3차 선택된 메뉴명</button>
+                                        <ul>
+                                            <li><a href="#n">3차 메뉴명</a></li>
+                                            <li class="active"><a href="#n">3차 선택된 메뉴명</a></li>
+                                            <li><a href="#n">3차 메뉴명</a></li>
+                                            <li><a href="#n">3차 메뉴명</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="breadcrumbs_item">
+                                        <button type="button" class="breadcrumbs_select" title="목록열기">4차 선택된 메뉴명</button>
+                                        <ul>
+                                            <li><a href="#n">4차 메뉴명</a></li>
+                                            <li class="active"><a href="#n">4차 선택된 메뉴명</a></li>
+                                            <li><a href="#n">4차 메뉴명</a></li>
+                                            <li><a href="#n">4차 메뉴명</a></li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </div>
+
+                            <div class="addons">
+                                <ul class="addons_list">
+                                    <li class="addons_item share toggle">
+                                        <button type="button" class="addons_button share_show">공유하기</button>
+                                        <div class="share_panel">
+                                            <ul class="share_list clearfix">
+                                                <li class="share_item n1">
+                                                    <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">인스타그램</a>
+                                                </li>
+                                                <li class="share_item n2">
+                                                    <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">페이스북</a>
+                                                </li>
+                                                <li class="share_item n3">
+                                                    <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">유튜브</a>
+                                                </li>
+                                                <li class="share_item n4">
+                                                    <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">블로그</a>
+                                                </li>
+                                                <li class="share_item n5">
+                                                    <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">카카오채널</a>
+                                                </li>
+                                            </ul>
+                                            <button type="button" class="share_hide">닫기</button>
+                                        </div>
+                                    </li>
+                                    <li class="addons_item print"><button type="button" onclick="window.print();" class="addons_button">인쇄</button></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h2 class="sub_title">해당메뉴명</h2>
+                    </header>
+
+                    <div id="contents">
+
+
+                        <p class="em_red">***템플릿 코드 복사 기능 : (일부)해당 템플릿 클릭시 코드가 자동복사됩니다.(수동으로 복사시 copy-attr="yes" 제거 후 사용하세요)</p>
+
+                        <!-- 탭메뉴 -->
+                        <h3>탭메뉴</h3>
+                        <h4>탭메뉴 .tab.type1</h4>
+                        <div class="tab type1">
+                            <div class="tab_menu">
+                                <button class="tab_select">
+                                    <span>활성화 메뉴</span>
+                                </button><!-- 현재메뉴명 입력해주세요 -->
+                                <div class="tab_panel">
+                                    <ul class="tab_list n1">
+                                        <li class="tab_item active"><button type="button" class="tab_button" title="선택됨"><span>4차 총장인사말</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>총장인사말</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>총장인사말</span></button></li>
+                                    </ul>
+                                </div>
+                                <div class="tab_content active">1</div>
+                                <div class="tab_content">2</div>
+                                <div class="tab_content">3</div>
+                            </div>
+                        </div>
+                        <h4>탭메뉴 .tab.type2</h4>
+                        <div class="tab type2">
+                            <div class="tab_menu">
+                                <button type="button" class="tab_select" title="목록열기">
+                                    <span>선택중인메뉴</span>
+                                </button>
+                                <div class="tab_panel">
+                                    <ul class="tab_list n1">
+                                        <li class="tab_item active"><button type="button" class="tab_button" title="선택됨"><span>선택중인메뉴</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button></li>
+                                    </ul>
+                                </div>
+                                <div class="tab_content active">1</div>
+                                <div class="tab_content">2</div>
+                                <div class="tab_content">3</div>
+                                <div class="tab_content">4</div>
+                                <div class="tab_content">5</div>
+                                <div class="tab_content">6</div>
+                                <div class="tab_content">7</div>
+                            </div>
+                        </div>
+
+                        <h4>탭메뉴 .tab.type1 (하위 탭 있을 경우)</h4>
+                        <div class="tab type1">
+                            <div class="tab_menu">
+                                <button class="tab_select">
+                                    <span>활성화 메뉴</span>
+                                </button><!-- 현재메뉴명 입력해주세요 -->
+                                <div class="tab_panel">
+                                    <ul class="tab_list n1">
+                                        <li class="tab_item active">
+                                            <button type="button" class="tab_button" title="선택됨"><span>4차 총장인사말</span></button>
+                                            <!-- 하위메뉴 있을 경우 -->
+                                            <ul class="tab_list n2">
+                                                <li class="tab_item active"><button type="button" class="tab_button">5차메뉴1</button></li><!-- 활성화된 메뉴에 active 클래스 넣어주세요 -->
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴1</button></li>
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴1</button></li>
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴1</button></li>
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴1</button></li>
+                                            </ul>
+                                        </li>
+                                        <li class="tab_item">
+                                            <button type="button" class="tab_button"><span>총장인사말</span></button>
+                                            <ul class="tab_list n2">
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴2</button></li>
+                                            </ul>
+                                        </li>
+                                        <li class="tab_item">
+                                            <button type="button" class="tab_button"><span>총장인사말</span></button>
+                                            <ul class="tab_list n2">
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴3</button></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>탭메뉴 .tab.type2 (하위 탭 있을 경우)</h4>
+                        <div class="tab type2">
+                            <div class="tab_menu">
+                                <button type="button" class="tab_select" title="목록열기">
+                                    <span>선택중인메뉴</span>
+                                </button>
+                                <div class="tab_panel">
+                                    <ul class="tab_list n1">
+                                        <li class="tab_item active">
+                                            <button type="button" class="tab_button" title="선택됨"><span>선택중인메뉴</span></button>
+                                            <!-- 하위메뉴 있을 경우 -->
+                                            <ul class="tab_list n2">
+                                                <li class="tab_item active"><button type="button" class="tab_button">5차메뉴1</button></li><!-- 활성화된 메뉴에 active 클래스 넣어주세요 -->
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴1</button></li>
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴1</button></li>
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴1</button></li>
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴1</button></li>
+                                            </ul>
+                                        </li>
+                                        <li class="tab_item">
+                                            <button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button>
+                                            <ul class="tab_list n2">
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴2</button></li>
+                                            </ul>
+                                        </li>
+                                        <li class="tab_item">
+                                            <button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button>
+                                            <ul class="tab_list n2">
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴3</button></li>
+                                            </ul>
+                                        </li>
+                                        <li class="tab_item">
+                                            <button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button>
+                                            <ul class="tab_list n2">
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴4</button></li>
+                                            </ul>
+                                        </li>
+                                        <li class="tab_item">
+                                            <button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button>
+                                            <ul class="tab_list n2">
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴5</button></li>
+                                            </ul>
+                                        </li>
+                                        <li class="tab_item">
+                                            <button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button>
+                                            <ul class="tab_list n2">
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴6</button></li>
+                                            </ul>
+                                        </li>
+                                        <li class="tab_item">
+                                            <button type="button" class="tab_button"><span>4차메뉴는 탭메뉴</span></button>
+                                            <ul class="tab_list n2">
+                                                <li class="tab_item"><button type="button" class="tab_button">5차메뉴7</button></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab type2 template">
+                            <div class="tab_menu">
+                                <button type="button" class="tab_select">
+                                    <span>스텝박스</span>
+                                </button>
+                                <div class="tab_panel">
+                                    <ul class="tab_list n1">
+                                        <li class="tab_item active"><button type="button" title="선택됨" class="tab_button tab_all"><span>전체보기</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>제목</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>목록</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>포인트디자인</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>테이블</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>버튼스타일</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>폼스타일</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>박스디자인</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>스텝박스</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>기타</span></button></li>
+                                        <li class="tab_item"><button type="button" class="tab_button"><span>개별디자인</span></button></li>
+                                    </ul>
+                                </div>
+                                <div id="a" class="tab_content active">
+                                    <!-- 제목 -->
+                                    <h3>H3 단락의 제목 위50px 아래30px</h3>
+                                    <h4>H4 단락의 중제목  아래 20px</h4>
+                                    <h5>H5 단락의 소제목 아래20px</h5>
+
+                                    <div class="box">
+                                        <p>열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. 열락의 것이 능히 꾸며 이상은 같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고, 역사를 가슴이 황금시대다. 같이, 위하여 그들의 풀이 너의 뼈 대한 피다. 군영과 인생의 고동을 기쁘며, 보는 싹이 거선의 작고 심장의 부패뿐이다. 장식하는 설산에서 어디 않는 이상의 고행을 인생을 되는 산야에 황금시대다. 하는 별과 속잎나고, 열락의 것이다. 거친 이상의 그와 것이다. 싸인 시들어 거친 이것이다.</p>
+                                    </div>
+                                    <br />
+                                    <p>
+                                        열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. 열락의 것이 능히 꾸며 이상은 같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고, 역사를 가슴이 황금시대다. 같이, 위하여 그들의 풀이 너의 뼈 대한 피다. 군영과 인생의 고동을 기쁘며, 보는 싹이 거선의 작고 심장의 부패뿐이다. 장식하는 설산에서 어디 않는 이상의 고행을 인생을 되는 산야에 황금시대다. 하는 별과 속잎나고, 열락의 것이다. 거친 이상의 그와 것이다. 싸인 시들어 거친 이것이다.<a href="" class="blank" target="_blank" title="새창" rel="noopener noreferrer"><span>새창링크</span></a>
+                                    </p>
+
+                                </div>
+                                <div id="b" class="tab_content active">
+                                    <h3>목록</h3>
+                                    <h4>목록(ul/ol) 아닌곳에 블릿</h4>
+                                    <div class="blt">목록(ul/ol) 아닌곳에 블릿 사용하고자 할때</div>
+
+                                    <h4>비순차적 목록(기본)</h4>
+                                    <ul class="bu" copy-attr='yes'>
+                                        <li>목록 텍스트1</li>
+                                        <li>목록 텍스트1</li>
+                                        <li>목록 텍스트1
+                                            <ul>
+                                                <li>목록 텍스트2</li>
+                                                <li>목록 텍스트2</li>
+                                                <li>목록 텍스트2
+                                                    <ul>
+                                                        <li>목록 텍스트3</li>
+                                                        <li>목록 텍스트3</li>
+                                                        <li>목록 텍스트3</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <h4>비순차적 목록(정의형)</h4>
+                                    <ul class="bu dl" copy-attr='yes'>
+                                        <li>
+                                            <div class="fiexbox">
+                                                <span class="title">리스트 타이틀</span>
+                                                <span class="text">봄바람이다. 열락의 것이 능히 꾸며 이상은 </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fiexbox">
+                                                <span class="title">리스트 타이틀</span>
+                                                <span class="text">봄바람이다. 열락의 것이 능히 꾸며 이상은 </span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <span class="title">리스트 제목</span>
+                                            <ul>
+                                                <li>홍이 그와 싹이 품고 품으며,  개행은</li>
+                                                <li>봄바람이다. 열락의 것이 능히 꾸며 이상은 </li>
+                                                <li>같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고,
+                                                    <ul>
+                                                        <li>홍이 그와 싹이 품고 품으며,  개행은</li>
+                                                        <li>봄바람이다. 열락의 것이 능히 꾸며 이상은</li>
+                                                        <li>같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고,</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                    <h4>순차적 목록</h4>
+                                    <h5>ol.num</h5>
+                                    <ol class="num" copy-attr='yes'>
+                                        <li><span class="count">1</span>홍이 그와 싹이 품고 품으며,  개행은</li>
+                                        <li><span class="count">2</span>봄바람이다. 열락의 것이 능히 꾸며 이상은</li>
+                                        <li><span class="count">3</span>같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고,</li>
+                                        <li><span class="count">4</span>홍이 그와 싹이 품고 품으며,  개행은</li>
+                                        <li><span class="count">5</span>봄바람이다. 열락의 것이 능히 꾸며 이상은</li>
+                                    </ol>
+
+                                    <h5>ul.num</h5>
+                                    <ul class="num" copy-attr='yes'>
+                                        <li><span class="count">1</span>홍이 그와 싹이 품고 품으며,  개행은</li>
+                                        <li><span class="count">2</span>봄바람이다. 열락의 것이 능히 꾸며 이상은</li>
+                                        <li><span class="count">3</span>같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고,</li>
+                                        <li><span class="count">11</span>홍이 그와 싹이 품고 품으며,  개행은</li>
+                                        <li><span class="count">22</span>봄바람이다. 열락의 것이 능히 꾸며 이상은</li>
+                                    </ul>
+
+                                    <h5>중첩테스트</h5>
+                                    <ul class="bu">
+                                        <li>목록 텍스트1
+                                            <ul class="num">
+                                                <li><span class="count">1</span>홍이 그와 싹이 품고 품으며,  개행은</li>
+                                                <li><span class="count">2</span>봄바람이다. 열락의 것이 능히 꾸며 이상은
+                                                    <ul class="bu">
+                                                        <li>목록 텍스트1</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>목록 텍스트1</li>
+                                    </ul>
+
+                                    <ol class="num margin_t_20">
+                                        <li><span class="count">1</span>홍이 그와 싹이 품고 품으며,  개행은</li>
+                                        <li><span class="count">2</span>봄바람이다. 열락의 것이 능히 꾸며 이상은
+                                            <ol class="num">
+                                                <li><span class="count">1</span>ㅁㅁ</li>
+                                                <li><span class="count">2</span>ㅁㅁ</li>
+                                                <li><span class="count">3</span>ㅁㅁ</li>
+                                            </ol>
+                                        </li>
+                                        <li><span class="count">3</span>같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고,</li>
+                                        <li><span class="count">4</span>홍이 그와 싹이 품고 품으며,  개행은</li>
+                                        <li><span class="count">5</span>봄바람이다. 열락의 것이 능히 꾸며 이상은</li>
+                                    </ol>
+
+                                </div>
+                                <div id="c" class="tab_content active">
+                                    <h3>강조</h3>
+                                    <em class="em_blue">강조텍스트1</em>
+                                    <em class="em_b_blue">강조텍스트1</em>
+                                    <br />
+                                    <em class="em_red">강조텍스트2</em>
+                                    <em class="em_b_red">강조텍스트2</em>
+
+                                    <br />
+                                    <!-- 주의, 경고 -->
+                                    <h3>주의/경고/안내</h3>
+                                    <div class="notice">보조내용</div>
+                                    <p class="warning type1">정보제공안내</p>
+                                    <p class="warning type2">경고성격의 안내</p>
+                                </div>
+                                <div id="d" class="tab_content active">
+                                    <!-- 테이블 -->
+                                    <h3>테이블</h3>
+                                    <h4>기본 가로형</h4>
+                                    <p class="table_unit" title="안내사항">(단위 : 천원)</p>
+                                    <table class="table" copy-attr='yes'>
+                                        <caption>테이블제목 - 순으로 정보를 제공</caption>
+                                        <colgroup>
+                                            <col class="w20p">
+                                            <col class="w40p">
+                                            <col class="w40p">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">테이블 제목1</th>
+                                            <th scope="col">테이블 제목2</th>
+                                            <th scope="col">테이블 제목3</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>테이블 내용1</td>
+                                            <td>테이블 내용1</td>
+                                            <td>테이블 내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>테이블 내용2</td>
+                                            <td>테이블 내용2</td>
+                                            <td>테이블 내용2</td>
+                                        </tr>
+                                        </tbody>
+                                        <tfoot>
+                                        <tr>
+                                            <th scope="row">합계</th>
+                                            <td>내용</td>
+                                            <td>내용</td>
+                                        </tr>
+                                        </tfoot>
+                                    </table>
+
+                                    <h4>테이블(세로형) - thead 없는것 - type2</h4>
+                                    <table class="table type2" copy-attr='yes'>
+                                        <caption>테이블제목 - 순으로 정보를 제공</caption>
+                                        <colgroup>
+                                            <col class="w30p">
+                                            <col class="w70p">
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">테이블 제목1</th>
+                                            <td>테이블 내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">테이블 제목2</th>
+                                            <td>테이블 내용2</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <h4>테이블-가로2줄형(tr_over는 스크립트로 붙으니 table이라고만 쓰시면 됩니다)</h4>
+                                    <table class="table" copy-attr='yes'>
+                                        <caption>테이블제목 - 순으로 정보를 제공</caption>
+                                        <colgroup>
+                                            <col class="w20p">
+                                            <col class="w30p">
+                                            <col class="w30p">
+                                            <col class="w20p">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="2">테이블 제목</th>
+                                            <th scope="col" colspan="2">테이블 제목</th>
+                                            <th scope="col" rowspan="2">테이블 제목</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">테이블 제목</th>
+                                            <th scope="col">테이블 제목</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                        </tr>
+                                        <tr>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <h4>테이블(반응형)</h4>
+                                    <table class="table responsive" copy-attr='yes'>
+                                        <caption>테이블제목 - 순으로 정보를 제공</caption>
+                                        <colgroup>
+                                            <col class="w25p">
+                                            <col class="w25p">
+                                            <col class="w25p">
+                                            <col class="w25p">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">테이블 제목</th>
+                                            <th scope="col">테이블 제목</th>
+                                            <th scope="col">테이블 제목</th>
+                                            <th scope="col">테이블 제목</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">테이블 내용</th>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">테이블 내용</th>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <h4>테이블(스크롤)</h4>
+                                    <div class="table_scroll" copy-attr='yes'>
+                                        <table class="table">
+                                            <caption>테이블제목 - 순으로 정보를 제공</caption>
+                                            <colgroup>
+                                                <col class="w25p">
+                                                <col class="w25p">
+                                                <col class="w25p">
+                                                <col class="w25p">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">테이블 제목</th>
+                                                <th scope="col">테이블 제목</th>
+                                                <th scope="col">테이블 제목</th>
+                                                <th scope="col">테이블 제목</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <th scope="row">테이블 내용</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">테이블 내용</th>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                                <td>테이블 내용</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="e" class="tab_content active">
+                                    <!-- 버튼 -->
+                                    <h3>버튼</h3>
+                                    <h4>텍스트형 버튼</h4>
+                                    <a href="" class="blank" target="_blank" title="새창" rel="noopener noreferrer"><span>새창링크</span></a>
+                                    <a href="" class="down" title="다운로드"><span>다운로드</span></a>
+                                    <a href="" class="quick"><span>바로가기</span></a>
+
+                                    <h4>버튼색상별</h4>
+                                    <a href="" class="btn type1">버튼 type1</a>
+                                    <a href="" class="btn type2">버튼 type2</a>
+                                    <a href="" class="btn type3">버튼 type3</a>
+                                    <a href="" class="btn type4">버튼 type4</a>
+                                    <a href="" class="btn disabl">비활성화버튼</a>
+
+                                    <h5>버튼크기별</h5>
+                                    <a href="" class="btn type1 medium">버튼크기medium</a>
+                                    <a href="" class="btn type2 medium">버튼크기medium</a>
+                                    <a href="" class="btn type1 small">버튼크기small</a>
+                                    <a href="" class="btn type2 small">버튼크기small</a>
+
+                                    <h4>버튼형식(아이콘포함)</h4>
+                                    <h5>버튼형식 .shape1~3</h5>
+                                    <a href="" class="icon_btn type1 shape1 download"><span>다운로드</span></a>
+                                    <a href="" class="icon_btn type1 shape2 download"><span>다운로드</span></a>
+                                    <a href="" class="icon_btn type1 shape3 download"><span>다운로드</span></a>
+                                    <br />
+                                    <h5>버튼크기별</h5>
+                                    <a href="" class="icon_btn type1 shape1 download"><span>버튼명</span></a>
+                                    <a href="" class="icon_btn type2 shape2 download"><span>버튼명</span></a>
+                                    <a href="" class="icon_btn type1 shape1 medium download"><span>버튼명</span></a>
+                                    <a href="" class="icon_btn type2 shape1 medium download"><span>버튼명</span></a>
+                                    <a href="" class="icon_btn type1 shape2 small download"><span>버튼명</span></a>
+                                    <a href="" class="icon_btn type2 shape2 small download"><span>버튼명</span></a>
+                                    <h5>버튼종류별(링크:.link / 다운로드:.download)</h5>
+                                    <a href="" class="icon_btn type1 shape1 link"><span>링크</span></a>
+                                    <a href="" class="icon_btn type1 shape2 link"><span>링크</span></a>
+                                    <a href="" class="icon_btn type1 shape3 link"><span>링크</span></a>
+                                    <br />
+                                    <a href="" class="icon_btn type2 shape1 download"><span>다운로드</span></a>
+                                    <a href="" class="icon_btn type2 shape2 download"><span>다운로드</span></a>
+                                    <a href="" class="icon_btn type2 shape3 download"><span>다운로드</span></a>
+                                </div>
+                                <div id="f" class="tab_content active">
+                                    <!--폼스타일-->
+                                    <h3>폼스타일</h3>
+                                    <h4>인풋 스타일</h4>
+                                    <div class="sd_input">
+                                        <input type="text" title="" placeholder="입력하세요.">
+                                    </div>
+                                    <div class="sd_input finish">
+                                        <input type="text" title="" placeholder="입력완료">
+                                    </div>
+                                    <div class="sd_input">
+                                        <input type="text" title="" placeholder="인풋박스 비활성" disabled="">
+                                    </div>
+                                    <div class="sd_input icon">
+                                        <input type="text" title="" placeholder="yyyy-mm-dd">
+                                        <div class="input_split">
+                                            <button type="button" class="i_date">
+                                                달력열기
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="sd_input error">
+                                        <input type="text" title="" placeholder="잘못입력">
+                                    </div>
+
+                                    <h4>셀렉트</h4>
+                                    <div class="sd_input">
+                                        <select title="">
+                                            <option>셀렉트 목록</option>
+                                            <option>옵션 1</option>
+                                            <option>옵션 2</option>
+                                            <option>옵션 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="sd_input">
+                                        <select disabled>
+                                            <option>셀렉트 비활성</option>
+                                            <option>옵션 1</option>
+                                            <option>옵션 2</option>
+                                            <option>옵션 3</option>
+                                        </select>
+                                    </div>
+                                    <h5>스타일셀렉트박스</h5>
+                                    <div class="style_select_box">
+                                        <button type="button" class="search_select" title="하위메뉴 열기">셀랙트박스 선택</button>
+                                        <div class="search_list">
+                                            <ul>
+                                                <li class="select_item active"><button type="button" class="select_anchor">샐랙트 목록(선택됨)</button></li>
+                                                <li class="select_item"><button type="button" class="select_anchor">샐랙트 목록1</button></li>
+                                                <li class="select_item"><button type="button" class="select_anchor">샐랙트 목록2</button></li>
+                                                <li class="select_item"><button type="button" class="select_anchor">샐랙트 목록3</button></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h4>라디오버튼</h4>
+                                    <span class="sd_input">
+                                        <input type="radio" name="radio" id="radio1" value="">
+                                        <label for="radio1">선택</label>
+                                    </span>
+                                    <span class="sd_input">
+                                        <input type="radio" name="radio" id="radio2" value="">
+                                        <label for="radio2">선택</label>
+                                    </span>
+                                    <span class="sd_input">
+                                        <input type="radio" id="radio3" disabled>
+                                        <label for="radio3">비활성</label>
+                                    </span>
+                                    <span class="sd_input type2">
+                                        <input type="radio" id="radio4" disabled>
+                                        <label for="radio4">선택됨 비활성</label>
+                                    </span>
+                                    <h4>체크박스</h4>
+                                    <span class="sd_input">
+                                        <input type="checkbox" name="checkbox" id="check1" value="">
+                                        <label for="check1">선택기본</label>
+                                    </span>
+                                    <span class="sd_input dis">
+                                        <input type="checkbox" id="check2" disabled>
+                                        <label for="check2">선택불가능</label>
+                                    </span>
+                                    <span class="sd_input dis2">
+                                        <input type="checkbox" id="check3" disabled>
+                                        <label for="check3">선택됨 해제불가능</label>
+                                    </span>
+                                </div>
+                                <div id="g" class="tab_content active">
+                                    <!-- 박스 -->
+                                    <h3>박스</h3>
+                                    <!-- 상단박스 -->
+                                    <h4>상단박스</h4>
+                                    <div class="box basic" copy-attr='yes'>
+                                        <div class="box_title">개요정보 알리기 타이틀</div>
+                                        <p class="box_text">
+                                            열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. 열락의 것이 능히 꾸며 이상은 같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고, 역사를 가슴이 황금시대다. 같이, 위하여 그들의 풀이 너의 뼈 대한 피다. 군영과 인생의 고동을 기쁘며, 보는 싹이 거선의 작고 심장의 부패뿐이다. 장식하는 설산에서 어디 않는 이상의 고행을 인생을 되는 산야에
+                                        </p>
+                                    </div>
+                                    <h4>기본박스</h4>
+                                    <p class="warning type2">*자동높이조절 스크립트로 붙는 style=height값제외하고 적용주세요</p>
+                                    <div class="col_box divide2" copy-attr='yes'>
+                                        <div class="col_item">
+                                            <div class="box_title">단락의 제목</div>
+                                            <div class="textbox">열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. 열락의 것이 능히 꾸며 이상은 같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고, 역사를 가슴이 황금시대다. 같이, 위하여 그들의 풀이 너의 뼈 대한 피다. </div>
+                                        </div>
+                                        <div class="col_item">
+                                            <div class="box_title">단락의 제목</div>
+                                            <div class="textbox">열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. 열락의 것이 능히 꾸며 이상은 같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고, 역사를 가슴이 황금시대다. 같이, 위하여 그들의 풀이 너의 뼈 대한 피다. 열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. </div>
+                                        </div>
+                                    </div>
+                                    <div class="col_box divide3" copy-attr='yes'>
+                                        <div class="col_item">
+                                            <div class="box_title">단락의 제목</div>
+                                            <div class="textbox">열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. 열락의 것이 능히 꾸며 이상은 같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고, 역사를 가슴이 황금시대다. 같이, 위하여 그들의 풀이 너의 뼈 대한 피다. </div>
+                                        </div>
+                                        <div class="col_item">
+                                            <div class="box_title">단락의 제목</div>
+                                            <div class="textbox">열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. 열락의 것이 능히 꾸며 이상은 같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고, 역사를 가슴이 황금시대다. 같이, 위하여 그들의 풀이 너의 뼈 대한 피다. </div>
+                                        </div>
+                                        <div class="col_item">
+                                            <div class="box_title">단락의 제목</div>
+                                            <div class="textbox">열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. 열락의 것이 능히 꾸며 이상은 같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고, 역사를 가슴이 황금시대다. 같이, 위하여 그들의 풀이 너의 뼈 대한 피다. 열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. </div>
+                                        </div>
+                                    </div>
+                                    <!--아이콘박스-->
+                                    <div class="icon_col_box divide2" copy-attr='yes'>
+                                        <div class="icon_col_item">
+                                            <div class="box_cont">
+                                                <i class="icon"></i>
+                                                <div class="box_title">단락의 제목</div>
+                                                <div class="textbox">열락의 천자만홍이 그와 싹이 품고 품으며</div>
+                                            </div>
+                                        </div>
+                                        <div class="icon_col_item">
+                                            <div class="box_cont">
+                                                <i class="icon"></i>
+                                                <div class="box_title">단락의 제목</div>
+                                                <div class="textbox">열락의 천자만홍이 그와 싹이 품고 품으며 열락의 천자만홍이 그와 싹이 품고 품으며 열락의 천자만홍이 그와 싹이 품고 품으며</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--이미지박스-->
+                                    <div class="box imagebox" copy-attr='yes'>
+                                        <div class="inner">
+                                            <div class="image">
+                                                <img src="http://placehold.it/265x216" alt="이미지">
+                                            </div>
+                                            <div class="cont">
+                                                <div class="tit">21세기를 향한 열린 대학교</div>
+                                                <div class="txt">열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. 열락의 것이 능히 꾸며 이상은 같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고, 역사를 가슴이 황금시대다. 같이, 위하여 그들의 풀이 너의 뼈 대한 피다. 군영과 인생의 고동을 기쁘며, 보는 싹이 거선의 작고 심장의 부패뿐이다. 장식하는 설산에서 어디 않는 이상의 고행을 인생을 되는 산야에 황금시대다. 하는 별과 속잎나고, 열락의 것이다. 거친 이상의 그와 것이다. 싸인 시들어 거친 이것이다.
+                                                    <br /><br />
+                                                    같이 길을 장식하는 지혜는 이상은 천자만홍이 내려온 전인 같지 사막이다. 것은 천하를 따뜻한 사랑의 뭇 그들은 튼튼하며, </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="h" class="tab_content active">
+                                    <!-- 스텝박스 -->
+                                    <h3>스텝박스</h3>
+                                    <p class="warning type2">*자동높이조절 스크립트로 붙는 style=height값제외하고 적용주세요</p>
+                                    <h4>가로형</h4>
+                                    <div class="step" copy-attr='yes'>
+                                        <ol class="step_list">
+                                            <li class="step_item">
+                                                <div class="step_content">
+                                                    <div class="tit"><span>단계제목</span></div>
+                                                    <div class="txt">단계 설명입니다.</div>
+                                                </div>
+                                            </li>
+                                            <li class="step_item">
+                                                <div class="step_content">
+                                                    <div class="tit"><span>단계제목</span></div>
+                                                    <div class="txt">단계 설명입니다. 단계 설명입니다.단계 설명입니다.</div>
+                                                </div>
+                                            </li>
+                                            <li class="step_item">
+                                                <div class="step_content">
+                                                    <div class="tit"><span>단계제목</span></div>
+                                                    <div class="txt">단계 설명입니다.</div>
+                                                </div>
+                                            </li>
+                                            <li class="step_item">
+                                                <div class="step_content">
+                                                    <div class="tit"><span>단계제목</span></div>
+                                                    <div class="txt">단계 설명입니다.</div>
+                                                </div>
+                                            </li>
+                                            <li class="step_item">
+                                                <div class="step_content">
+                                                    <div class="tit"><span>단계제목</span></div>
+                                                    <div class="txt">단계 설명입니다.</div>
+                                                </div>
+                                            </li>
+                                            <li class="step_item">
+                                                <div class="step_content">
+                                                    <div class="tit"><span>단계제목</span></div>
+                                                    <div class="txt">단계 설명입니다.</div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                    <h5>.step.type2(제목만)</h5>
+                                    <div class="step type2" copy-attr='yes'>
+                                        <ol class="step_list">
+                                            <li class="step_item">
+                                                <div class="step_content">
+                                                    <div class="tit"><span>단계제목</span></div>
+                                                </div>
+                                            </li>
+                                            <li class="step_item">
+                                                <div class="step_content">
+                                                    <div class="tit"><span>단계제목</span></div>
+                                                </div>
+                                            </li>
+                                            <li class="step_item">
+                                                <div class="step_content">
+                                                    <div class="tit"><span>단계제목</span></div>
+                                                </div>
+                                            </li>
+                                            <li class="step_item">
+                                                <div class="step_content">
+                                                    <div class="tit"><span>단계제목</span></div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+
+                                    <h4>세로형</h4>
+                                    <div class="step_vertical" copy-attr='yes'>
+                                        <ol class="step_list clearfix">
+                                            <li class="step_box">
+                                                <div class="title">단계제목</div>
+                                                <div class="text">열락의 천자만홍이 그와 싹이</div>
+                                            </li>
+                                            <li class="step_box">
+                                                <div class="title">단계제목</div>
+                                                <div class="text">열락의 천자만홍이 그와 싹이</div>
+                                            </li>
+                                            <li class="step_box">
+                                                <div class="title">단계제목</div>
+                                                <div class="text">열락의 천자만홍이 그와 싹이</div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div id="i" class="tab_content active">
+                                    <h4>.col_list_box</h4>
+                                    <div class="col_list_box" copy-attr='yes'>
+                                        <div class="box download">
+                                            <div class="cont_box icon1">
+                                                <span>이미지통합 디자인 매뉴얼</span>
+                                            </div>
+                                            <a href="" title="다운로드" class="emp_btn download"><span>다운로드</span></a>
+                                        </div>
+                                        <div class="box download">
+                                            <div class="cont_box icon1">
+                                                <span>이미지통합 디자인 매뉴얼</span>
+                                            </div>
+                                            <a href="" title="다운로드" class="emp_btn download"><span>다운로드</span></a>
+                                        </div>
+                                        <div class="box link">
+                                            <div class="cont_box icon2">
+                                                <span>이동하려는 타이틀</span>
+                                            </div>
+                                            <a href="" target="_blank" title="새창" class="emp_btn link" rel="noopener noreferrer"><span>바로가기</span></a>
+                                        </div>
+                                        <div class="box link">
+                                            <div class="cont_box icon2">
+                                                <span>이동하려는 타이틀</span>
+                                            </div>
+                                            <a href="" target="_blank" title="새창" class="emp_btn link" rel="noopener noreferrer"><span>바로가기</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="col_list_box line1" copy-attr='yes'>
+                                        <div class="box download">
+                                            <div class="cont_box icon1">
+                                                <span>이미지통합 디자인 매뉴얼</span>
+                                            </div>
+                                            <a href="" title="다운로드" class="emp_btn download"><span>다운로드</span></a>
+                                        </div>
+                                        <div class="box link">
+                                            <div class="cont_box icon2">
+                                                <span>이동하려는 타이틀</span>
+                                            </div>
+                                            <a href="" target="_blank" title="새창" class="emp_btn link" rel="noopener noreferrer"><span>바로가기</span></a>
+                                        </div>
+                                        <!-- 미리보기 추가 -->
+                                        <div class="box download preview">
+                                            <div class="cont_box icon2">
+                                                <span>다운로드 & 미리보기</span>
+                                            </div>
+                                            <div>
+                                                <a href="" target="_blank" title="다운로드" class="emp_btn download"><span>다운로드</span></a>
+                                                <a href="" target="_blank" title="새창 미리보기" class="emp_btn preview"><span>미리보기</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 라인 -->
+                                    <h3>라인</h3>
+                                    <h4>.line .line2~4</h4>
+                                    <div class="line"></div>
+                                    <div class="line2"></div>
+                                    <div class="line3"></div>
+                                    <div class="line4"></div>
+                                    <div class="line5"></div>
+
+                                    <!--팝업박스-->
+                                    <h3>레이어팝업</h3>
+                                    <button type="button" class="btn type2 small popup_btn">팝업버튼</button>
+                                    <div class="popup">
+                                        <div class="popup_wrap">
+                                            <div class="pop_inner">
+                                                <h3 class="popup_title h0">레이어 타이틀</h3>
+                                                <div class="popup_con">
+                                                    <div class="text">
+                                                        1. 대학 편제 변경<br />
+                                                        가. 휴먼인재융합대학을 인문대학과 예술체육대학으로 분리<br />
+                                                        나. 인문대학: 국어국문학과, 영어영문학과, 중어중문학과, 사학과, 문헌정보학과, 문예창작학과, 유아교육과, 글로벌어문학부(독어독문/불어불문/일어일문/러시아어문전공)<br />
+                                                        다. 예술체육대학: 서양화․미술경영학과, 한국화․서예학과, 입체조형학과, 디자인비즈학부(시각정보디자인/산업디자인/장신구․금속디자인전공), 스포츠과학부(스포츠건강과학/스포츠레저산업전공), 시큐리티메니지먼트학과, 체육학과
+                                                    </div>
+                                                </div>
+                                                <input type="button" class="popup_close" value="닫기">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--이미지-->
+                                    <h3>이미지확대보기</h3>
+                                    <div class="img_zoombox img_mobile" copy-attr='yes'>
+                                        <img src="http://placehold.it/265x216" alt=" 이미지">
+                                    </div>
+
+                                </div>
+                                <div id="j" class="tab_content active">
+                                    <!--조직도-->
+                                    <h3>조직도</h3>
+                                    <p class="warning type2">내용 추가하면 라인은 깨질 수 있습니다. 수정해주세요</p>
+                                    <div class="organization" copy-attr='yes'>
+                                        <ol class="organ_list clearfix">
+                                            <li class="organ_depth1">1단계</li>
+                                            <li class="organ_depth2">2단계</li>
+                                            <li class="organ_depth3">3단계</li>
+                                            <li class="organ_depth4">
+                                                <ul class="organ_depth4_list">
+                                                    <li class="depth4_1">4단계</li>
+                                                    <li class="depth4_2">
+                                                        <div class="tit">4단계 목록포함</div>
+                                                        <div class="txt">
+                                                            <ul class="bu clearfix">
+                                                                <li>창업지원팀</li>
+                                                                <li>창업지원센터</li>
+                                                                <li>창업교육센터</li>
+                                                                <li>창업보육센터</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="organ_depth5">
+                                                <ul class="organ_depth5_list">
+                                                    <li class="depth5_1">5단계</li>
+                                                    <li class="depth5_2">
+                                                        <div class="tit">5단계 목록포함</div>
+                                                        <div class="txt">
+                                                            <ul class="bu clearfix">
+                                                                <li>전략기획팀</li>
+                                                                <li>기획예산팀</li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </div>
+
+                                    <!--<h3>인사말</h3>
+                                    <div class="greeting" copy-attr='yes'>
+                                        <div class="greet_box">
+                                            <div class="title">
+                                                <p class="txt1">발전기금이 경기학원의 미래를 만들어갑니다.</p>
+                                                <p class="txt2">학교법인 경기학원과 경기대학교를 항상<br />
+                                                    사랑해 주시는 여러분들께 감사말씀 드립니다.</p>
+                                            </div>
+                                            <div class="image">
+                                                <img src="/site/public/images/template/greeting_img.jpg" alt="이미지">
+                                            </div>
+                                        </div>
+                                        <div class="greet_cont">
+                                            <p class="text">
+                                                1947년 개교 이래 학교법인 경기학원과 경기대학교는 어려운 여건 속에서도 지역의 명문 사학으로서 인재양성과 지역발전에 힘써왔습니다. 이렇게 우리 법인이 걸어온 길에는 언제나 경기가족 여러분과 외부 인사들께서 정성을 모아주셨습니다.
+                                                <br /> <br />
+                                                이제 우리는 2020년 시대를 맞이하여 새로운 미래를 이끌어가기 위해 더욱 큰 걸음을 준비하고 있습니다. 그 어느 때보다 미래에 대한 불안감이 고조되고 있는 지금, 우리 법인은 이를 전화위복의 기회로 삼고 더욱 더 정진할 것입니다.
+                                                <br /> <br />
+                                                이러한 큰 걸음에 여러분께서 함께 해주십시오.
+                                                지역에서 전국으로, 전국에서 세계로 뻗어 나가는 경기학원과 경기대학교가 될 수 있도록 밑거름이 되어 주십시오. 4차 산업혁명 시대에 요구하는 창의성 계발과 융합교육을 통하여 더욱 발전하는 모습으로 보답하겠습니다.
+                                                <br /> <br />
+                                                감사합니다.
+                                            </p>
+                                            <div class="name">학교법인 경기학원 이사장</div>
+                                        </div>
+                                    </div>-->
+
+                                    <h3>지도</h3>
+                                    <div class="map_box">
+                                        <div class="map_wrap">
+                                            <!-- * 카카오맵 - 지도퍼가기 -->
+                                            <div id="daumRoughmapContainer1672906278437" class="root_daum_roughmap root_daum_roughmap_landing" style="width: 100%;"></div>
+                                            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                                            <script charset="UTF-8">
+                                                new daum.roughmap.Lander({
+                                                    "timestamp" : "1672906278437",
+                                                    "key" : "2db5s",
+                                                    "mapWidth" : "",
+                                                    "mapHeight" : "500"
+                                                }).render();
+                                            </script>
+                                        </div>
+                                        <p class="warning type1 margin_t_20">주차장이 협소하므로 수험생은 반드시 대중교통을 이용하기 바람</p>
+                                        <div class="icon_col_box divide2">
+                                            <div class="icon_col_item">
+                                                <div class="box_cont">
+                                                    <i class="icon addr"></i>
+                                                    <div class="box_title">주소</div>
+                                                    <div class="textbox">서울특별시 서대문구 경기대로 9길 24</div>
+                                                </div>
+                                            </div>
+                                            <div class="icon_col_item">
+                                                <div class="box_cont">
+                                                    <i class="icon tel"></i>
+                                                    <div class="box_title">전화번호</div>
+                                                    <div class="textbox">02) 390-5114</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            /*템플릿 코드 복사 코드
+
+                            @name code-copy
+                             * @author Kwon Oh Hwan
+                             * @since 2020-09-16
+
+                            1. 복사할 코드에 attribute로 copy-attr='yes' 기입
+                            2. <textarea id="ClipBoard" style="display:none"></textarea> html 파일에 넣기
+                            3. <div class="copy_clone" style="display:none;"></div> html 파일에 넣기
+
+                            */
+
+                            $("[copy-attr='yes']").on('click', function(){
+                                var findHtml = $(this).clone();
+
+
+                                $('.copy_clone').append(findHtml);
+                                $('.copy_clone *').removeAttr('copy-attr style');
+
+                                var copyHtml = $('.copy_clone').html();
+
+
+                                $('#ClipBoard').css('display', 'block').val(copyHtml).select();
+
+                                var succeed;
+                                try {
+                                    succeed = document.execCommand("copy");
+                                    $('#ClipBoard').css('display', 'none');
+                                    $('.copy_clone').html('');
+                                } catch(e) {
+                                    succeed = false;
+                                }
+                                if(succeed){
+                                    alert('복사 되었습니다');
+                                }
+                                return false;
+                            });
+
+                        </script>
+
+
+
+                    </div>
+
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="wrap">
+            <div class="banner">
+                <h2 class="banner_title">배너존</h2>
+                <div class="banner_list">
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                </div>
+                <div class="banner_control">
+                    <button type="button" class="banner_prev">이전</button>
+                    <button type="button" class="banner_next">다음</button>
+                    <button type="button" class="banner_auto"></button>
+                </div>
+            </div>
+
+            <div class="footer_link">
+                <div class="link_site">
+                    <h2 class="skip">관련사이트</h2>
+                    <ul class="site_list">
+                        <li class="site_item toggle">
+                            <button type="button" class="site_show"><span>대학/대학원 홈페이지</span></button>
+                            <div class="site_panel">
+                                <ul class="site_ul">
+                                    <li class="site_li"><a href="#n" class="site_anchor">무선인터넷</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">안전보건소통함</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">시설보수 One-Stop 서비스</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">교육혁신본부</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">이러닝시스템</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">학칙 및 규정</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">대학알리미</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="site_item toggle">
+                            <button type="button" class="site_show"><span>부서/기관 안내</span></button>
+                            <div class="site_panel">
+                                <ul class="site_ul">
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="link_shortcut">
+                    <h2 class="skip">바로가기</h2>
+                    <ul class="shortcut_list">
+                        <li class="shortcut_item"><a href="#n" class="shortcut_anchor">개인정보처리방침</a></li>
+                        <li class="shortcut_item"><a href="#n" class="shortcut_anchor">이용약관</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_content">
+                <div class="logo">
+                    <a href="./index.do" class="logo_anchor">충북대학교 <span>사이트명</span></a>
+                </div>
+                <div class="info">
+                    <address class="info_address">(28644) 충청북도 청주시 서원구 충대로 1, 충북대학교 사이트명</address>
+                    <ul class="info_list">
+                        <li class="info_item"><span>TEL</span>043-261-2990</li>
+                        <li class="info_item"><span>FAX</span>043-275-5820</li>
+                        <li class="info_item"><span>EMAIL</span>tsc@chungbuk.ac.kr</li>
+                    </ul>
+                    <p class="info_copyright">COPYRIGHT 2024 CHUNGBUK NATIONAL UNIVERSITY. <span>ALL RIGHTS RESERVED.</span></p>
+                </div>
+                <!--<div class="wa">
+                    <a href="http://webwatch.or.kr/certification/situation.html" target="_blank" title="새창" rel="noopener noreferrer" class="wa_anchor">
+                        <img src="/common/images/layout/wa_mark.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
+                    </a>
+                </div>-->
+            </div>
+
+            <button type="button" class="up_btn">TOP</button>
+        </div>
+        <!--
+        cms 정보 불러오기
+        <div class="footer_info">
+            <address><span class="info_address">@@{siteInfo.insttAdres}</span><span class="info_tel">TEL : @@{siteInfo.insttTelno}</span></address>
+            <p class="info_copyright">@@{siteInfo.siteCpyrht}</p>
+        </div>
+        -->
+    </footer>
+
+</div>
+</body>
+</html>

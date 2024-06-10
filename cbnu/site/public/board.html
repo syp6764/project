@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="keywords" content="@@{siteInfo.siteKwrd}" />
+    <meta name="description" content="@@{siteInfo.siteDc}" />
+    <link rel="stylesheet" type="text/css" href="/common/css/font.css" />
+    <link rel="stylesheet" href="/site/public/css/sub.css">
+    <script src="/common/js/jquery-1.12.4.min.js"></script>
+    <script src="/common/js/plugins.js"></script>
+    <script src="/common/js/program.js"></script>
+    <script src="/site/public/js/common.js"></script>
+    <script src="/site/public/js/sub.js"></script>
+    <script src="/site/public/js/program.js"></script>
+    <title>@@{menuInfo.cntntsNm} - @@{siteInfo.siteNm}</title>
+</head>
+<body id="${siteInfo.tmplatId}" class="@@{siteInfo.siteId} page@@{key}">
+<div id="wrapper">
+    <header id="header">
+        <div class="accessibility">
+            <a href="#contents">본문 바로가기</a>
+        </div>
+
+        <div class="gnb">
+            <div class="wrap">
+                <div class="link">
+                    <ul class="link_list">
+                        <li class="link_item login"><a href="#" class="link_anchor">로그인</a></li>
+                        <!-- <li class="link_item logout"><a href="#" class="link_anchor">로그아웃</a></li> -->
+                        <li class="link_item sitemap"><a href="#" class="link_anchor">사이트맵</a></li>
+                        <li class="link_item home"><a href="#" class="link_anchor">충북대학교</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="group">
+            <h1 class="logo">
+                <div class="wrap">
+                    <a href="./index.do" class="logo_anchor"><img src="/common/images/layout/logo.png" alt="로고alt"><span>사이트명</span></a>
+                </div>
+            </h1>
+            <div class="lnb">
+                <div class="menu_show">
+                    <button type="button" class="menu_btn">주메뉴 열기</button>
+                </div>
+                <nav class="menu after eachdown">
+                    <h2 class="skip">주메뉴</h2>
+                    <div class="menu_header">
+                        <a href="./index.do" class="menu_logo"><img src="/common/images/layout/logo_white.png" alt="로고alt"><span>사이트명</span></a>
+                        <div class="link">
+                            <ul class="link_list">
+                                <li class="link_item login"><a href="#" class="link_anchor">로그인</a></li>
+                                <!-- <li class="link_item logout"><a href="#" class="link_anchor">로그아웃</a></li> -->
+                                <li class="link_item home"><a href="#" class="link_anchor">충북대학교</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="depth depth1"><!-- 차수에 맞는 숫자와 조합하여 클래스를 넣어주세요 (예 : depth#, depth#_#) -->
+                            <ul class="depth_list depth1_list cut">
+                                <li class="depth_item depth1_item active"><!-- 현재 선택된 메뉴(상위 메뉴 포함) .depth_item에 active 추가해주세요 -->
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                    <div class="depth depth2">
+                                        <ul class="depth_list depth2_list cut">
+                                            <li class="depth_item depth2_item active">
+                                                <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                                <div class="depth depth3">
+                                                    <ul class="depth_list depth3_list">
+                                                        <li class="depth_item depth3_item active">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                            <div class="depth depth4">
+                                                                <ul class="depth_list depth4_list cut">
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth4_text">4차메뉴명(새창)</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth3_text">3차메뉴(새창)</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                                <div class="depth depth3">
+                                                    <ul class="depth_list depth3_list">
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                            <div class="depth depth4">
+                                                                <ul class="depth_list depth4_list cut">
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth4_text">4차메뉴명(새창)</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth3_text">3차메뉴(새창)</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth2_text">2차메뉴(링크)</a>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text">2차메뉴</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                </li>
+                                <li class="depth_item depth1_item">
+                                    <a href="#n" target="_self" class="depth_text depth1_text">1차메뉴</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu_hide">
+                        <button type="button" class="menu_btn">주메뉴 닫기</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div class="wrap clearfix">
+            <main class="colgroup">
+                <article>
+
+
+                    <div id="contents">
+                        <div class="margin_b_30" style="color:red; font-size:22px; font-weight:600;">★ 모든 스킨은 기존 스킨 그대로 놔두고 스킨 새로 추가요망★</div>
+                        <div class="margin_b_30" style="font-size:16px;">
+                            기본게시판 (목록) - 스킨추가<br>
+                            포토게시판 (목록) - 스킨추가<br>
+                            포토게시판 (상세) - 스킨추가<br>
+                            뉴스형게시판 (목록) - 스킨추가<br>
+                            글쓰기페이지 - 스킨추가<br>
+                            뷰페이지 - 스킨추가<br>
+                            FAQ 리스트 - 스킨추가
+                        </div>
+                        <a href="" class="bbsbtn white big">버튼big</a>
+                        <button type="button" class="bbsbtn white big">버튼big</button>
+                        &nbsp;&nbsp;
+                        <a href="" class="bbsbtn sky big">버튼big</a>
+                        <button type="button" class="bbsbtn sky big">버튼big</button>
+                        &nbsp;&nbsp;
+                        <a href="" class="bbsbtn darkgray regular">버튼regular</a>
+                        <button type="button" class="bbsbtn darkgray regular">버튼regular</button>
+                        <br><br>
+
+                        <div class="p-wrap bbs bbs__list bbs_new_skin bbs_normal"><!-- bbs_new_skin:추가스킨디자인, 일반게시판:bbs_normal -->
+
+                            <div class="box board">
+                                <div class="box_wrap">
+                                    <div class="box_title">게시판설명 타이틀</div>
+                                    <div class="box_text">
+                                        <p>열락의 천자만홍이 그와 싹이 품고 품으며, 봄바람이다. 열락의 것이 능히 꾸며 이상은 같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고, 역사를 가슴이 황금시대다. 같이, 위하여 그들의 풀이 너의 뼈 대한 피다. 군영과 인생의 고동을 기쁘며, 보는 싹이 거선의 작고 심장의 부패뿐이다. 장식하는  </p>
+                                        <ul class="bu">
+                                            <li>홍이 그와 싹이 품고 품으며,  개행은</li>
+                                            <li>봄바람이다. 열락의 것이 능히 꾸며 이상은</li>
+                                            <li>같은 동력은 칼이다. 인간의 봄바람을 것은 속잎나고,</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-9 col-sm-24 margin_t_10 small">
+                                    <div class="bbs_page">
+                                        <span class="item count">총게시물 : <em>254</em>건</span>
+                                        <span class="item page">페이지 : <em>1/2</em></span>
+                                    </div>
+                                </div>
+                                <div class="col-15 col-sm-24 right top_select">
+                                    <select name="" id="" class="p-input p-input--auto" title="검색영역선택">
+                                        <option value="">셀렉트 제목</option>
+                                        <option value="">셀렉트 제목</option>
+                                        <option value="">셀렉트 제목</option>
+                                        <option value="">셀렉트 제목</option>
+                                    </select>
+                                    <input type="text" name="" id="" class="p-input p-input--auto board_search" title="검색단어 입력" value="" placeholder="입력하세요.">
+                                    <button type="submit" class="p-button primary">조회</button>
+                                </div>
+                            </div>
+
+                            <form name="" method="post" action="" data-select="checkall" data-checkallid="#check-all" data-checkname="checkid">
+                                <fieldset>
+                                    <legend>게시물 목록</legend>
+                                    <div class="table-responsive"><table class="p-table simple" data-table="rwd" data-tabletype="simple" data-breakpoint="760">
+                                        <caption>{게시판명} 목록 - 번호, 제목, 작성자, 작성일, 조회수 정보  제공</caption>
+                                        <colgroup>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col" class="first">
+                                                <span class="p-form-checkbox p-form-checkbox--single">
+                                                    <input type="checkbox" name="" id="check-all" class="p-form-checkbox__input">
+                                                    <label for="check-all" class="p-form-checkbox__label">전체 선택</label>
+                                                </span>
+                                            </th>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">제목</th>
+                                            <th scope="col">작성자</th>
+                                            <th scope="col">작성일</th>
+                                            <th scope="col">조회수</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="text_center">
+                                        <tr class="p-notice">
+                                            <td class="p-table__checkbox">
+                                                <span class="p-form-checkbox p-form-checkbox--single">
+                                                    <input type="checkbox" name="checkid" id="n11" class="p-form-checkbox__input">
+                                                    <label for="n11" class="p-form-checkbox__label">{게시물제목} 선택</label>
+                                                </span>
+                                            </td>
+                                            <td><span title="공지" class="p-badge notice">공지</span></td>
+                                            <td class="p-subject"><a href="#">2014 홍천군종합사회복지관 하반기 프로그램 </a></td>
+                                            <td>관리자</td>
+                                            <td><time>2016-08-22</time></td>
+                                            <td class="hits" data-mask="#,##0" data-mask-reverse="true">15642</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-table__checkbox">
+                                                <span class="p-form-checkbox p-form-checkbox--single">
+                                                    <input type="checkbox" name="checkid" id="n10" class="p-form-checkbox__input">
+                                                    <label for="n10" class="p-form-checkbox__label">{게시물제목} 선택 </label>
+                                                </span>
+                                            </td>
+                                            <td><span class="bbs_num">10</span></td>
+                                            <td class="p-subject"><a href="#">2014년 정기분 재산세(건축물,주택) 납부안내</a> <span class="p-icon p-icon__new">새글</span><span class="p-icon p-icon__hot">핫이슈</span></td>
+                                            <td>재무과</td>
+                                            <td><time>2016-08-22</time></td>
+                                            <td class="hits" data-mask="#,##0" data-mask-reverse="true">15642</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-table__checkbox">
+                                                <span class="p-form-checkbox p-form-checkbox--single">
+                                                    <input type="checkbox" name="checkid" id="n9" class="p-form-checkbox__input">
+                                                    <label for="n9" class="p-form-checkbox__label">{게시물제목} 선택 </label>
+                                                </span>
+                                            </td>
+                                            <td><span class="bbs_num">10</span></td>
+                                            <td class="p-subject">
+                                                <a href="#">2014년 정기분 재산세(건축물,주택) 납부안내</a> <span class="p-icon p-icon__new">새글</span>
+                                            </td>
+                                            <td>재무과</td>
+                                            <td><time>2016-08-22</time></td>
+                                            <td class="hits" data-mask="#,##0" data-mask-reverse="true">15642</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-table__checkbox">
+                                                <span class="p-form-checkbox p-form-checkbox--single">
+                                                    <input type="checkbox" name="checkid" id="n8" class="p-form-checkbox__input">
+                                                    <label for="n8" class="p-form-checkbox__label">{게시물제목} 선택 </label>
+                                                </span>
+                                            </td>
+                                            <td><span class="bbs_num">10</span></td>
+                                            <td class="p-subject">
+                                                <span class="p-icon p-icon__secret">비밀글</span>
+                                                <a href="#">2014년 정기분 재산세(건축물,주택) 납부안내</a>
+                                            </td>
+                                            <td>재무과</td>
+                                            <td><time>2016-08-22</time></td>
+                                            <td class="hits" data-mask="#,##0" data-mask-reverse="true">15642</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-table__checkbox">
+                                                <span class="p-form-checkbox p-form-checkbox--single">
+                                                    <input type="checkbox" name="checkid" id="n7" class="p-form-checkbox__input">
+                                                    <label for="n7" class="p-form-checkbox__label">{게시물제목} 선택</label>
+                                                </span>
+                                            </td>
+                                            <td><span class="bbs_num">10</span></td>
+                                            <td class="p-subject"><a href="#">2014년 정기분 재산세(건축물,주택) 납부안내</a></td>
+                                            <td>재무과</td>
+                                            <td><time>2016-08-22</time></td>
+                                            <td class="hits" data-mask="#,##0" data-mask-reverse="true">15642</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-table__checkbox">
+                                                <span class="p-form-checkbox p-form-checkbox--single">
+                                                    <input type="checkbox" name="checkid" id="n6" class="p-form-checkbox__input">
+                                                    <label for="n6" class="p-form-checkbox__label">{게시물제목} 선택</label>
+                                                </span>
+                                            </td>
+                                            <td><span class="bbs_num">10</span></td>
+                                            <td class="p-subject">
+                                                <span class="p-icon p-icon__reply">답변</span>
+                                                <a href="#">2014년 정기분 재산세(건축물,주택) 납부안내</a>
+                                            </td>
+                                            <td>재무과</td>
+                                            <td><time>2016-08-22</time></td>
+                                            <td class="hits" data-mask="#,##0" data-mask-reverse="true">15642</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-table__checkbox">
+                                                <span class="p-form-checkbox p-form-checkbox--single">
+                                                    <input type="checkbox" name="checkid" id="n5" class="p-form-checkbox__input">
+                                                    <label for="n5" class="p-form-checkbox__label">{게시물제목} 선택 </label>
+                                                </span>
+                                            </td>
+                                            <td><span class="bbs_num">10</span></td>
+                                            <td class="p-subject"><a href="#">2014년 정기분 재산세(건축물,주택) 납부안내</a></td>
+                                            <td>재무과</td>
+                                            <td><time>2016-08-22</time></td>
+                                            <td class="hits" data-mask="#,##0" data-mask-reverse="true">15642</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-table__checkbox">
+                                                <span class="p-form-checkbox p-form-checkbox--single">
+                                                    <input type="checkbox" name="checkid" id="n4" class="p-form-checkbox__input">
+                                                    <label for="n4" class="p-form-checkbox__label">{게시물제목} 선택 </label>
+                                                </span>
+                                            </td>
+                                            <td><span class="bbs_num">10</span></td>
+                                            <td class="p-subject"><a href="#">2014년 정기분 재산세(건축물,주택) 납부안내</a></td>
+                                            <td>재무과</td>
+                                            <td><time>2016-08-22</time></td>
+                                            <td class="hits" data-mask="#,##0" data-mask-reverse="true">15642</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-table__checkbox">
+                                                <span class="p-form-checkbox p-form-checkbox--single">
+                                                    <input type="checkbox" name="checkid" id="n3" class="p-form-checkbox__input">
+                                                    <label for="n3" class="p-form-checkbox__label">{게시물제목} 선택 </label>
+                                                </span>
+                                            </td>
+                                            <td><span class="bbs_num">10</span></td>
+                                            <td class="p-subject"><a href="#">2014년 정기분 재산세(건축물,주택) 납부안내</a></td>
+                                            <td>재무과</td>
+                                            <td><time>2016-08-22</time></td>
+                                            <td class="hits" data-mask="#,##0" data-mask-reverse="true">15642</td>
+                                        </tr>
+                                        </tbody>
+                                    </table></div>
+                                </fieldset>
+                            </form>
+
+                            <div class="p-pagination">
+                                <div class="p-page">
+                                    <span class="p-page__control">
+                                        <a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+                                        <a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+                                        <a href="#" class="p-page__link prev-one">이전 페이지</a>
+                                    </span>
+                                    <span class="p-page__link-group">
+                                        <strong title="현재 1페이지" class="p-page__link">1</strong>
+                                        <a href="" title="2페이지 이동" class="p-page__link active">2</a>
+                                        <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                                        <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                                        <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                                        <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                                        <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                                        <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                                        <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                                        <a href="" title="10페이지 이동" class="p-page__link">110</a>
+                                    </span>
+                                    <span class="p-page__control">
+                                        <a href="#" class="p-page__link next-one">다음 페이지</a>
+                                        <a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+                                        <a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="p-empty">
+                                <div class="inner">
+                                    <i></i>
+                                    <p class="tit"><em>“검색어”</em> 와(과) 일치하는 검색결과가 없습니다.</p>
+                                    <ul class="txt">
+                                        <li>모든 단어의 철자가 정확한지 확인하세요.</li>
+                                        <li>다른 검색어를 사용해 보세요.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br><br>
+                        ------------------ 포토형 게시판 전체 상단에 적용 -------------------
+                        <div class="p-wrap bbs bbs__gallery bbs_new_skin">
+                            <div class="gallery_box">
+                                <div class="gallery_con">
+                                    <p class="title">하루 한번 시력운동을 하면 시력이 좋아질까 하루 한번 시력운동을 하면 시력이 좋아질까</p>
+                                    <p class="desc">
+                                        우리 대학이 지난 1월 6일(토) 오후 7시 2024학년도 정시모집 원서접수를 마감한 결과, 1,030명 모집에 6,191명이 지원해 6.01대 1의 경쟁률을 기록했다.<br>
+                                        이는 국가거점국립대학교 중 가장 높은 경쟁률로 이로써 충북대는 7년 연속으로 정시 경쟁률 국가거점국립대학교 1위를 차지하는 쾌거를 이뤘다.
+                                    </p>
+                                    <p class="date">2024-01-25</p>
+                                </div>
+                                <div class="gallery_photo">
+                                    <div class="photo">
+                                        <div class="photo_list">
+                                            <div class="photo_item">
+                                                <img src="/site/public/images/program/photo6.jpg" alt="이미지 대체텍스트" class="photo_img">
+                                            </div>
+                                            <div class="photo_item">
+                                                <img src="/site/public/images/program/photo6.jpg" alt="이미지 대체텍스트" class="photo_img">
+                                            </div>
+                                            <div class="photo_item">
+                                                <img src="/site/public/images/program/photo5.jpg" alt="이미지 대체텍스트" class="photo_img">
+                                            </div>
+                                        </div>
+                                        <div class="photo_control">
+                                            <button type="button" class="photo_prev">이전</button>
+                                            <button type="button" class="photo_auto"></button>
+                                            <button type="button" class="photo_next">다음</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br><br>
+                        ------------------ 포토형 게시판 -------------------
+                        <div class="p-wrap bbs bbs__gallery bbs_new_skin">
+                            <div class="bbs_page">
+                                <span class="item count">총게시물 : <em>254</em>건</span>
+                                <span class="item page">페이지 : <em>1</em>/2</span>
+                            </div>
+                            <div class="gallery_list clearfix">
+                                <div class="gallery_item">
+                                    <a href="">
+                                        <span class="photobox">
+                                            <span class="inner_photo" style="background-image:url('/site/public/images/program/photo4.jpg');"></span>
+                                            <span class="photo"><img src="/site/public/images/program/photo4.jpg" alt="이미지 대체텍스트"></span>
+                                        </span>
+                                        <span class="title">서울에서 뉴욕까지 7시간, 초음속 항공기 데모 나왔다</span>
+                                    </a>
+                                    <div class="date">2021-08-25</div>
+                                </div>
+                                <div class="gallery_item noimage"><!-- 이미지없을때 noimage -->
+                                    <a href="">
+                                        <span class="photobox" title="등록된 이미지가 없습니다.">
+                                            <span class="inner_photo">등록된 이미지가 없습니다.</span>
+                                            <span class="photo"></span>
+                                        </span>
+                                        <span class="title">우리 회사 회의실을 스크린골프장으로 만들어봤습니다!</span>
+                                    </a>
+                                    <div class="date">2021-08-25</div>
+                                </div>
+                                <div class="gallery_item">
+                                    <a href="">
+                                        <span class="photobox">
+                                            <span class="inner_photo" style="background-image:url('/site/public/images/program/photo5.jpg');"></span>
+                                            <span class="photo"><img src="/site/public/images/program/photo5.jpg" alt="이미지 대체텍스트"></span>
+                                        </span>
+                                        <span class="title">엣지가 싫어 플랫만 보고 질렀습니다. 갤럭시 노트20</span>
+                                    </a>
+                                    <div class="date">2021-08-25</div>
+                                </div>
+                                <div class="gallery_item">
+                                    <a href="">
+                                        <span class="photobox">
+                                            <span class="inner_photo" style="background-image:url('/site/public/images/program/photo4.jpg');"></span>
+                                            <span class="photo"><img src="/site/public/images/program/photo4.jpg" alt="이미지 대체텍스트"></span>
+                                        </span>
+                                        <span class="title">서울에서 뉴욕까지 7시간, 초음속 항공기 데모 나왔다</span>
+                                    </a>
+                                    <div class="date">2021-08-25</div>
+                                </div>
+                                <div class="gallery_item">
+                                    <a href="">
+                                        <span class="photobox">
+                                            <span class="inner_photo" style="background-image:url('/site/public/images/program/photo5.jpg');"></span>
+                                            <span class="photo"><img src="/site/public/images/program/photo5.jpg" alt="이미지 대체텍스트"></span>
+                                        </span>
+                                        <span class="title">우리 회사 회의실을 스크린골프장으로 만들어봤습니다!</span>
+                                    </a>
+                                    <div class="date">2021-08-25</div>
+                                </div>
+                                <div class="gallery_item">
+                                    <a href="">
+                                        <span class="photobox">
+                                            <span class="inner_photo" style="background-image:url('/site/public/images/program/photo4.jpg');"></span>
+                                            <span class="photo"><img src="/site/public/images/program/photo4.jpg" alt="이미지 대체텍스트"></span>
+                                        </span>
+                                        <span class="title">엣지가 싫어 플랫만 보고 질렀습니다. 갤럭시 노트20</span>
+                                    </a>
+                                    <div class="date">2021-08-25</div>
+                                </div>
+                            </div>
+                            <div class="p-pagination">
+                                <div class="p-page">
+                                    <span class="p-page__control">
+                                        <a href="#" class="p-page__link prev-end"><span class="skip">처음 페이지</span></a>
+                                        <a href="#" class="p-page__link prev"><span class="skip">이전 10 페이지</span></a>
+                                        <a href="#" class="p-page__link prev-one">이전 페이지</a>
+                                    </span>
+                                    <span class="p-page__link-group">
+                                        <strong title="현재 1페이지" class="p-page__link">1</strong>
+                                        <a href="" title="2페이지 이동" class="p-page__link active">2</a>
+                                        <a href="" title="3페이지 이동" class="p-page__link">3</a>
+                                        <a href="" title="4페이지 이동" class="p-page__link">4</a>
+                                        <a href="" title="5페이지 이동" class="p-page__link">5</a>
+                                        <a href="" title="6페이지 이동" class="p-page__link">6</a>
+                                        <a href="" title="7페이지 이동" class="p-page__link">7</a>
+                                        <a href="" title="8페이지 이동" class="p-page__link">8</a>
+                                        <a href="" title="9페이지 이동" class="p-page__link">9</a>
+                                        <a href="" title="10페이지 이동" class="p-page__link">110</a>
+                                    </span>
+                                    <span class="p-page__control">
+                                        <a href="#" class="p-page__link next-one">다음 페이지</a>
+                                        <a href="#" class="p-page__link next"><span class="skip">다음 10 페이지</span></a>
+                                        <a href="#" class="p-page__link next-end"><span class="skip">끝 페이지</span></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br><br>
+                        ------------------ 뉴스형 게시판 -------------------
+                        <div class="p-wrap bbs bbs__news bbs_new_skin">
+                            <ul class="p-media-list p-media--ellipsis">
+                                <li class="p-media">
+                                    <a href="#" class="p-media__link">
+                                        <div class="p-media__image">
+                                            <div class="p-media__image-wrap">
+                                                <img src="/site/public/images/program/photo1.jpg" alt="이미지 대체텍스트">
+                                            </div>
+                                        </div>
+                                        <div class="p-media__body">
+                                            <div class="p-media__heading p-media__heading--ellipsis">
+                                                <em class="p-media__heading-text">
+                                                    중요한건 꺾이지 않는 마음 제목제목이 길어지면 두줄로 나오게 할 수 있음
+                                                </em>
+                                                <span class="p-icon p-icon__new">새글</span> <span class="p-icon p-icon__hot">핫이슈</span>
+                                            </div>
+                                            <div class="p-media__content">
+                                                우리 집 고양이는 매일 책상 위에서 꾸벅꾸벅 낮잠을 즐깁니다. 고양이가 책상 위에서 자는 것을 좋아하는 특별한 이유가 있을까요 비밀은 책상 위의 유리에 있습니다.
+                                                유리는 나무보다 열전도가 높아서 열기나 냉기를 사람에게 빠르게 전달합니다. 유리를 놓은 책상 위에 올라간 고양이는
+                                            </div>
+
+                                            <div class="p-author__info">
+                                                <span class="p-split"><em>작성자 </em> 작성자팀</span>
+                                                <span class="p-split"><em>작성일 </em> <time>2022.12.7 오후 1:49:56</time></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="p-media">
+                                    <a href="#" class="p-media__link">
+                                        <div class="p-media__image">
+                                            <div class="p-media__image-wrap">
+                                                <img src="/site/public/images/program/photo2.jpg" alt="이미지 대체텍스트">
+                                            </div>
+                                        </div>
+                                        <div class="p-media__body">
+                                            <div class="p-media__heading p-media__heading--ellipsis">
+                                                <em class="p-media__heading-text">
+                                                    중요한건 꺾이지 않는 마음 제목제목이 길어지면 두줄로 나오게 할 수 있음
+                                                </em>
+                                            </div>
+                                            <div class="p-media__content">
+                                                우리 집 고양이는 매일 책상 위에서 꾸벅꾸벅 낮잠을 즐깁니다. 고양이가 책상 위에서 자는 것을 좋아하는 특별한 이유가 있을까요 비밀은 책상 위의 유리에 있습니다.
+                                                유리는 나무보다 열전도가 높아서 열기나 냉기를 사람에게 빠르게 전달합니다. 유리를 놓은 책상 위에 올라간 고양이는
+                                            </div>
+
+                                            <div class="p-author__info">
+                                                <span class="p-split"><em>작성자 </em> 작성자팀</span>
+                                                <span class="p-split"><em>작성일 </em> <time>2022.12.7 오후 1:49:56</time></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="p-media">
+                                    <a href="#" class="p-media__link">
+                                        <div class="p-media__image">
+                                            <div class="p-media__image-wrap">
+                                                <img src="/site/public/images/program/photo1.jpg" alt="이미지 대체텍스트">
+                                            </div>
+                                        </div>
+                                        <div class="p-media__body">
+                                            <div class="p-media__heading p-media__heading--ellipsis">
+                                                <em class="p-media__heading-text">
+                                                    중요한건 꺾이지 않는 마음 제목제목이 길어지면 두줄로 나오게 할 수 있음
+                                                </em>
+                                            </div>
+                                            <div class="p-media__content">
+                                                우리 집 고양이는 매일 책상 위에서 꾸벅꾸벅 낮잠을 즐깁니다. 고양이가 책상 위에서 자는 것을 좋아하는 특별한 이유가 있을까요 비밀은 책상 위의 유리에 있습니다.
+                                                유리는 나무보다 열전도가 높아서 열기나 냉기를 사람에게 빠르게 전달합니다. 유리를 놓은 책상 위에 올라간 고양이는
+                                            </div>
+
+                                            <div class="p-author__info">
+                                                <span class="p-split"><em>작성자 </em> 작성자팀</span>
+                                                <span class="p-split"><em>작성일 </em> <time>2022.12.7 오후 1:49:56</time></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="p-media">
+                                    <a href="#" class="p-media__link">
+                                        <div class="p-media__image">
+                                            <div class="p-media__image-wrap">
+                                                <img src="/site/public/images/program/photo2.jpg" alt="이미지 대체텍스트">
+                                            </div>
+                                        </div>
+                                        <div class="p-media__body">
+                                            <div class="p-media__heading p-media__heading--ellipsis">
+                                                <em class="p-media__heading-text">
+                                                    중요한건 꺾이지 않는 마음 제목제목이 길어지면 두줄로 나오게 할 수 있음
+                                                </em>
+                                            </div>
+                                            <div class="p-media__content">
+                                                우리 집 고양이는 매일 책상 위에서 꾸벅꾸벅 낮잠을 즐깁니다. 고양이가 책상 위에서 자는 것을 좋아하는 특별한 이유가 있을까요 비밀은 책상 위의 유리에 있습니다.
+                                                유리는 나무보다 열전도가 높아서 열기나 냉기를 사람에게 빠르게 전달합니다. 유리를 놓은 책상 위에 올라간 고양이는
+                                            </div>
+
+                                            <div class="p-author__info">
+                                                <span class="p-split"><em>작성자 </em> 작성자팀</span>
+                                                <span class="p-split"><em>작성일 </em> <time>2022.12.7 오후 1:49:56</time></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <br><br><br>
+                        ------------------ 글쓰기페이지 (스킨추가) -------------------
+                        <div class="p-wrap bbs bbs__form bbs_new_skin">
+                            <div>
+                                <span class="p-icon p-icon__info-circle">주의사항</span>
+                                <span class="p-form__required--icon">필수</span> 표시는 필수 항목 입니다.
+                            </div>
+
+                            <form name="bbsNttForm" id="" method="post" action="" onsubmit="" enctype="multipart/form-data">
+                                <fieldset>
+                                    <legend>게시물 작성</legend>
+                                    <table class="p-table mobile block">
+                                        <caption>{게시판이름} 상세보기 - 제목, 담당부서, 담당자, 담당연락처, 내용, 첨부파일 정보 제공</caption>
+                                        <colgroup>
+                                            <col class="w20p">
+                                            <col>
+                                        </colgroup>
+                                        <tbody class="p-table--th-left">
+                                        <tr class="p-table__subject">
+                                            <th scope="row"><label for="p-name" class="p-form__label">이름 <span class="p-form__required--icon">필수</span></label></th>
+                                            <td>
+                                                <input type="text" name="" id="p-name" class="p-input p-input--auto" placeholder="입력하세요.">
+                                                <span class="p-table__subject_text">이름을 정확히 입력하세요.</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="" class="p-form__label">공지여부 <span class="p-form__required--icon">필수</span></label></th>
+                                            <td>
+                                                <span class="p-form-checkbox">
+                                                    <input type="checkbox" name="c11" id="c11_1" class="p-form-checkbox__input" value="">
+                                                    <label for="c11_1" class="p-form-checkbox__label">체크박스 기본</label>
+                                                </span>
+                                                <span class="p-form-checkbox">
+                                                    <input type="checkbox" name="c11" id="c11_2" class="p-form-checkbox__input" value="" checked="checked">
+                                                    <label for="c11_2" class="p-form-checkbox__label">체크박스 선택</label>
+                                                </span>
+                                                <span class="p-form-checkbox">
+                                                    <input type="radio" name="c11" id="c11_3" class="p-form-radio__input" value="">
+                                                    <label for="c11_3" class="p-form-radio__label">라디오버튼 기본</label>
+                                                </span>
+                                                <span class="p-form-checkbox">
+                                                    <input type="radio" name="c11" id="c11_4" class="p-form-radio__input" value="" checked="checked">
+                                                    <label for="c11_4" class="p-form-radio__label">라디오버튼 선택</label>
+                                                </span>
+                                                <span class="p-switcher">
+                                                    <input id="aa" type="checkbox" class="p-switcher__input" value="">
+                                                    <label for="aa" class="p-switcher__label">공지로 등록</label>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">공지 게시일 <span class="p-form__required--icon">필수</span> <span class="p-icon p-icon__new">새글</span></th>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="p-date-group col"> <!--col-14 col-sm-24-->
+                                                        <div class="p-form-group p-date" data-date="datepicker">
+                                                            <input type="text" name="" class="p-input" value="" placeholder="yyyy-mm-dd">
+                                                            <div class="p-input__split">
+                                                                <button type="button" class="p-input__item  p-date__icon">달력 열기</button>
+                                                            </div>
+                                                        </div>
+                                                        <span class="p-form__split">~</span>
+                                                        <div class="p-form-group p-date" data-date="datepicker">
+                                                            <input type="text" name="" class="p-input" value="" placeholder="yyyy-mm-dd">
+                                                            <div class="p-input__split">
+                                                                <button type="button" class="p-input__item  p-date__icon">달력 열기</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="small margin_t_5">
+                                                    <span class="p-icon p-icon__info-circle-solid">주의사항</span>
+                                                    2018-01-01 형식으로 숫자 및  -(하이픈)만 입력하세요
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">작성자</th>
+                                            <td>작성자 정보</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="" class="p-form__label">담당부서</label></th>
+                                            <td>
+                                                <select name="" id="" class="p-input p-input--auto">
+                                                    <option value="">부서</option>
+                                                    <option value="">영업/기획팀</option>
+                                                    <option value="">디자인팀</option>
+                                                    <option value="">퍼블리셔팀 퍼블리셔팀 퍼블리셔팀</option>
+                                                    <option value="">개발팀</option>
+                                                    <option value="">운영관리팀</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="" class="p-form__label">input 100%</label></th>
+                                            <td><input type="text" name="" id="" class="p-input"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="" class="p-form__label">input 너비 초기화</label></th>
+                                            <td><input type="text" name="" id="" class="p-input p-input--auto"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="" class="p-form__label">input 너비 % 적용</label></th>
+                                            <td><input type="text" name="" id="" class="p-input w75p w-sm-100p"></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">연락처</th>
+                                            <td>
+                                                <div class="row telbox">
+                                                    <div class="col-12 col-sm-24 ">
+                                                        <div class="p-form-group">
+                                                            <select name="" id="" class="p-input" title="연락처 첫번째 번호 선택">
+                                                                <option value="">010</option>
+                                                                <option value="">011</option>
+                                                            </select>
+                                                            <span class="p-form__split"> - </span>
+                                                            <input type="tel" name="" class="p-input" title="연락처 중간번호 입력" value="">
+                                                            <span class="p-form__split"> - </span>
+                                                            <input type="tel" name="" class="p-input" title="연락처 마지막번호 입력" value="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">이메일</th>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-16 col-sm-24">
+                                                        <div class="p-form-group">
+                                                            <input type="text" name="" id="" class="p-input" title="이메일 아이디 입력" value="">
+                                                            <span class="p-form__split">@</span>
+                                                            <input type="text" name="" class="p-input" title="이메일 도메인 입력" value="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8 col-sm-24">
+                                                        <select name="" class="p-input" title="이메일 도메인 선택">
+                                                            <option value="">naver.com</option>
+                                                            <option value="">gmail.com</option>
+                                                            <option value="">nate.com</option>
+                                                            <option value="">hanshinit.co.kr</option>
+                                                            <option value="">직접입력</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="" class="p-form__label">이메일 2</label></th>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-24">
+                                                        <input type="email" name="" id="" class="p-input" value="" placeholder="email@abc.com 형식으로 입력하세요.">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="" class="p-form__label">연락처 2</label></th>
+                                            <td>
+                                                <input type="tel" name="" class="p-input p-input--auto" value="" placeholder="숫자만 입력하세요.">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">주소</th>
+                                            <td>
+                                                <div class="addressbox">
+                                                    <div class="post">
+                                                        <input type="number" class="p-input p-input--auto zipcode" title="주소를 검색하세요" placeholder="주소를 검색하세요">
+                                                        <button type="button" title="새창" class="p-button primary postbtn">우편번호</button>
+                                                    </div>
+                                                    <div class="adress">
+                                                        <input type="text" class="p-input adressinput" title="상세주소 입력" placeholder="상세주소를 입력해주세요">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="" class="p-form__label">내용</label></th>
+                                            <td>
+                                                <textarea name="" id="" class="p-input" cols="80" rows="10" required="required"></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">파일 첨부</th>
+                                            <td>
+                                                <ul class="p-attach margin_b_15">
+                                                    <li class="p-attach__item">
+                                                        <span class="p-form-radio">
+                                                            <input type="radio" name="aa" id="a1" class="p-form-radio__input" checked="">
+                                                            <label for="a1" class="p-form-radio__label margin_r_10">유지</label>
+                                                        </span>
+                                                        <span class="p-form-radio">
+                                                            <input type="radio" name="aa" id="a2" class="p-form-radio__input">
+                                                            <label for="a2" class="p-form-radio__label margin_r_10">삭제</label>
+                                                        </span>
+                                                        <span class="p-form-checkbox">
+                                                            <input type="checkbox" name="" id="a3" class="p-form-checkbox__input" checked="">
+                                                            <label for="a3" class="p-form-checkbox__label margin_r_20">본문삽입</label>
+                                                        </span>
+                                                        <a href=""><span class="p-icon p-icon__hwp">hwp 문서</span><span>2014년 정기분 재산세(건축물, 주택) 납부안내 재산세.hwp</span></a>
+                                                    </li>
+                                                    <li class="p-attach__item">
+                                                        <span class="p-form-radio">
+                                                            <input type="radio" name="bb" id="b1" class="p-form-radio__input" checked="">
+                                                            <label for="b1" class="p-form-radio__label margin_r_10">유지</label>
+                                                        </span>
+                                                        <span class="p-form-radio">
+                                                            <input type="radio" name="bb" id="b2" class="p-form-radio__input">
+                                                            <label for="b2" class="p-form-radio__label margin_r_10">삭제</label>
+                                                        </span>
+                                                        <span class="p-form-checkbox">
+                                                            <input type="checkbox" name="" id="b3" class="p-form-checkbox__input" checked="">
+                                                            <label for="b3" class="p-form-checkbox__label margin_r_20">본문삽입</label>
+                                                        </span>
+                                                        <a href=""><span class="p-icon p-icon__xls">xls 문서</span><span>2014년 정기분 재산세(건축물, 주택) 납부안내 재산세.hwp</span></a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="p-upload">
+                                                    <div class="p-form-group">
+                                                        <div class="p-input__addon">
+                                                            <button type="button" class="p-button p-button--small primary" data-button="upload" data-parent=".p-upload" data-original="#fileorg1" data-showfilename="#filename1"><span class="skip">1번째 첨부 </span>파일선택</button>
+                                                        </div>
+                                                        <div class="p-form-group__upload">
+                                                            <input type="file" id="fileorg1" class="p-upload__file--hidden" title="{항목명 표시} 파일 첨부" style="display: none;">
+                                                            <span id="filename1" class="p-input disabled"></span>
+                                                            <button type="button" class="p-upload__clear clear">1번째 첨부 파일 제거</button>
+                                                        </div>
+                                                        <div class="p-form-checkbox">
+                                                            <input type="checkbox" name="" id="addcheck1" class="p-form-checkbox__input">
+                                                            <label for="addcheck1" class="p-form-checkbox__label">본문삽입</label>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" id="" class="p-input" title="1번째 첨부 이미지 대체 텍스트 입력" value="" placeholder="첨부 이미지 대체 텍스트 입력">
+                                                </div>
+                                                <div class="p-upload">
+                                                    <div class="p-form-group">
+                                                        <div class="p-input__addon">
+                                                            <button type="button" class="p-button p-button--small primary" data-button="upload" data-parent=".p-upload" data-original="#fileorg2" data-showfilename="#filename2"><span class="skip">1번째 첨부</span>파일선택</button>
+                                                        </div>
+                                                        <div class="p-form-group__upload">
+                                                            <input type="file" id="fileorg2" class="p-upload__file--hidden" title="{항목명 표시} 파일 첨부" style="display: none;">
+                                                            <span id="filename2" class="p-input disabled"></span>
+                                                            <button type="button" class="p-upload__clear clear">2번째 첨부 파일 제거</button>
+                                                        </div>
+                                                        <div class="p-form-checkbox">
+                                                            <input type="checkbox" name="" id="addcheck2" class="p-form-checkbox__input">
+                                                            <label for="addcheck2" class="p-form-checkbox__label">본문삽입</label>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" id="" class="p-input" title="2번째 첨부 이미지 대체 텍스트 입력" value="" placeholder="첨부 이미지 대체 텍스트 입력">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </fieldset>
+                            </form>
+                            <div class="floatbox btn_group text_center">
+                                <input type="submit" class="bbsbtn sky big submit" value="확인">
+                                <a href="" class="bbsbtn white big">이전</a>
+                            </div>
+                        </div><!--//p-wrap-->
+                        <br><br><br>
+                        ------------------ 뷰페이지 (스킨추가) -------------------
+                        <div class="p-wrap bbs bbs__view bbs_new_skin">
+                            <div class="bbs_viewbox">
+                                <div class="subjectbox">
+                                    중요한건 꺾이지 않는 마음 제목제목이 길어지면 두줄로 나오게 할 수 있음
+                                </div>
+                                <div class="fieldlistbox">
+                                    <div class="field_item">
+                                        <em class="title">작성자</em>
+                                        <span class="text">작성자팀</span>
+                                    </div>
+                                    <div class="field_item">
+                                        <em class="title">조회수</em>
+                                        <span class="text">1623</span>
+                                    </div>
+                                    <div class="field_item">
+                                        <em class="title">작성일</em>
+                                        <span class="text">2022.12.7 오후 1:49:56</span>
+                                    </div>
+                                </div>
+                                <div class="viewcontentbox">
+                                    <div class="viewcontent">
+                                        <div class="bbs_photo">
+                                            <div class="inner">
+                                                <img src="/site/public/images/program/photo3.jpg" alt="이미지">
+                                                <span class="img_zoom">
+                                                    <a href="/site/public/images/program/photo3.jpg" target="_blank" title="새창 이미지 확대보기" rel="noopener noreferrer">이미지 확대보기</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="contenttext">
+                                            우리 집 고양이는 매일 책상 위에서 꾸벅꾸벅 낮잠을 즐깁니다. 고양이가 책상 위에서 자는 것을 좋아하는 특별한 이유가 있을까요 비밀은 책상 위의 유리에 있습니다.
+                                            유리는 나무보다 열전도가 높아서 열기나 냉기를 사람에게 빠르게 전달합니다. 유리를 놓은 책상 위에 올라간 고양이는 유리의 냉기 때문에 신체의 온도변화를 느끼게 되는데요. 신체의 온도가 변하면 근육이 이완되고 온몸이 나른해집니다. 창문 가에서 낮잠을 잘 때 잠이 더 잘 오는 것도 이와 같은 원리랍니다!<br>
+                                            <br>
+                                            졸음은 부족한 잠을 보충하려는 생리적 욕구로서 잠에 빠지기 쉬운 상태를 말합니다. 공부하는 학생들에게는 졸음이 상대하기 어려운 적이라는 사실! 신체의 온도변화를 일으키는 책상 위의 유리는 졸음을 유발하게 됩니다
+                                        </div>
+                                    </div>
+                                    <div class="attachedfile"><!-- 첨부파일이 있을 때 출력 -->
+                                        <div class="attach_item">
+                                            <span class="text">첨부파일명.jpg</span>
+                                            <a href="" class="icon_btn type2 shape2 small download"><span>다운로드</span></a>
+                                        </div>
+                                        <div class="attach_item">
+                                            <span class="text">첨부파일명.hwp</span>
+                                            <a href="" target="_blank" title="새창" class="icon_btn type2 shape2 small preview" rel="noopener noreferrer"><span>미리보기</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="floatbox btn_group clearfix">
+                                <div class="floatleft">
+                                    <a href="" class="bbsbtn white big list">목록</a>
+                                </div>
+                                <div class="floatright">
+                                    <a href="" class="bbsbtn sky big modify">수정</a>
+                                </div>
+                            </div>
+
+                            <div class="bbsmovebox">
+                                <div class="move_item prev clearfix">
+                                    <div class="move_title"><em>이전글</em></div>
+                                    <div class="move_text">
+                                        <span class="move_link">이전글 제목제목 제목</span>
+                                    </div>
+                                    <div class="move_date">2022.12.07</div>
+                                </div>
+                                <div class="move_item next clearfix">
+                                    <div class="move_title"><em>다음글</em></div>
+                                    <div class="move_text">
+                                        <a href="" class="move_link">다음글의 제목제목</a>
+                                    </div>
+                                    <div class="move_date">2022.12.07</div>
+                                </div>
+                            </div>
+                        </div><!--//p-wrap-->
+                        <br><br><br>
+                        ------------------ 뷰페이지 (포토게시판) (스킨추가) -------------------
+                        <script>
+                            $(function() {
+                                //슬라이드
+                                var $Bbs_Slidebox = $('.bbs__gallery.bbs__view.bbs_new_skin .bbs_photoslide');
+                                $Bbs_Slidebox.each(function(){
+                                    var $this = $(this),
+                                        $photoslidebox = $this.find('.photoslidebox'),
+                                        $BbsSlide = $photoslidebox.find('.slide_list'),
+                                        $photoControls = $photoslidebox.find('.coltrols'),
+                                        $Navslidebox = $this.find('.navslidebox'),
+                                        $BbsSlideNav = $this.find('.slide_nav'),
+                                        $BbsNavItems = $BbsSlideNav.find('.slide_item'),
+                                        NavItemLength = $BbsNavItems.length,
+                                        $NavControls = $Navslidebox.find('.coltrols');
+                                    var NavCenterMode = false;
+                                    if(NavItemLength>7){
+                                        NavCenterMode = true;
+                                    }
+                                    $BbsSlideNav.attr('data-centermode', NavCenterMode);
+                                    $BbsSlide.slick({
+                                        fade: false,
+                                        autoplay : false,
+                                        pauseOnHover: false,
+                                        pauseOnDotsHover : true,
+                                        swipe:false,
+                                        draggable:false,
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                        arrows:true,
+                                        prevArrow : $photoControls.find('.prev'),
+                                        nextArrow : $photoControls.find('.next'),
+                                        dots:false,
+                                        asNavFor: $BbsSlideNav,
+                                        responsive: [
+                                            {
+                                                breakpoint: 1001,
+                                                settings: {
+                                                    swipe:true,
+                                                    draggable:true
+                                                }
+                                            }]
+                                    });
+                                    $BbsSlideNav.slick({
+                                        vertical: false,
+                                        verticalSwiping: false,
+                                        centerMode: NavCenterMode,
+                                        centerPadding: 0,
+                                        swipe:false,
+                                        draggable:false,
+                                        slidesToShow: 7,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                        arrows:true,
+                                        prevArrow : $NavControls.find('.prev'),
+                                        nextArrow : $NavControls.find('.next'),
+                                        dots:false,
+                                        asNavFor: $BbsSlide,
+                                        focusOnSelect: true,
+                                        responsive: [
+                                            {
+                                                breakpoint: 1001,
+                                                settings: {
+                                                    swipe:true,
+                                                    draggable:true,
+                                                    slidesToShow: 5
+                                                }
+                                            },
+                                            {
+                                                breakpoint: 741,
+                                                settings: {
+                                                    swipe:true,
+                                                    draggable:true,
+                                                    slidesToShow: 4
+                                                }
+                                            },
+                                            {
+                                                breakpoint: 601,
+                                                settings: {
+                                                    swipe:true,
+                                                    draggable:true,
+                                                    slidesToShow: 3
+                                                }
+                                            },
+                                            {
+                                                breakpoint: 468,
+                                                settings: {
+                                                    swipe:true,
+                                                    draggable:true,
+                                                    slidesToShow: 2
+                                                }
+                                            }]
+                                    });
+                                });
+                            });
+                        </script>
+                        <div class="p-wrap bbs bbs__gallery bbs__view bbs_new_skin">
+                            <div class="bbs_viewbox">
+                                <div class="subjectbox">
+                                    중요한건 꺾이지 않는 마음 제목제목이 길어지면 두줄로 나오게 할 수 있음
+                                </div>
+                                <div class="fieldlistbox">
+                                    <div class="field_item">
+                                        <em class="title">작성자</em>
+                                        <span class="text">작성자팀</span>
+                                    </div>
+                                    <div class="field_item">
+                                        <em class="title">조회수</em>
+                                        <span class="text">1623</span>
+                                    </div>
+                                    <div class="field_item">
+                                        <em class="title">작성일</em>
+                                        <span class="text">2022.12.7 오후 1:49:56</span>
+                                    </div>
+                                </div>
+                                <div class="viewcontentbox">
+                                    <div class="viewcontent">
+                                        <div class="bbs_photoslide type1">
+                                            <div class="photoslidebox">
+                                                <div class="coltrols">
+                                                    <button type="button" class="prev slick-arrow" style="">이전</button>
+                                                    <button type="button" class="next slick-arrow" style="">다음</button>
+                                                </div>
+                                                <div class="slide_list">
+                                                    <div class="slide_item">
+                                                        <div class="photobox">
+                                                            <div class="inner_photo" style="background-image:url('/site/public/images/program/photo3.jpg');"></div>
+                                                            <div class="photo">
+                                                                <span class="imgbox">
+                                                                    <img src="/site/public/images/program/photo3.jpg" alt="이미지">
+                                                                    <span class="img_zoom">
+                                                                        <a href="/site/public/images/program/photo3.jpg" target="_blank" title="새창 이미지 확대보기" rel="noopener noreferrer" tabindex="-1">이미지 확대보기</a>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <div class="photobox">
+                                                            <div class="inner_photo" style="background-image:url('/site/public/images/program/photo3.jpg');"></div>
+                                                            <div class="photo">
+                                                                <span class="imgbox">
+                                                                    <img src="/site/public/images/program/photo3.jpg" alt="이미지">
+                                                                    <span class="img_zoom">
+                                                                        <a href="/site/public/images/program/photo3.jpg" target="_blank" title="새창 이미지 확대보기" rel="noopener noreferrer" tabindex="-1">이미지 확대보기</a>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <div class="photobox">
+                                                            <div class="inner_photo" style="background-image:url('/site/public/images/program/photo3.jpg');"></div>
+                                                            <div class="photo">
+                                                                <span class="imgbox">
+                                                                    <img src="/site/public/images/program/photo3.jpg" alt="이미지">
+                                                                    <span class="img_zoom">
+                                                                        <a href="/site/public/images/program/photo3.jpg" target="_blank" title="새창 이미지 확대보기" rel="noopener noreferrer" tabindex="-1">이미지 확대보기</a>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <div class="photobox">
+                                                            <div class="inner_photo" style="background-image:url('/site/public/images/program/photo3.jpg');"></div>
+                                                            <div class="photo">
+                                                                <span class="imgbox">
+                                                                    <img src="/site/public/images/program/photo3.jpg" alt="이미지">
+                                                                    <span class="img_zoom">
+                                                                        <a href="/site/public/images/program/photo3.jpg" target="_blank" title="새창 이미지 확대보기" rel="noopener noreferrer" tabindex="-1">이미지 확대보기</a>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <div class="photobox">
+                                                            <div class="inner_photo" style="background-image:url('/site/public/images/program/photo3.jpg');"></div>
+                                                            <div class="photo">
+                                                                <span class="imgbox">
+                                                                    <img src="/site/public/images/program/photo3.jpg" alt="이미지">
+                                                                    <span class="img_zoom">
+                                                                        <a href="/site/public/images/program/photo3.jpg" target="_blank" title="새창 이미지 확대보기" rel="noopener noreferrer" tabindex="-1">이미지 확대보기</a>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <div class="photobox">
+                                                            <div class="inner_photo" style="background-image:url('/site/public/images/program/photo3.jpg');"></div>
+                                                            <div class="photo">
+                                                                <span class="imgbox">
+                                                                    <img src="/site/public/images/program/photo3.jpg" alt="이미지">
+                                                                    <span class="img_zoom">
+                                                                        <a href="/site/public/images/program/photo3.jpg" target="_blank" title="새창 이미지 확대보기" rel="noopener noreferrer" tabindex="-1">이미지 확대보기</a>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <div class="photobox">
+                                                            <div class="inner_photo" style="background-image:url('/site/public/images/program/photo3.jpg');"></div>
+                                                            <div class="photo">
+                                                                <span class="imgbox">
+                                                                    <img src="/site/public/images/program/photo3.jpg" alt="이미지">
+                                                                    <span class="img_zoom">
+                                                                        <a href="/site/public/images/program/photo3.jpg" target="_blank" title="새창 이미지 확대보기" rel="noopener noreferrer" tabindex="-1">이미지 확대보기</a>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <div class="photobox">
+                                                            <div class="inner_photo" style="background-image:url('/site/public/images/program/photo3.jpg');"></div>
+                                                            <div class="photo">
+                                                                <span class="imgbox">
+                                                                    <img src="/site/public/images/program/photo3.jpg" alt="이미지">
+                                                                    <span class="img_zoom">
+                                                                        <a href="/site/public/images/program/photo3.jpg" target="_blank" title="새창 이미지 확대보기" rel="noopener noreferrer" tabindex="-1">이미지 확대보기</a>
+                                                                    </span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="navslidebox">
+                                                <div class="coltrols">
+                                                    <button type="button" class="prev slick-arrow" style="">이전</button>
+                                                    <button type="button" class="next slick-arrow" style="">다음</button>
+                                                </div>
+                                                <div class="slide_nav">
+                                                    <div class="slide_item">
+                                                        <button type="button" class="navbtn" style="background-image:url('/site/public/images/program/photo3.jpg');">1번이미지보기</button>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <button type="button" class="navbtn" style="background-image:url('/site/public/images/program/photo3.jpg');">2번이미지보기</button>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <button type="button" class="navbtn" style="background-image:url('/site/public/images/program/photo3.jpg');">3번이미지보기</button>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <button type="button" class="navbtn" style="background-image:url('/site/public/images/program/photo3.jpg');">4번이미지보기</button>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <button type="button" class="navbtn" style="background-image:url('/site/public/images/program/photo3.jpg');">5번이미지보기</button>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <button type="button" class="navbtn" style="background-image:url('/site/public/images/program/photo3.jpg');">6번이미지보기</button>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <button type="button" class="navbtn" style="background-image:url('/site/public/images/program/photo3.jpg');">7번이미지보기</button>
+                                                    </div>
+                                                    <div class="slide_item">
+                                                        <button type="button" class="navbtn" style="background-image:url('/site/public/images/program/photo3.jpg');">8번이미지보기</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="contenttext">
+                                            우리 집 고양이는 매일 책상 위에서 꾸벅꾸벅 낮잠을 즐깁니다. 고양이가 책상 위에서 자는 것을 좋아하는 특별한 이유가 있을까요 비밀은 책상 위의 유리에 있습니다.
+                                            유리는 나무보다 열전도가 높아서 열기나 냉기를 사람에게 빠르게 전달합니다. 유리를 놓은 책상 위에 올라간 고양이는 유리의 냉기 때문에 신체의 온도변화를 느끼게 되는데요. 신체의 온도가 변하면 근육이 이완되고 온몸이 나른해집니다. 창문 가에서 낮잠을 잘 때 잠이 더 잘 오는 것도 이와 같은 원리랍니다!<br>
+                                            <br>
+                                            졸음은 부족한 잠을 보충하려는 생리적 욕구로서 잠에 빠지기 쉬운 상태를 말합니다. 공부하는 학생들에게는 졸음이 상대하기 어려운 적이라는 사실! 신체의 온도변화를 일으키는 책상 위의 유리는 졸음을 유발하게 됩니다
+                                        </div>
+                                    </div>
+                                    <div class="attachedfile"><!-- 첨부파일이 있을 때 출력 -->
+                                        <div class="attach_item">
+                                            <span class="text">첨부파일명.jpg</span>
+                                            <a href="" class="icon_btn type2 shape2 small download"><span>다운로드</span></a>
+                                            <a href="" target="_blank" title="새창" class="icon_btn type2 shape2 small preview" rel="noopener noreferrer"><span>미리보기</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="floatbox btn_group clearfix">
+                                <div class="floatleft">
+                                    <a href="" class="bbsbtn white big list">목록</a>
+                                </div>
+                                <div class="floatright">
+                                    <a href="" class="bbsbtn sky big modify">수정</a>
+                                </div>
+                            </div>
+
+                            <div class="bbsmovebox">
+                                <div class="move_item prev clearfix">
+                                    <div class="move_title"><em>이전글</em></div>
+                                    <div class="move_text">
+                                        <span class="move_link">이전글 제목제목 제목</span>
+                                    </div>
+                                    <div class="move_date">2022.12.07</div>
+                                </div>
+                                <div class="move_item next clearfix">
+                                    <div class="move_title"><em>다음글</em></div>
+                                    <div class="move_text">
+                                        <a href="" class="move_link">다음글의 제목제목</a>
+                                    </div>
+                                    <div class="move_date">2022.12.07</div>
+                                </div>
+                            </div>
+                        </div><!--//p-wrap-->
+                        <br><br><br><br><br>
+                        ------------------ FAQ 리스트 (스킨추가 : 카테고리) -------------------
+                        <div class="temp_accordion faq_list">
+                            <div class="accordion_item faq_item">
+                                <button type="button" title="내용열기" class="accordion_btn">
+                                    <span class="title">카테고리</span><!-- 카테고리 넣어주세요 -->
+                                    <span class="text">질문 제목이 선택되었을때 선택되었을때</span>
+                                </button>
+                                <div class="accordion_con">
+                                    <div class="boxwrap">
+                                        <div class="textbox">우리 집 고양이는 매일 책상 위에서 꾸벅꾸벅 낮잠을 즐깁니다. 고양이가 책상 위에서 자는 것을 좋아하는 특별한 이유가 있을까요 비밀은 책상 위의 유리에 있습니다.
+                                            유리는 나무보다 열전도가 높아서 열기나 냉기를 사람에게 빠르게 전달합니다. 유리를 놓은 책상 위에 올라간 고양이는 유리의 냉기 때문에 신체의 온도변화를 느끼게 되는데요. 신체의 온도가 변하면 근육이 이완되고 온몸이 나른해집니다. 창문 가에서 낮잠을 잘 때 잠이 더 잘 오는 것도 이와 같은 원리랍니다!<br>
+                                            <br>
+                                            졸음은 부족한 잠을 보충하려는 생리적 욕구로서 잠에 빠지기 쉬운 상태를 말합니다. 공부하는 학생들에게는 졸음이 상대하기 어려운 적이라는 사실! 신체의 온도변화를 일으키는 책상 위의 유리는 졸음을 유발하게 됩니다.</div>
+                                        <div class="floatbox btn_group clearfix">
+                                            <div class="p-accordion__link-group">
+                                                <a href="" class="p-tab__link modify">수정</a>
+                                                <a href="" class="p-tab__link delete">삭제</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion_item faq_item">
+                                <button type="button" title="내용열기" class="accordion_btn">
+                                    <span class="title">카테고리</span><!-- 카테고리 넣어주세요 -->
+                                    <span class="text">모든 국민은 양심의 자유를 가진다. 대법원은 법률에 저촉되지 아니하는송에 관한</span>
+                                </button>
+                                <div class="accordion_con">
+                                    <div class="boxwrap">
+                                        <div class="textbox">우리 집 고양이는 매일 책상 위에서 꾸벅꾸벅 낮잠을 즐깁니다. 고양이가 책상 위에서 자는 것을 좋아하는 특별한 이유가 있을까요 비밀은 책상 위의 유리에 있습니다.
+                                            유리는 나무보다 열전도가 높아서 열기나 냉기를 사람에게 빠르게 전달합니다. 유리를 놓은 책상 위에 올라간 고양이는 유리의 냉기 때문에 신체의 온도변화를 느끼게 되는데요. 신체의 온도가 변하면 근육이 이완되고 온몸이 나른해집니다. 창문 가에서 낮잠을 잘 때 잠이 더 잘 오는 것도 이와 같은 원리랍니다!<br>
+                                            <br>
+                                            졸음은 부족한 잠을 보충하려는 생리적 욕구로서 잠에 빠지기 쉬운 상태를 말합니다. 공부하는 학생들에게는 졸음이 상대하기 어려운 적이라는 사실! 신체의 온도변화를 일으키는 책상 위의 유리는 졸음을 유발하게 됩니다.</div>
+                                        <div class="floatbox btn_group clearfix">
+                                            <div class="p-accordion__link-group">
+                                                <a href="" class="p-tab__link modify">수정</a>
+                                                <a href="" class="p-tab__link delete">삭제</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion_item faq_item">
+                                <button type="button" title="내용열기" class="accordion_btn">
+                                    <span class="title">카테고리카테</span><!-- 카테고리 넣어주세요 -->
+                                    <span class="text">모든 국민은 양심의 자유를 가진다. 대법원은 법률에 저촉되지 아니하는송에 관한</span>
+                                </button>
+                                <div class="accordion_con">
+                                    <div class="boxwrap">
+                                        <div class="textbox">우리 집 고양이는 매일 책상 위에서 꾸벅꾸벅 낮잠을 즐깁니다. 고양이가 책상 위에서 자는 것을 좋아하는 특별한 이유가 있을까요 비밀은 책상 위의 유리에 있습니다.
+                                            유리는 나무보다 열전도가 높아서 열기나 냉기를 사람에게 빠르게 전달합니다. 유리를 놓은 책상 위에 올라간 고양이는 유리의 냉기 때문에 신체의 온도변화를 느끼게 되는데요. 신체의 온도가 변하면 근육이 이완되고 온몸이 나른해집니다. 창문 가에서 낮잠을 잘 때 잠이 더 잘 오는 것도 이와 같은 원리랍니다!<br>
+                                            <br>
+                                            졸음은 부족한 잠을 보충하려는 생리적 욕구로서 잠에 빠지기 쉬운 상태를 말합니다. 공부하는 학생들에게는 졸음이 상대하기 어려운 적이라는 사실! 신체의 온도변화를 일으키는 책상 위의 유리는 졸음을 유발하게 됩니다.</div>
+                                        <div class="floatbox btn_group clearfix">
+                                            <div class="p-accordion__link-group">
+                                                <a href="" class="p-tab__link modify">수정</a>
+                                                <a href="" class="p-tab__link delete">삭제</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion_item faq_item">
+                                <button type="button" title="내용열기" class="accordion_btn">
+                                    <span class="title">카테고리</span><!-- 카테고리 넣어주세요 -->
+                                    <span class="text">모든 국민은 양심의 자유를 가진다. 대법원은 법률에 저촉되지 아니하는송에 관한</span>
+                                </button>
+                                <div class="accordion_con">
+                                    <div class="boxwrap">
+                                        <div class="textbox">우리 집 고양이는 매일 책상 위에서 꾸벅꾸벅 낮잠을 즐깁니다. 고양이가 책상 위에서 자는 것을 좋아하는 특별한 이유가 있을까요 비밀은 책상 위의 유리에 있습니다.
+                                            유리는 나무보다 열전도가 높아서 열기나 냉기를 사람에게 빠르게 전달합니다. 유리를 놓은 책상 위에 올라간 고양이는 유리의 냉기 때문에 신체의 온도변화를 느끼게 되는데요. 신체의 온도가 변하면 근육이 이완되고 온몸이 나른해집니다. 창문 가에서 낮잠을 잘 때 잠이 더 잘 오는 것도 이와 같은 원리랍니다!<br>
+                                            <br>
+                                            졸음은 부족한 잠을 보충하려는 생리적 욕구로서 잠에 빠지기 쉬운 상태를 말합니다. 공부하는 학생들에게는 졸음이 상대하기 어려운 적이라는 사실! 신체의 온도변화를 일으키는 책상 위의 유리는 졸음을 유발하게 됩니다.</div>
+                                        <div class="floatbox btn_group clearfix">
+                                            <div class="p-accordion__link-group">
+                                                <a href="" class="p-tab__link modify">수정</a>
+                                                <a href="" class="p-tab__link delete">삭제</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </article>
+            </main>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="wrap">
+            <div class="banner">
+                <h2 class="banner_title">배너존</h2>
+                <div class="banner_list">
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                </div>
+                <div class="banner_control">
+                    <button type="button" class="banner_prev">이전</button>
+                    <button type="button" class="banner_next">다음</button>
+                    <button type="button" class="banner_auto"></button>
+                </div>
+            </div>
+
+            <div class="footer_link">
+                <div class="link_site">
+                    <h2 class="skip">관련사이트</h2>
+                    <ul class="site_list">
+                        <li class="site_item toggle">
+                            <button type="button" class="site_show"><span>대학/대학원 홈페이지</span></button>
+                            <div class="site_panel">
+                                <ul class="site_ul">
+                                    <li class="site_li"><a href="#n" class="site_anchor">무선인터넷</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">안전보건소통함</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">시설보수 One-Stop 서비스</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">교육혁신본부</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">이러닝시스템</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">학칙 및 규정</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">대학알리미</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="site_item toggle">
+                            <button type="button" class="site_show"><span>부서/기관 안내</span></button>
+                            <div class="site_panel">
+                                <ul class="site_ul">
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                    <li class="site_li"><a href="#n" class="site_anchor">사이트링크</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="link_shortcut">
+                    <h2 class="skip">바로가기</h2>
+                    <ul class="shortcut_list">
+                        <li class="shortcut_item"><a href="#n" class="shortcut_anchor">개인정보처리방침</a></li>
+                        <li class="shortcut_item"><a href="#n" class="shortcut_anchor">이용약관</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_content">
+                <div class="logo">
+                    <a href="./index.do" class="logo_anchor">충북대학교 <span>사이트명</span></a>
+                </div>
+                <div class="info">
+                    <address class="info_address">(28644) 충청북도 청주시 서원구 충대로 1, 충북대학교 사이트명</address>
+                    <ul class="info_list">
+                        <li class="info_item"><span>TEL</span>043-261-2990</li>
+                        <li class="info_item"><span>FAX</span>043-275-5820</li>
+                        <li class="info_item"><span>EMAIL</span>tsc@chungbuk.ac.kr</li>
+                    </ul>
+                    <p class="info_copyright">COPYRIGHT 2024 CHUNGBUK NATIONAL UNIVERSITY. <span>ALL RIGHTS RESERVED.</span></p>
+                </div>
+                <!--<div class="wa">
+                    <a href="http://webwatch.or.kr/certification/situation.html" target="_blank" title="새창" rel="noopener noreferrer" class="wa_anchor">
+                        <img src="/common/images/layout/wa_mark.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
+                    </a>
+                </div>-->
+            </div>
+
+            <button type="button" class="up_btn">TOP</button>
+        </div>
+        <!--
+        cms 정보 불러오기
+        <div class="footer_info">
+            <address><span class="info_address">@@{siteInfo.insttAdres}</span><span class="info_tel">TEL : @@{siteInfo.insttTelno}</span></address>
+            <p class="info_copyright">@@{siteInfo.siteCpyrht}</p>
+        </div>
+        -->
+    </footer>
+
+</div>
+</body>
+</html>
