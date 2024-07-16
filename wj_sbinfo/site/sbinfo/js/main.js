@@ -187,7 +187,7 @@
                 $stateBar.css('width', percent + '%');
             });
             $programList.slick({
-                autoplay : false,
+                autoplay : true,
                 dots : false,
                 draggable : false,
                 swipe : true,
@@ -195,7 +195,7 @@
                 slidesToShow : 2,
                 slidesToScroll : 1,
                 variableWidth : false,
-                infinite : true,
+                infinite : false,
                 arrows : true,
                 prevArrow : $programPrev,
                 nextArrow : $programNext,
