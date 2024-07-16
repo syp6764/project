@@ -5,7 +5,7 @@
 :not(.lnb_open) .trans #header:not(.fixed){background-color:transparent;}
 :not(.lnb_open) .trans #header:not(.fixed) .lnb .menu .depth1_text{color:#fff;}
 :not(.lnb_open) .trans #header:not(.fixed) .logo .logo_anchor .logo_text{color:#fff;}
-:not(.lnb_open) .trans #header:not(.fixed) .logo .logo_anchor{background:url(/common_2024/images/layout/logo_white.png) no-repeat left center;}
+:not(.lnb_open) .trans #header:not(.fixed) .logo .logo_anchor{background:url(/project/wj_sbinfo/common_2024/images/layout/logo_white.png) no-repeat left center;}
 :not(.lnb_open) .trans #header:not(.fixed) .logo .logo_anchor img{opacity:0;}
 :not(.lnb_open) .trans #header:not(.fixed) .gnb .link_list:before{border:1px solid rgba(255, 255, 255, 0.23); background-color:rgba(255, 255, 255, 0.07);}
 :not(.lnb_open) .trans #header:not(.fixed) .gnb .link_anchor{color:#fff;}
