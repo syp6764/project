@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* 본고딕 */
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 200;
+	src: url("../fonts/NotoSansCJKkr-Light.woff2") format('woff2'),
+	url("../fonts/NotoSansCJKkr-Light.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 300;
+	src: url("../fonts/NotoSansCJKkr-DemiLight.woff2") format('woff2'),
+	url("../fonts/NotoSansCJKkr-DemiLight.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 400;
+	src: url("../fonts/NotoSansCJKkr-Regular.woff2") format('woff2'),
+		url("../fonts/NotoSansCJKkr-Regular.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 500;
+	src: url("../fonts/NotoSansCJKkr-Medium.woff2") format('woff2'),
+	url("../fonts/NotoSansCJKkr-Medium.woff") format('woff');
+}
+@font-face{
+	font-family: 'NotoKr';
+	font-weight: 600;
+	src: url("../fonts/NotoSansCJKkr-Bold.woff2") format('woff2'),
+	url("../fonts/NotoSansCJKkr-Bold.woff") format('woff');
+}
+
+
+/* 넥슨 Lv1*/
+
+@font-face{
+	font-family: 'Nexen';
+	font-weight: 200;
+	src: url("../fonts/NEXONLv1GothicLight.ttf") format('truetype');
+}
+@font-face{
+	font-family: 'Nexen';
+	font-weight: 400;
+	src: url("../fonts/NEXONLv1GothicRegular.ttf") format('truetype');
+}
+@font-face{
+	font-family: 'Nexen';
+	font-weight: 600;
+	src: url("../fonts/NEXONLv1GothicBold.ttf") format('truetype');
+}
+
+/* s-core */
+@font-face{
+	font-family: 'SCDream';
+	font-weight: 200;
+	src: url("../fonts/S-CoreDream-3Light.woff") format('woff'),
+	url("../fonts/S-CoreDream-3Light.woff2") format('woff2');
+}
+
+@font-face{
+	font-family: 'SCDream';
+	font-weight: 400;
+	src: url("../fonts/S-CoreDream-4Regular.woff") format('woff'),
+	url("../fonts/S-CoreDream-4Regular.woff2") format('woff2');
+}
+
+@font-face{
+	font-family: 'SCDream';
+	font-weight: 500;
+	src: url("../fonts/S-CoreDream-5.woff") format('woff'),
+	url("../fonts/S-CoreDream-5.woff2") format('woff2');
+}
+@font-face{
+	font-family: 'SCDream';
+	font-weight: 500;
+	src: url("../fonts/S-CoreDream-6Bold.woff") format('woff'),
+	url("../fonts/S-CoreDream-6Bold.woff2") format('woff2');
+}
+
+/* 생거진천체 */
+@font-face{
+    font-family: 'SaenggeoJincheon';
+    font-weight: 400;
+    src: url("../fonts/Saenggeo_Jincheon.woff") format('woff'),
+    url("../fonts/Saenggeo_Jincheon.woff2") format('woff2');
+}
+
+/* 넥센타이어 */
+@font-face {
+    font-family: 'NEXEN_TIRE_Bold';
+    font-weight: 700;
+    src: url("../fonts/NEXEN_TIRE_Bold.woff") format('woff'),
+    url("../fonts/NEXEN_TIRE_Bold.woff2") format('woff2');
+}
+
+/* jalnan */
+@font-face {
+    font-family: 'yg-jalnan';
+    font-weight: normal;
+    src: url('../fonts/Jalnan.woff') format('woff');
+}
