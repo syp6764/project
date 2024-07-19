@@ -2,5 +2,6 @@
 
 @import url('/project/anyang/common/css/default.css');
 @import url('/project/anyang/common/css/layout.css');
-@import url('common.css');
+@import url('/project/anyang/site/public/css/common.css');
+@import url('/project/anyang/site/public/css/sub_layout.css');
 @import url('main_layout.css');
