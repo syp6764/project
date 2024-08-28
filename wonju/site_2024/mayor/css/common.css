@@ -110,8 +110,8 @@ input[type="submit"]{cursor:pointer;}
 
 .logo{position:absolute; top:28px; left:0; z-index:71; animation-name:logoAnimate; animation-duration:0.2s; animation-timing-function:linear; animation-fill-mode:forwards;animation-iteration-count:1;}
 .logo a{display:block; font-size:0; line-height:0;}
-.logo a .img{display:inline-block; width:324px; height:40px; background:url(../images/common/slogan.png) no-repeat; vertical-align:middle;}
-.logo a .text{display:inline-block; position:relative; width:117px; height:30px; margin-left:31px; background:url(../images/common/logo.png) no-repeat; vertical-align:middle;}
+.logo a .img{display:inline-block; width:275px; height:34px; background:url(../images/common/slogan.png) no-repeat; vertical-align:middle;}
+.logo a .text{display:inline-block; position:relative; width:132px; height:34px; margin-left:31px; background:url(../images/common/logo.png) no-repeat; vertical-align:middle;}
 .logo a .text:before{display:block; position:absolute; top:6px; left:-15px; width:1px; height:21px; background-color:#dedede;}
 
 .gnb{position:absolute; top:35px; right:0; z-index:71;}
