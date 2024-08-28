@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /* Layout */
-@import url('/common/css/default.css');
-@import url('/common/css/layout.css');
+@import url('/project/wonju/common/css/default.css');
+@import url('/project/wonju/common/css/layout.css');
 @import url('common.css?v=20240624');
 @import url('sub_layout.css?v=20240624');
 /*@import url('/common/css/template.css');*/
@@ -10,7 +10,5 @@
 @import url('font.css');
 @import url('template.css');
 @import url('program.css');
-@import url('sub_content.css');
-@import url('sub_content2.css');
 
 
