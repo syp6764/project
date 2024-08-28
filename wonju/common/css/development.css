@@ -1,0 +1,1286 @@
+@charset "UTF-8";
+/* 2020-05 이경선*/
+
+/* 시정홍보 게시판 */
+.program .m-culture .list {margin-top:30px;}
+.program .m-culture .list li {display:block; overflow:hidden; float:left; position:relative; width:calc((100% - 123px) / 4); margin-right:40px; margin-bottom:30px; border:1px solid #d0d0d0; text-align:center;}
+.program .m-culture .list li:nth-child(4n) {margin-right:0;}
+.program .m-culture .list li a {display:block;}
+.program .m-culture .list li a .list_img {position:relative; overflow:hidden; height:285px; border-bottom:1px solid #d0d0d0; box-sizing:border-box; line-height:285px;}
+.program .m-culture .list li a .list_img img {width:134px; height:190px;}/*썸네일사이즈로 작업함*/
+.program .m-culture .list li a .list_title {display:table; width:100%; height:50px;}
+.program .m-culture .list li a .list_title span {display:table-cell; text-align:center; vertical-align:middle;}
+.program .m-culture .list li:hover a .list_img:before {display:block; position:absolute; width:100%; height:100%; background:url('/common/images/development/newsletter_list_button.png') no-repeat center center rgba(0,0,0,0.6);}
+
+@media screen and (max-width:1200px) {
+    .program .m-culture .list li {overflow:visible;}
+
+    .program .m-culture .list li a .list_img {height:211px; line-height:211px;}
+}
+@media screen and (max-width:1000px) {
+    .program .m-culture .list li a {width:100%;}
+    .program .m-culture .list li a .list_img {overflow:visible; width:100%; text-align:center;}
+}
+@media screen and (max-width:800px) {
+    .program .m-culture .list li {width:calc((100% - 30px) / 2); margin-right:30px;}
+    .program .m-culture .list li:nth-child(2n) {margin-right:0;}
+}
+@media screen and (max-width:640px) {
+    .program .m-culture .list li {width:calc((100% - 10px) / 2); margin-right:10px;}
+}
+
+
+/*게시판 - 환경관련용어*/
+.eco_word .p-accordion .p-icon {left:30px; width:auto; height:auto; padding:7px 20px; border:1px solid #959595; background:#fff; font-size:14px; line-height:16px; color:#111; font-weight:400; vertical-align:middle; transition:all 0.25s linear; text-decoration:none;}
+.eco_word .p-accordion .p-icon__answer, .eco_word .p-accordion .p-icon__question {top:10px;}
+.eco_word .p-accordion .p-icon__question {}
+.eco_word .p-accordion .p-icon__answer {border:1px solid #0361b2; background-color:#0361b2; color:#fff;}
+.eco_word .p-accordion .p-accordion__title {margin-left:80px;}
+.eco_word .p-accordion .p-accordion__body.active {padding-left:110px;}
+
+
+/*게시판 - 역대동장*/
+.bbs.dong .dong_list {margin-left:-10px; padding-top:30px; border-top:2px solid #222222;}
+.bbs.dong .dong_list .dong_item {float:left; width:calc(50% - 10px); margin-bottom:10px; margin-left:10px; padding:20px; border:1px solid #cdcdcd; font-size:0; line-height:0; letter-spacing:-0.025em;}
+.bbs.dong .dong_list .dong_item a {display:block;}
+.bbs.dong .dong_list .dong_image {float:right; width:75px; height:99px; overflow:hidden; margin-left:5px;}
+.bbs.dong .dong_list .dong_info {float:left; width:100%; height:99px; padding-left:10px;}
+.bbs.dong .dong_list .dong_num {margin-top:8px; margin-bottom:15px; color:#000; font-size:18px; line-height:20px;}
+.bbs.dong .dong_list .dong_tenure .dd {line-height:22px;}
+
+.bbs.dong .dong_list .dong_image+.dong_info {width:calc(100% - 100px)}
+
+@media screen and (max-width:1000px) {
+    .bbs.dong .dong_list .dong_num {margin-bottom:8px; font-size:16px; line-height:18px;}
+    .bbs.dong .dong_list .dong_info {padding-left:0;}
+    .bbs.dong .dong_list .dong_info .dl li {font-size:14px; line-height:18px;}
+}
+
+@media screen and (max-width:680px) {
+    .bbs.dong .dong_list {margin-left:0;}
+    .bbs.dong .dong_list .dong_item {float:none; width:100%; margin-left:0;}
+    .bbs.dong .dong_list .dong_info {height:auto;}
+}
+
+/*e-book홍보관*/
+.program .e-book .list {margin-top:30px;}
+.program .e-book .list li {display:block; overflow:hidden; float:left; position:relative; width:calc((100% - 123px) / 4); margin-right:40px; margin-bottom:30px; border:1px solid #d0d0d0; text-align:center;}
+.program .e-book .list li:nth-child(4n) {margin-right:0;}
+.program .e-book .list li a {display:block;}
+.program .e-book .list li a .list_img {position:relative; overflow:hidden; height:285px; border-bottom:1px solid #d0d0d0; box-sizing:border-box; font-size:0; line-height:285px;}
+.program .e-book .list li a .list_img img {width:100%;}/*썸네일사이즈로 작업함*/
+.program .e-book .list li a .list_title {display:table; width:100%; height:50px;}
+.program .e-book .list li a .list_title span {display:table-cell; text-align:center; vertical-align:middle;}
+.program .e-book .list li:hover a .list_img:before {display:block; position:absolute; width:100%; height:100%; background:url('/common/images/development/newsletter_list_button.png') no-repeat center center rgba(0,0,0,0.6);}
+
+@media screen and (max-width:1200px) {
+    .program .e-book .list li {overflow:visible;}
+    .program .e-book .list li a .list_img {height:211px; line-height:211px;}
+}
+@media screen and (max-width:1000px) {
+    .program .e-book .list li a {width:100%;}
+    .program .e-book .list li a .list_img {overflow:visible; width:100%; text-align:center;}
+}
+@media screen and (max-width:800px) {
+    .program .e-book .list li {width:calc((100% - 30px) / 2); margin-right:30px;}
+    .program .e-book .list li:nth-child(2n) {margin-right:0;}
+}
+@media screen and (max-width:640px) {
+    .program .e-book .list li {width:calc((100% - 10px) / 2); margin-right:10px;}
+}
+
+/*원주 맞춤서비스*/
+.program .welfare {}
+.program .welfare .welfareCategory {padding-bottom:25px;}
+.program .welfare .category_form {text-align:center;}
+.program .welfare .step {position:relative;}
+.program .welfare .step .step_title {position:absolute; top:0; left:0; width:125px; height:100%; padding-top:20px; background-color:#7746a5; border-radius:9px;}
+.program .welfare .step .step_title span {display:block;}
+.program .welfare .step .step_num {color:rgba(255, 255, 255, 0.8); font-size:13px; line-height:15px;}
+.program .welfare .step .step_num:after {display:block; width:18px; height:18px; margin:12px auto; background:url('/common/images/development/welfare_icon_sprite.png') no-repeat left -32px;}
+.program .welfare .step .step_title_text {position:relative; border-radius:9px; color:#fff; font-size:16px; line-height:20px; letter-spacing:-0.05em;}
+
+.program .welfare .step .ctgr_list {width:100%; padding-left:135px; font-size:0; line-height:0;}
+.program .welfare .step .ctgr_list li {display:inline-block; position:relative;  margin-left:10px; vertical-align:top;}
+.program .welfare .step .ctgr_list li input {position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;}
+.program .welfare .step .ctgr_list li label {display:block; border-radius:9px;  box-sizing:border-box;}
+.program .welfare .step .ctgr_list li label span {color:#252525; font-size:15px; line-height:17px; letter-spacing:-0.1em;}
+
+.program .welfare .step1 {margin-bottom:15px;}
+.program .welfare .step1 .ctgr_list li {width:calc(20% - 10px);}
+.program .welfare .step1 .ctgr_list li label {display:block; width:100%; height:130px; padding-top:96px;  border:1px solid #435370; border-radius:9px;}
+.program .welfare .step1 .ctgr_list li label:before {display:block; position:absolute; top:calc(50% - 34px); left:50%; transform:translateX(-50%); background:url('/common/images/development/welfare_icon_sprite.png') no-repeat;}
+.program .welfare .step1 .ctgr_list li label.ctgr1:before {width:46px; height:45px; background-position:left -79px;}
+.program .welfare .step1 .ctgr_list li label.ctgr2:before {width:38px; height:45px; background-position:left -134px;}
+.program .welfare .step1 .ctgr_list li label.ctgr3:before {width:32px; height:49px; background-position:left -189px;}
+.program .welfare .step1 .ctgr_list li label.ctgr4:before {width:37px; height:45px; background-position:left -248px;}
+.program .welfare .step1 .ctgr_list li label.ctgr5:before {width:36px; height:45px; background-position:left -303px;}
+.program .welfare .step1 .ctgr_list li label span {letter-spacing:-0.05em;}
+
+.program .welfare .step2 .step_title {top:10px; height:calc(100% - 10px); padding-top:37px; background-color:#435370;}
+.program .welfare .step2 .ctgr_list {margin-top:-10px;}
+.program .welfare .step2 .ctgr_list li {width:calc(33.33% - 10px); margin-top:10px;}
+.program .welfare .step2 .ctgr_list li label {height:50px; line-height:50px; border:1px solid #435370;}
+.program .welfare .step2 .ctgr_list li label span {vertical-align:middle;}
+
+/*체크*/
+.program .welfare .step1 .ctgr_list li input:checked+label {background:#f3ebfa; border:2px solid #7746a5;}
+.program .welfare .step1 .ctgr_list li input:focus+label {border:2px solid #7746a5;}
+
+.program .welfare .step2 .ctgr_list li input:checked+label {background:#ebeff5; border:2px solid #435370;}
+.program .welfare .step2 .ctgr_list li input:focus+label {border:2px solid #435370;}
+
+.program .welfare .welfare_buttons {margin-top:20px;}
+.program .welfare .welfare_buttons button {position:relative; height:50px; background-color:#7746a5; border-radius:30px; color:#fff; font-size:16px; line-height:18px;}
+.program .welfare .welfare_buttons button[type="submit"] {padding-right:64px; padding-left:37px; background-color:#7746a5;}
+.program .welfare .welfare_buttons button[type="submit"]:before {display:block; position:absolute; top:15px; right:25px; width:22px; height:22px; background:url('/common/images/development/welfare_icon_sprite.png') no-repeat left top / 204.54% 1527.27%;}
+.program .welfare .welfare_buttons .reset_btn {padding-right:30px; padding-left:30px; background-color:#f4f4f4; border:1px solid #a1a9b7; color:#636363;}
+
+
+.program .welfare .welfareResult .result_text{position:relative; margin:0 0 15px; padding:3px 0 0 3px; font-size:15px; line-height:17px;}
+
+.program .welfare .welfareSearch {margin-bottom:30px;}
+.program .welfare .welfareSearch .p-search {margin-bottom:0;}
+
+
+.program .welfare .welfareContentList{width:100%; margin:5px 0; box-sizing:content-box;}
+.program .welfare .welfareContentList *{box-sizing:content-box;}
+.program .welfare .welfareContentList li{display:block; position:relative; margin:0 0 10px; padding:30px; border:1px solid #c5c9d6; font-size:0;}
+.program .welfare .welfareContentList li:last-child{margin:0;}
+.program .welfare .welfareContentList li:before{display:block; position:absolute; top:34px; left:271px; bottom:34px; width:0; border-left:1px dotted #7f7f7f;}
+.program .welfare .welfareContentList li > *{display:inline-block; font-size:15px;}
+.program .welfare .welfareContentList *{vertical-align:top;}
+.program .welfare .welfareContentList .keyword{width:228px; padding:0 10px 0 0;}
+.program .welfare .welfareContentList .category{margin:0 0 15px;}
+.program .welfare .welfareContentList .category span{display:inline-block; height:17px; margin:2px 0; padding:5px 15px; background-color:#f3ebfa; border-radius:15px; color:rgba(64, 28, 97, 0.8); font-size:15px; line-height:17px; white-space:nowrap;}
+/*.program .welfare .welfareContentList .hash{margin:0 0 0 -10px;}*/
+.program .welfare .welfareContentList .hash span{display:inline-block; margin:0 0 0 10px; color:#435370; font-size:15px; line-height:17px; white-space:nowrap;}
+.program .welfare .welfareContentList .title{width:calc(100% - 238px - 40px - 115px); margin:15px 20px; color:#111; font-size:20px; line-height:22px;}
+.program .welfare .welfareContentList .link{position:absolute; top:45px; right:30px; bottom:0; width:115px; margin:auto 0;}
+.program .welfare .welfareContentList a{display:block; position:relative; width:calc(100% - 32px); height:37px; padding:0 15px; border:1px solid #959595; color:#111; font-size:15px; line-height:37px;}
+.program .welfare .welfareContentList a:after{display:block; position:absolute; top:0; right:10px; bottom:0; width:5px; height:9px; margin:auto 0; background:url(/common/images/development/welfare_icon_sprite.png) no-repeat left 17.69% / 900% 3866.66%;}
+/*.program .welfare .welfareContentList a[target="_blank"]:after{top:-2px; width:18px; height:16px; background-position:-116px -90px;}*/
+.welfareView .welfare.line{margin-top:40px}
+.welfareView .buttons{margin-top:40px; text-align:center}
+
+@media screen and (max-width:800px) {
+    .program .welfare .step .step_title {position:static; width:100%; margin-bottom:10px; padding-top:10px; padding-bottom:10px;}
+    .program .welfare .step .step_title span {display:inline-block;}
+    .program .welfare .step .step_num {position:relative; padding-left:22px;}
+    .program .welfare .step .step_num:after {position:absolute; top:0; left:0; margin:0;}
+    .program .welfare .step .step_title span br {display:none;}
+    .program .welfare .step .ctgr_list {padding-left:0;}
+    .program .welfare .step .ctgr_list li label span {font-size:14px; line-height:16px;}
+
+    .program .welfare .step1 .ctgr_list li:first-child {margin-left:0;}
+    .program .welfare .step2 .ctgr_list li:nth-child(3n + 1) {margin-left:0;}
+
+    .program .welfare .welfareContentList .hash {margin-left:-10px;}
+    .program .welfare .welfareContentList li {padding:20px 20px 50px 20px;}
+    .program .welfare .welfareContentList li:before {display:none;}
+    .program .welfare .welfareContentList .keyword {width:100%;}
+    .program .welfare .welfareContentList .title {width:100%; margin:4px 0;}
+    .program .welfare .welfareContentList .link {top:auto; bottom:20px; right:20px;}
+    .program .welfare .welfareContentList a {height:30px; line-height:30px;}
+}
+
+@media screen and  (max-width:640px){
+    .program .welfare .welfareContentList .category span {height:16px; font-size:13px;}
+    .program .welfare .welfareContentList .hash span {height:16px; font-size:13px;}
+    .program .welfare .welfareContentList .title {font-size:16px;}
+    .program .welfare .welfareContentList a {font-size:13px;}
+    .program .welfare .welfare_buttons button {height:40px; font-size:14px; line-height:16px;}
+    .program .welfare .welfare_buttons button[type="submit"] {padding-left:20px; padding-right:40px;}
+    .program .welfare .welfare_buttons button[type="submit"]:before {top:12px; right:17px; width:15px; height:15px;}
+    .program .welfare .welfare_buttons .reset_btn {padding-right:15px; padding-left:15px;}
+
+}
+
+@media screen and (max-width:500px) {
+    .program .welfare .step1 .ctgr_list li {width:calc(33.33% - 10px); margin-bottom:10px;}
+}
+
+/* (주)한신정보기술 최아름 - 2020.04 */
+
+
+/* 나의예약 */
+.reservation_list table .em_black{color:#252525;}
+.reservation_list table .em_grey{color:#646464; text-decoration:line-through;}
+.reservation_list table .em_skyblue{color:#0080a2;}
+.reservation_list .search_box{margin-bottom:45px; padding:15px 56px 24px; background-color:#f9fafc;}
+.reservation_list .search_box ul li{float:left; width:40%; margin-top:15px;}
+.reservation_list .search_box ul li:before{top:23px;}
+.reservation_list .search_box ul li:nth-child(2n){width:60%;}
+.reservation_list .search_box ul li label{display:inline-block; width:75px; color:#252525; font-size:16px; line-height:1.3em;}
+.reservation_list .search_box ul li:last-child label{width:106px;}
+.reservation_list .search_box ul li select{display:inline-block; width:145px; height:46px; -moz-padding-end:50px; -webkit-padding-end:50px; background:#fff url("/site/reservation/images/contents/reservation_select.png") right top no-repeat; font-size:16px;}
+.reservation_list .search_box ul li input{display:inline-block; height:46px;}
+.reservation_list .search_box ul li .p-form-group{display:inline-block; width:145px;}
+.reservation_list .search_box ul li .p-form__split{display:inline-block; width:auto;}
+.reservation_list .search_box ul li .p-form-group__button{display:inline-block; width:107px; text-align:right;}
+.reservation_list .search_box ul li .p-form-group__button .btn{width:100px;}
+.reservation_list .search_box ul li .p-form-group .p-input__split{display:inline-block; position:absolute; top:12px; right:36px;}
+.reservation_list .search_box ul li .p-form-group .p-input__split .p-input__item{border-color:transparent; background-color:transparent;}
+.reservation_list .search_box ul li .p-form-group .p-date__icon:before{width:20px; height:20px; background:url("/site/reservation/images/contents/reservation_calendar.png") 0 0 no-repeat;}
+.reservation_list .search_box ul li .p-input--beside{width:calc(100% - 225px);}
+
+
+@media screen and (max-width:1240px){
+    .reservation_list .search_box ul li{display:table;}
+    .reservation_list .search_box ul li label{display:table-cell;}
+    .reservation_list .search_box ul li select{display:table-cell;}
+    .reservation_list .search_box ul li input{display:table-cell; width:100%;}
+    .reservation_list .search_box ul li .p-form-group{display:table-cell; width:auto;}
+    .reservation_list .search_box ul li .p-form__split{display:table-cell; width:1%;}
+    .reservation_list .search_box ul li .p-form-group__button{display:table-cell;}
+    .reservation_list .search_box ul li .p-input--beside{width:100%;}
+}
+@media screen and (max-width:820px){
+    .reservation_list .search_box{padding:15px 20px 24px;}
+    .reservation_list .search_box ul li select{width:calc(100% - 20px);}
+}
+@media screen and (max-width:720px){
+    .reservation_list .search_box ul li{float:none; width:100%;}
+    .reservation_list .search_box ul li:nth-child(2n){width:100%;}
+    .reservation_list .search_box ul li select{width:100%;}
+}
+@media screen and (max-width:450px){
+    .reservation_list .search_box ul li{padding-lefT:0;}
+    .reservation_list .search_box ul li:before{display:none;}
+    .reservation_list .search_box ul li .p-date-group{width:100%;}
+    .reservation_list .search_box ul li .p-form-group{display:block; width:100%;}
+    .reservation_list .search_box ul li .p-form__split{display:block; width:100%; text-align:center;}
+
+}
+
+/* 나의예약 - 시설규정위반 */
+.reservation_list .card_box{position:relative; margin-bottom:45px; padding:5px; border-radius:5px; background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQYV2NkQAJSpQf+M8L4IM6zbgdGsACMA2IzInNAAgCwdQ5TGeB9ZgAAAABJRU5ErkJggg==") 0 0 repeat;}
+.reservation_list .card_box:before{display:block; position:absolute; top:0; left:0; width:100%; height:5px; background-color:#4648b7;}
+.reservation_list .card_box:after{display:block; position:absolute; bottom:0; left:55px; width:317px; height:218px; background:url("/site/reservation/images/contents/reservation_box_icon.png") 0 0 no-repeat;}
+.reservation_list .card_box .inner{position:relative; padding:43px; background-color:#fff;}
+.reservation_list .card_box .inner:before,.reservation_list .card_box .inner:after{display:block; position:absolute; top:0; left:-5px; width:5px; height:65px; background-color:#4648b7;}
+.reservation_list .card_box .inner:after{left:auto; right:-5px;}
+.reservation_list .card_box .tit{display:inline-block; position:relative; margin-left:78px; margin-right:90px; color:#2e329f; font-size:36px; line-height:44px; font-weight:600; letter-spacing:-0.05em; vertical-align:top;}
+.reservation_list .card_box .tit:before{display:block; position:absolute; top:7px; left:-44px; width:31px; height:31px; background:url("/site/reservation/images/contents/reservation_title_icon.png") 0 0 no-repeat;}
+.reservation_list .card_box .txt{display:inline-block; width:460px; vertical-align:top;}
+.reservation_list .card_box .txt .bu{padding:25px 36px 35px; background-color:#e5f2fd; border-radius:30px;}
+.reservation_list .card_box .txt .bu li{margin-top:0; color:#111; font-size:16px; line-height:25px;}
+.reservation_list .card_box .txt p{margin:27px 36px 0; color:#434343; font-size:16px; line-height:28px; letter-spacing:-0.03em;}
+.reservation_list .card_box .txt .em_b_pink{color:#c4426e; font-weight:600;}
+
+@media screen and (max-width:1240px){
+    .reservation_list .card_box .tit{display:inline-block; margin-right:0; margin-left:30px; padding-left:45px;}
+    .reservation_list .card_box .tit:before{left:0;}
+    .reservation_list .card_box .txt{display:block; margin-top:30px; width:auto;}
+    .reservation_list .card_box:after{display:none;}
+}
+@media screen and (max-width:640px){
+    .reservation_list .card_box{text-align:center;}
+    .reservation_list .card_box .inner{padding:43px 5%;}
+    .reservation_list .card_box .tit{margin-left:0; font-size:28px;}
+    .reservation_list .card_box .txt{text-align:left;}
+    .reservation_list .card_box .txt .bu{padding-left:5%; padding-right:5%;}
+    .reservation_list .card_box .txt .bu li{font-size:14px; line-height:23px;}
+    .reservation_list .card_box .txt p{margin-left:5%; margin-right:5%; font-size:14px; line-height:23px;}
+}
+
+/* 나의예약_상세보기_결제완료 */
+.reservation_list .p-form-checkbox__input:checked~.p-form-checkbox__label:before{border-color:#0092b9; background-color:#0092b9;}
+.reservation_list .point{display:inline;}
+
+/* 단체로그인 */
+
+.reservation_login{position:relative; text-align:center;}
+.reservation_login .title_area{height:182px; background:url("/site/reservation/images/contents/reservation_login_bg.jpg") center center no-repeat;}
+.reservation_login .title_area .inner{padding:42px 0;}
+.reservation_login .title_area .btn{padding:10px 28px; border:1px solid #a1a3d7; background-color:transparent; color:#fff; font-size:15px;}
+.reservation_login .title_area .title{margin-top:30px; color:#fff; font-sizE:20px; line-height:26px; letter-spacing:-0.03em;}
+.reservation_login .search_box{display:block; margin:0; padding:33px 140px; background-position:left bottom, right top, left top, left top -1px;}
+.reservation_login .search_box .sub_txt{display:inline-block; padding:0 9px; position:relative;}
+.reservation_login .search_box .sub_txt:before{display:block; position:absolute; bottom:0; left:0; width:100%; height:1px; background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAAFElEQVQYV2Ncv379/8DAQEYGKAAANlIEAvsizg4AAAAASUVORK5CYII=") 0 0 repeat;}
+.reservation_login .search_box .sub_txt .point{display:inline-block; margin-top:19px; margin-bottom:38px; color:#000; font-size:16px; line-height:25px; letter-spacing:-0.03em;}
+.reservation_login .search_box .input_box{margin-top:37px;}
+.reservation_login .search_box .input_box .bu li{margin-bottom:10px;}
+.reservation_login .search_box .input_box .bu li:before{top:19px;}
+.reservation_login .search_box .input_box .bu li label{display:inline-block; width:110px; color:#252525; font-size:15px; line-height:45px; vertical-align:top;}
+.reservation_login .search_box .input_box .bu li .item{display:inline-block; height:45px;}
+.reservation_login .search_box .input_box .bu li > .item{min-width:273px;}
+.reservation_login .search_box .input_box .bu li .p-input{height:45px;}
+.reservation_login .search_box .input_box .bu li .p-form-group.item .p-input{float:left; width:calc(33.33% - 16px);}
+.reservation_login .search_box .input_box .bu li .p-form-group.item .p-form__split{display:inline-block; float:left; width:23px; height:45px; margin:2px 0; padding:8px 4px;}
+.reservation_login .certify{width:172px; height:52px;}
+.infringement_box{display:none; position:absolute; top:210px; left:calc(50% - 327px); width:655px; height:534px; text-align:center;}
+.infringement_box:before{display:block; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.6); transition-property:visibility, opacity; transition-duration:0.25s; transition-timing-function:linear; z-index:30;}
+.infringement_box .inner{position:relative; padding:42px; background-color:#fff; z-index:31;}
+.infringement_box .title{position:relative; color:#272727; font-size:34px; line-height:48px; font-weight:600; letter-spacing:-0.02em;}
+.infringement_box .title:before{display:block; position:absolute; bottom:-26px; left:calc(50% - 18px); width:37px; height:3px; background-color:#000;}
+.infringement_box .dot_box{margin-top:61px; padding:40px 0; text-align:center;}
+.infringement_box .dot_box .bu{display:inline-block;}
+.infringement_box .dot_box .bu li{margin-top:0;}
+.infringement_box .text{margin-top:25px; margin-bottom:33px; color:#434343; font-size:16px; line-height:26px; letter-spacing:-0.03em;}
+.infringement_box .close .btn{width:100px; height:44px;}
+.infringement_box .close .btn2{position:absolute; top:0; right:0; width:64px; height:64px; background:#04284b url("/site/reservation/images/contents/reservation_close.png") center center no-repeat; font-size:0; line-height:0;}
+.reservation_on #header{z-index:0;}
+.reservation_on #footer{z-index:0;}
+
+@media screen and (max-width:1240px){
+    .reservation_login .search_box{padding:33px 5%;}
+}
+@media screen and (max-width:780px){
+    .reservation_login .search_box .input_box .bu li > .item{min-width:auto; width:calc(100% - 120px);}
+    .infringement_box{width:90%; left:5%;}
+}
+@media screen and (max-width:640px){
+    .reservation_login .title_area{height:auto; background-size:cover;}
+    .reservation_login .title_area .inner{padding:30px 5%;}
+    .reservation_login .title_area .title{margin-top:20px; font-size:16px;}
+    .reservation_login .search_box{padding-bottom:28px; font-size:14px; line-height:1.3em;}
+    .reservation_login .search_box .sub_txt .point{margin-bottom:28px; font-size:14px; line-height:21px;}
+    .reservation_login .title_area .btn{font-size:14px; line-height:18px;}
+    .reservation_login .search_box .input_box{margin-top:28px;}
+    .reservation_login .search_box .input_box .bu li label{height:40px; font-size:14px; line-height:40px;}
+    .reservation_login .search_box .input_box .bu li .p-input{height:40px; font-size:14px;}
+    .reservation_login .search_box .input_box .bu li > .item{height:40px;}
+    .reservation_login .certify{width:132px; height:44px;}
+    .infringement_box .inner{padding:30px;}
+    .infringement_box .title{font-size:25px;}
+    .infringement_box .title:before{bottom:-7px;}
+    .infringement_box .dot_box{margin-top:30px}
+    .infringement_box .dot_box{padding:30px 5% 25px;}
+    .infringement_box .dot_box .bu li{font-size:14px;}
+    .infringement_box .text{margin-bottom:27px; font-size:14px; line-height:1.3em;}
+    .infringement_box .close .btn2{width:55px; height:55px;}
+}
+@media screen and (max-width:510px){
+    .reservation_login .search_box .input_box{margin-top:18px;}
+    .reservation_login .search_box .input_box .bu li{padding-right:22px;}
+    .reservation_login .search_box .input_box .bu li label{display:block;}
+    .reservation_login .search_box .input_box .bu li > .item{width:auto;}
+    .reservation_login .search_box .input_box .bu li select.p-input{min-width:auto;}
+}
+@media screen and (max-width:460px){
+    .infringement_box .text br{display:none;}
+}
+
+/* 결제상태값 */
+.reservation_btn{display:inline-block; width:102px; height:40px; color:#fff; font-size:15px; line-height:40px; letter-spacing:-0.02em; background-color:#2d53a1; text-align:center;}
+.reservation_btn.type2{background-color:#394159;}
+.reservation_btn.type3{background-color:#c4426e;}
+.reservation_btn.type4{background-color:#5f6a89;}
+.reservation_btn.type5{background-color:#c17b00;}
+
+/* 금액 */
+.reservation_list .area_cost{float:right; margin-right:6px; color:#000; font-size:18px; letter-spacing:-0.02em; line-height:26px; text-align:right;}
+.reservation_list .area_cost .cost span{position:relative; margin-left:10px; color:#2d53a1; font-size:22px; font-weight:600; letter-spacing:-0.02em;}
+.reservation_list .area_cost .cost span:before{display:block; position:absolute; bottom:-5px; left:-6px; width:calc(100% + 12px); height:16px; background-color:#e0e8ff; border-radius:10px; z-index:-1;}
+.reservation_list .area_cost .point{margin-top:13px; letter-spacing:-0.03em;}
+.reservation_list .area_cost_box{padding:23px 5%; margin-bottom:15px; border:1px solid #2d53a1;}
+.reservation_list .area_cost_box{color:#000; font-size:20px; letter-spacing:-0.03em; line-height:26px; text-align:center;}
+.reservation_list .area_cost_box .cost span{position:relative; margin-left:10px; color:#2d53a1; font-size:24px; font-weight:600; letter-spacing:-0.03em;}
+
+@media screen and (max-width:640px){
+    .reservation_list .area_cost .cost{font-size:17px;}
+    .reservation_list .area_cost .cost span{font-size:17px; line-height:24px;}
+    .reservation_list .area_cost_box{font-size:16px; line-height:24px;}
+    .reservation_list .area_cost_box .cost span{font-size:20px; line-height:24px;}
+}
+
+/* 승인대기 박스 */
+.reservation_titbox{background-color:#f9fafc;}
+.reservation_titbox.dot_box{padding:46px 66px 54px 66px;}
+.reservation_titbox .title{display:block; position:relative; float:left; width:213px; padding-top:14px; padding-left:95px; color:#000; font-size:22px; line-height:26px; letter-spacing:-0.03em; font-weight:600;}
+.reservation_titbox .title:before{display:inline-block; position:absolute; top:0; left:0; width:56px; height:56px; background-image:url("/site/reservation/images/contents/reservation_titbox_icon.png"); background-position:0 0; background-repeat:no-repeat;}
+.reservation_titbox .text{display:block; float:left; position:relative; width:calc(100% - 213px); margin-top:4px; padding-left:61px; color:#111; font-size:16px; line-height:22px; letter-spacing:-0.03em;}
+.reservation_titbox .text:before{display:block; position:absolute; top:21px; left:0; width:18px; height:6px; background-color:#cecece; border-radius:5px;}
+
+@media screen and (max-width:1240px){
+    .reservation_titbox{padding-left:30px; padding-right:30px;}
+    .reservation_titbox .title:before{left:20px;}
+}
+@media screen and (max-width:1000px){
+    .reservation_titbox{padding:30px 5% 40px;}
+    .reservation_titbox .title{float:none; width:auto; padding-left:0;}
+    .reservation_titbox .title:before{display:none;}
+    .reservation_titbox .text{float:none; width:auto; margin-top:40px; padding-left:2px;}
+    .reservation_titbox .text:before{top:-16px;left:2px;}
+}
+@media screen and (max-width:640px){
+    .reservation_titbox .title{font-size:17px;}
+    .reservation_titbox .text{font-size:15px; line-height:1.3em;}
+}
+
+/* 온라인결제 박스 */
+.reservation_titbox.type2{padding-right:31px; padding-bottom:41px;}
+.reservation_titbox.type2 .title{width:236px;}
+.reservation_titbox.type2 .title:before{top:-6px; left:-9px; width:70px; height:63px; background-image:url("/site/reservation/images/contents/reservation_titbox_icon02.png");}
+.reservation_titbox.type2 .text{width:calc(100% - 236px); margin-top:-7px;}
+.reservation_titbox.type2 .text:before{top:33px;}
+.reservation_titbox.type2 .method{float:left; width:calc(100% - 100px); padding-right:25px;}
+.reservation_titbox.type2 .method .p-form-checkbox__label:before,.reservation_titbox .method .p-form-radio__label:before{border-radius:10px;}
+.reservation_titbox.type2 .method p{margin-top:18px; color:#535353; font-size:15px; line-height:21px; letter-spacing:-0.04em;}
+.reservation_titbox.type2 .payment{float:right; width:100px;}
+.reservation_titbox.type2 .payment .btn{width:100%; height:68px; padding:23px 25px; border-color:transparent; background-color:#0092b9; color:#fff; font-size:16px; line-height:18px;}
+.reservation_titbox.type2 .payment .btn:before{display:block; position:absolute; top:calc(50% - 9px); right:20px; width:18px; height:18px; background:url("/site/reservation/images/contents/reservation_titbox_btn.png") 0 0 no-repeat;}
+
+@media screen and (max-width:1240px){
+    .reservation_titbox.type2 .title:before{left:11px;}
+}
+@media screen and (max-width:1000px){
+    .reservation_titbox.type2 .text{width:auto; margin-top:40px;}
+    .reservation_titbox.type2 .text:before{top:-16px;}
+    .reservation_titbox.type2 .method{margin-top:10px;}
+}
+@media screen and (max-width:550px){
+    .reservation_titbox.type2{padding-right:5%; padding-bottom:38px;}
+    .reservation_titbox.type2 .method{float:none; width:auto; padding-right:0;}
+    .reservation_titbox.type2 .payment{float:none; margin:30px auto 0;}
+    .reservation_titbox.type2 .payment .btn{height:48px; padding:13px 25px; font-size:14px;}
+}
+
+
+/* 온라인결제선택_계좌입금 */
+.reservation_titbox.type3 .title:before{top:-6px; left:-9px; width:71px; height:59px; background-image:url("/site/reservation/images/contents/reservation_titbox_icon03.png");}
+.reservation_titbox.type3 .text{margin-top:-3px; color:#535353; font-size:15px; letter-spacing:-0.03em;}
+.reservation_titbox.type3 .text:before{top:29px;}
+.reservation_titbox.type3 .account{color:#111; font-size:16px; line-height:23px;}
+
+@media screen and (max-width:1240px){
+    .reservation_titbox.type3 .title:before{left:11px;}
+}
+@media screen and (max-width:1000px){
+    .reservation_titbox.type3 .text{width:auto; margin-top:40px;}
+    .reservation_titbox.type3 .text:before{top:-16px;}
+}
+
+/* 온라인결제선택_무통장입금 */
+.reservation_titbox.type4{padding-bottom:32px;}
+.reservation_titbox.type4 .title{width:236px;}
+.reservation_titbox.type4 .title:before{top:-6px; left:-9px; width:69px; height:68px; background-image:url("/site/reservation/images/contents/reservation_titbox_icon04.png");}
+.reservation_titbox.type4 .text{width:calc(100% - 236px); margin-top:-15px; color:#535353; font-size:15px; line-height:22px; letter-spacing:-0.03em;}
+.reservation_titbox.type4 .text:before{top:41px;}
+.reservation_titbox.type4 .account{color:#111; font-size:16px; line-height:23px;}
+
+@media screen and (max-width:1240px){
+    .reservation_titbox.type4 .title:before{left:11px;}
+}
+@media screen and (max-width:1000px){
+    .reservation_titbox.type4 .text{width:auto; margin-top:40px;}
+    .reservation_titbox.type4 .text:before{top:-16px;}
+}
+
+/* reservation_btn */
+.reservation_list_btn{float:left; padding:11px 34px 12px; border:1px solid #2e87d3; font-size:16px; line-height:19px; color:#115fca;}
+a.reservation_list_btn{color:#115fca; text-decoration:none;}
+.reservation_list_btn.type2{float:right; border-color:transparent; background-color:#5f6a89; color:#fff;}
+a.reservation_list_btn.type2{color:#fff;}
+.reservation_list_btn.type3{float:right; border-color:transparent; background-color:#0092b9; color:#fff;}
+a.reservation_list_btn.type3{color:#fff;}
+
+.reservation_btn_area{float:right;}
+.reservation_btn_area .reservation_list_btn{float:none;}
+
+@media screen and (max-width:640px){
+    .reservation_list_btn{font-size:14px;}
+}
+
+/* 타이블 박스 */
+.reservation_title{margin-bottom:30px;}
+.reservation_title p{float:right; position:relative; width:calc(100% - 133px); margin-top:7px; color:#151515; font-size:22px; line-height:24px;}
+.reservation_title p:before{display:block; position:absolute; bottom:-27px; left:0; width:100%; height:1px; background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAE0lEQVQYV2Osr6//39jYyMgABAAkCgQC0GYrQwAAAABJRU5ErkJggg==") 0 0 repeat;}
+
+@media screen and (max-width:640px){
+    .reservation_title p{width:calc(100% - 115px); font-size:18px;}
+    .reservation_title p:before{bottom:-17px;}
+}
+@media screen and (max-width:540px){
+    .reservation_title p{font-size:17px;}
+}
+
+/* 환불신청 */
+.refund_scroll_box{height:200px; color:#464646; font-size:16px; line-height:25px; letter-spacing:-0.03em; overflow:hidden; overflow-y:scroll;}
+.refund_scroll_box.dot_box{padding:30px;}
+.refund_box{background-color:#f8f9fb;}
+.refund_box .title{position:relative; float:left; width:87px;margin:35px 39px; color:#000; font-size:22px; line-height:26px; letter-spacing:-0.02em; font-weight:600;}
+.refund_box .title:before{display:block; position:absolute; top:24px; right:-52px; width:18px; height:6px; background-color:#cecece; border-radius:5px;}
+.refund_box .title span{position:absolute; top:5px; left:-15px; color:#2d53a1; font-size:12px; line-height:18px;}
+.refund_box .account_box{float:left; width:calc(100% - 222px); margin:17px 0 17px 57px;}
+.reservation_list .font_12{font-size:12px;}
+.refund_box .account_box  .account_list{display:block; margin-right:-23px;}
+.refund_box .account_box  .account_list li{display:inline-block; margin-right:10px;}
+.refund_box .account_box  .account_list li label{display:inline-block; margin-right:13px; color:#252525; font-size:16px; line-height:1.3em;}
+.refund_box .account_box  .account_list li select{display:inline-block; width:auto; height:46px; background:#fff url("/site/reservation/images/contents/reservation_select.png") right top no-repeat; -webkit-padding-end:55px;}
+.refund_box .account_box  .account_list li input{display:inline-block; height:46px;}
+.refund_box .account_box  .account_list li:nth-child(2) input{width:178px;}
+.refund_box .account_box  .account_list li:last-child input{width:114px;}
+.refund_box .account_box .text_ex{margin-top:13px; color:#535353; font-size:15px; line-height:25px; letter-spacing:-0.03em;}
+
+@media screen and (max-width:1240px){
+    .refund_box .title{float:none; width:auto; margin-bottom:20px; font-size:18px;}
+    .refund_box .title:before{display:none;}
+    .refund_box .title br{display:none; margin:30px 25px;}
+    .refund_box .account_box{float:none; width:auto; margin:0 20px 30px;}
+    .refund_box .account_box .account_list li{float:left; width:calc(30% - 23px);}
+    .refund_box .account_box .account_list li:nth-child(2){width:calc(40% - 23px);}
+    .refund_box .account_box .account_list li select{width:calc(100% - 50px); -webkit-padding-end:50px;}
+    .refund_box .account_box .account_list li:nth-child(2) input{width:calc(100% - 80px);}
+    .refund_box .account_box .account_list li:last-child input{width:calc(100% - 65px);}
+}
+@media screen and (max-width:700px){
+    .refund_box{font-size:15px;}
+    .refund_box .account_box .account_list{margin-right:0;}
+    .refund_box .account_box .account_list li{float:none; width:100%;}
+    .refund_box .account_box .account_list li:nth-child(2){width:100%;}
+    .refund_box .account_box .account_list li label {width:60px;}
+    .refund_box .account_box .account_list li select{width:calc(100% - 80px);}
+    .refund_box .account_box .account_list li:last-child input{width:calc(100% - 80px);}
+    .refund_box.dot_box{padding:8px 0;}
+}
+
+/* 환불신청확인 */
+.reservation_list .blue_box{margin-top:20px; padding:31px 36px;  border:3px solid #2e87d3;}
+.reservation_list .blue_box .title_area{margin-bottom:49px; text-align:center;}
+.reservation_list .blue_box .title_area span{position:relative; color:#014199; font-size:24px; line-height:26px; font-weight:600;}
+.reservation_list .blue_box .title_area span:before{display:block; position:absolute; bottom:-11px; left:-3px; width:calc(100% + 6px); height:1px; background-color:#4648b7;}
+.reservation_list .blue_box .bu li{margin-top:0;}
+
+@media screen and (max-width:700px) {
+    .reservation_list .blue_box .title_area span{font-size:20px;}
+    .reservation_list .blue_box .bu li{font-size:15px; letter-spacing:-0.03em;}
+}
+
+/* 시설대관 목록 */
+.facility_list .box {margin-bottom:10px;}
+.facility_list .box.type2 .box_wrap{padding:103px 5% 30px;}
+.facility_list .box.type2 .box_wrap .title {margin-bottom:10px;}
+.facility_list .box.type2 .box_wrap .title .em_line {position:relative; padding:0 4px 5px; z-index:1;}
+.facility_list .box.type2 .box_wrap .title .em_line:before {display:block; position:absolute; width:100%; height:13px; bottom:0; left:0; border-radius:30px; background-color:#d5e7f6; z-index:-1;}
+
+.facility_list .reservation_list .search_box{padding:15px 96px 24px}
+.facility_list .reservation_list .search_box ul li:first-child{width:60%;}
+.facility_list .reservation_list .search_box ul li:nth-child(2n){width:40%;}
+.facility_list .reservation_list .search_box ul li:last-child{width:70%; margin-left:15%;}
+
+.facility_list .facility_list_card{}
+.facility_list .facility_list_card .list_area{margin-left:-20px;}
+.facility_list .facility_list_card .list_area .list{display:block; float:left; position:relative; width:calc(33.33% - 20px); margin-bottom:20px; margin-left:20px; border:1px solid #d2d2d2;}
+.facility_list .facility_list_card .list_area .list .division{display:inline-block; position:absolute; top:-1px; left:-1px; min-width:92px; padding:0 10px; border-width:1px; border-style:solid; border-color:#008c68; background-color:#fff; text-align:center;}
+.facility_list .facility_list_card .list_area .list .division span{display:inline-block; position:relative; margin-top:10px; margin-bottom:14px; color:#008c68; font-size:14px; line-height:16px;}
+.facility_list .facility_list_card .list_area .list .division span:before{display:block; position:absolute; bottom:-7px; left:0; width:100%; height:1px; background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAE0lEQVQYV2Nk6Mn4z1Ayg5EBCAAZ5gMCQnmcuwAAAABJRU5ErkJggg=="); background-position:0 0; background-repeat:repeat;}
+
+.facility_list .facility_list_card .list_area .list .division.type2{border-color:#0361b2;}
+.facility_list .facility_list_card .list_area .list .division.type2 span{color:#0361b2}
+.facility_list .facility_list_card .list_area .list .division.type2 span:before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAFElEQVQYV2NkTtz0/+98P0YGIAAAIm4EAjAygRwAAAAASUVORK5CYII=");}
+.facility_list .facility_list_card .list_area .list .division.type3{border-color:#0092b9;}
+.facility_list .facility_list_card .list_area .list .division.type3 span{color:#0092b9}
+.facility_list .facility_list_card .list_area .list .division.type3 span:before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAFElEQVQYV2NkmLTzP0OeOyMDEAAAG0IDAgyW6EAAAAAASUVORK5CYII=");}
+.facility_list .facility_list_card .list_area .list .division.type4{border-color:#d47d00;}
+.facility_list .facility_list_card .list_area .list .division.type4 span{color:#d47d00}
+.facility_list .facility_list_card .list_area .list .division.type4 span:before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAE0lEQVQYV2O8UsvwX6eZgZEBCAAdWgMCC8OkqAAAAABJRU5ErkJggg==");}
+.facility_list .facility_list_card .list_area .list .division.type5{border-color:#8a408f;}
+.facility_list .facility_list_card .list_area .list .division.type5 span{color:#8a408f}
+.facility_list .facility_list_card .list_area .list .division.type5 span:before{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAE0lEQVQYV2Pscuj/X3agkJEBCAAjegQCW15NagAAAABJRU5ErkJggg==");}
+
+
+.facility_list .facility_list_card .list_area .list .image{height:196px; border-bottom:1px solid #d2d2d2; background-color:#f7f8fb; background-image:url("/common/images/template/noimg.png"); background-position:center center; background-repeat:no-repeat; font-size:0; line-height:0; overflow:hidden;}
+.facility_list .facility_list_card .list_area .list .image img{width:100%;}
+.facility_list .facility_list_card .list_area .list .list_txt{margin:23px 20px;}
+.facility_list .facility_list_card .list_area .list .subtitle{display:block; height:21px; margin-bottom:24px; color:#000; font-size:18px; line-height:21px; letter-spacing:-0.03em;  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+
+.facility_list .facility_list_card .list_area .list ul li{margin-bottom:4px;}
+.facility_list .facility_list_card .list_area .list ul li p{color:#444; font-size:15px; line-height:26px; letter-spacing:-0.05em; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.facility_list .facility_list_card .list_area .list ul li span{position:relative; width:67px; margin-right:12px; color:#2d2c2c; font-size:15px; line-height:26px; letter-spacing:-0.05em;}
+.facility_list .facility_list_card .list_area .list ul li span:before{display:block; position:absolute; top:7px; right:0; width:1px; height:13px; background-color:#c0c0c0;}
+.facility_list .facility_list_card .list_area .list .more{margin-top:24px; text-align:center;}
+.facility_list .facility_list_card .list_area .list .more .facility_btn{width:100px; height:30px; margin:0 2px; background-color:#0361b2; color:#fff; font-size:15px; letter-spacing:-0.03em; line-height:30px;}
+.facility_list .facility_list_card .list_area .list .more .facility_btn.type2{background-color:#c4426e;}
+.facility_list .facility_list_card .list_area .list .more .facility_btn.type3{background-color:#5f6a89;}
+.facility_list .facility_list_card .list_area .list .more .facility_btn.type4{border:1px solid #959595; background-color:transparent; color:#111; line-height:28px;}
+
+@media screen and (max-width:1240px) {
+    .facility_list .reservation_list .search_box{padding:15px 5% 24px;}
+    .facility_list .reservation_list .search_box ul li:first-child{padding-right:20px;}
+
+    .facility_list .facility_list_card .list_area .list{width:calc(50% - 20px);}
+
+}
+@media screen and (max-width:760px) {
+    .facility_list .reservation_list .search_box ul li:first-child{width:100%; padding-right:0;}
+    .facility_list .reservation_list .search_box ul li:nth-child(2n){width:100%;}
+    .facility_list .reservation_list .search_box ul li:last-child{width:100%; margin-left:0;}
+}
+@media screen and (max-width:640px) {
+    .facility_list .facility_list_card .list_area{margin-left:0;}
+    .facility_list .facility_list_card .list_area .list{float:none; width:auto; margin-left:0;}
+}
+
+/*시설정보_상세정보_슬릭*/
+.facility_info .photo_slick{margin-bottom:45px;}
+
+.facility_info .photo_slick .photo_list{display:block; float:left; width:573px; font-size:0; line-height:0;}
+.facility_info .photo_slick .photo_list .photo_slide{height:394px; font-size:0; line-height:394px; text-align:center;}
+.facility_info .photo_slick .photo_list .photo_slide .img{display:block; width:573px; height:394px; border:1px solid #d2d2d2; text-align:center; line-height:394px;}
+.facility_info .photo_slick .photo_list .photo_slide .img.no_img{background-color:#f7f8fb; background-image:url("/site/reservation/images/contents/facility_info_noimg.png"); background-position:center center; background-repeat:no-repeat;}
+.facility_info .photo_slick .photo_list .photo_slide .img img{font-size:0; line-height:0;}
+
+.facility_info .photo_slick .cont_list{display:block; float:left; width:calc(100% - 573px); padding-left:10px; padding-top:15px; text-align:center;}
+.facility_info .photo_slick .cont_list .area_title .title{margin-top:48px; color:#000; font-size:20px; line-height:27px;}
+.facility_info .photo_slick .cont_list .area_title .title span{display:block; margin-bottom:20px;}
+
+.facility_info .photo_slick .cont_list .photo_control{margin-top:37px;}
+.facility_info .photo_slick .cont_list .photo_control button{margin:0 5px; font-size:0; line-height:0; width:60px; height:60px; border-radius:40px; background-color:#2e87d3; background-image:url("/site/reservation/images/contents/facility_control_icon.png"); background-position:center center; background-repeat:no-repeat;}
+.facility_info .photo_slick .cont_list .photo_control .next{transform:rotate(180deg);}
+
+.facility_info .photo_slick .cont_list .photo_count{margin-top:75px;}
+.facility_info .photo_slick .cont_list .photo_count span{display:inline-block; font-size:14px; line-height:18px; letter-spacing:-0.02em;}
+.facility_info .photo_slick .cont_list .photo_count .em_blue{position:relative; margin:0 11px; color:#0361b2; font-weight:600;}
+.facility_info .photo_slick .cont_list .photo_count .em_blue:before{display:block; position:absolute; top:13px; right:-17px; width:10px; height:2px; background-color:#000;}
+.facility_info .photo_slick .cont_list .photo_count .em_grey{margin:0 11px; color:#999;}
+
+.facility_info .info_list ul{margin-top:25px; margin-bottom:38px;}
+.facility_info .info_list ul li{display:block; float:left; width:50%; margin-top:11px; padding-left:48px;}
+.facility_info .info_list ul li:after{content:"";display:table;clear:both}
+.facility_info .info_list ul li:before{left:25px;}
+.facility_info .info_list ul li span{display:inline-block; float:left; width:140px; color:#014199;}
+.facility_info .info_list ul li p{float:left; width:calc(100% - 140px);}
+
+.facility_info .tab_menu .tab_contents .tab_content.n1 p span strong img{width:100%; object-fit:contain;}
+
+@media only screen and (max-width:1240px){
+    .facility_info .photo_slick{margin-bottom:25px;}
+    .facility_info .photo_slick .photo_list{float:none; width:auto; margin:0 auto;}
+    .facility_info .photo_slick .photo_list .photo_slide{height:auto; line-height: 0;}
+    .facility_info .photo_slick .photo_list .photo_slide .img{width:100%;}
+    .facility_info .photo_slick .photo_list .photo_slide .img.no_img{}
+    .facility_info .photo_slick .cont_list{float:none; position:relative; width:100%; margin-top:30px; padding-left:0; padding-top:0;text-align:left;}
+    .facility_info .photo_slick .cont_list .area_title .title{margin-top:25px;}
+    .facility_info .photo_slick .cont_list .area_title .title span{margin-bottom:10px;}
+    .facility_info .photo_slick .cont_list .area_title .title p br{display:none;}
+    .facility_info .photo_slick .cont_list .photo_count{margin-top:20px;}
+    .facility_info .photo_slick .cont_list .photo_count .em_blue{margin-left:0;}
+    .facility_info .photo_slick .cont_list .photo_control{position:absolute; top:10px; right:0; margin-top:0;}
+    .facility_info .info_list ul li span{width:100px;}
+    .facility_info .photo_slick .cont_list .photo_control button{width:45px; height:45px; margin:0;}
+}
+@media only screen and (max-width:800px){
+    .facility_info .info_list ul li{float:none; width:auto;}
+    .facility_info .photo_slick .cont_list .area_title .title{font-size:17px; line-height:18px;}
+    .facility_info .info_list ul li{font-size:14px; line-height:17px; margin-top:5px;}
+}
+
+
+/* 시설대관_맵+캘린더 */
+.facility_info{}
+.facility_info .tab_menu .map_tab.tab_contents{margin-top:-1px;}
+.facility_info .map_tab{padding:18px 15px; border:1px solid #d2d2d2;}
+.facility_info .area_map{position:relative;}
+.facility_info .area_map .card{padding:0; border:0;}
+.facility_info .area_map .address_box{display:block; position:absolute; bottom:0; /*left:;*/ width:100%; height:auto; padding-top:11px; padding-bottom:14px; background-color:rgba(0,0,0,0.7); color:#fff; font-size:16px; line-height:26px; letter-spacing:-0.05em; text-align:center; z-index:10;}
+
+
+.facility_info .scheduler{margin-top:47px;}
+.facility_info .scheduler .area_calendar.width_100 {width:100%;}
+.facility_info .scheduler .area_calendar{float:left; width:calc(60% - 25px); margin-right:25px;}
+
+.facility_info .scheduler .area_calendar .area_year{position:relative; margin-top:0; margin-bottom:20px; padding:24px 5%; background-color:#f7f8fb; text-align:center;}
+.facility_info .scheduler .area_calendar .area_year .year{color:#000; font-size:28px; letter-spacing:-0.03em; line-height:30px;}
+.facility_info .scheduler .area_calendar .area_year .btn_box .prev,
+.facility_info .scheduler .area_calendar .area_year .btn_box .next{display:block; position:absolute; top:calc(50% - 19px); left:66px; width:38px; height:38px; border:1px solid #dadce4; border-radius:20px; background-color:#fff; background-image:url("/site/reservation/images/contents/facility_calender_btn.png"); background-position:center 12px; background-repeat:no-repeat; font-size:0; line-height:0;}
+.facility_info .scheduler .area_calendar .area_year .btn_box .next{left:auto; right:66px; background-position:center -21px;}
+
+.facility_info .scheduler .area_calendar .possible_list{text-align:center;}
+.facility_info .scheduler .area_calendar .possible_list span{display:inline-block; position:relative; margin:0 16px; padding-left:28px; color:#000; font-size:15px; line-height:17px; letter-spacing:-0.03em;}
+.facility_info .scheduler .area_calendar .possible_list span:before{display:block; position:absolute; top:0; left:0; width:17px; height:17px;}
+.facility_info .scheduler .area_calendar .possible_list span.impossible:before{background-color:#ffe6e6;}
+.facility_info .scheduler .area_calendar .possible_list span.possible:before{background-color:#e8f5ff;}
+
+.facility_info .scheduler .area_calendar .calendar{margin-top:21px; border-top:1px solid #273157;}
+.facility_info .scheduler .area_calendar .calendar_table{width:100%;}
+.facility_info .scheduler .area_calendar .calendar_table tr{border-bottom:1px solid #d5d7dd;}
+.facility_info .scheduler .area_calendar .calendar_table thead th{padding:9px 0 10px; color:#000; font-size:17px; font-weight:300;}
+.facility_info .scheduler .area_calendar .calendar_table thead th.sun{color:#da2c2c;}
+.facility_info .scheduler .area_calendar .calendar_table thead th.sat{color:#375dba;}
+.facility_info .scheduler .area_calendar .calendar_table tbody td{position:relative; vertical-align:top; height:70px;}
+.facility_info .scheduler .area_calendar .calendar_table tbody td a{display:block; height:100%;}
+.facility_info .scheduler .area_calendar .calendar_table tbody td span{display:inline-block; width:14px; margin-top:2px; color:#5d5d5d; font-size:12px; line-height:14px; text-align:right;}
+
+.facility_info .scheduler .area_calendar .calendar_table tbody td .impossible_btn{display:block; padding-right:5px; padding-left:5px; text-decoration:none;}
+.facility_info .scheduler .area_calendar .calendar_table tbody td .possible_btn{display:block; padding-right:5px; padding-left:5px; text-decoration:none;}
+.facility_info .scheduler .area_calendar .calendar_table tbody td .disabled_btn{display:block; padding-right:5px; padding-left:5px; text-decoration:none; cursor:auto;}
+
+.facility_info .scheduler .area_calendar .calendar_table tbody td .impossible_btn:before {display:block; position:absolute; top:0; left:0; z-index:-1; width:100%; height:100%; background-color:#ffe6e6;}
+.facility_info .scheduler .area_calendar .calendar_table tbody td .possible_btn:before {display:block; position:absolute; top:0; left:0; z-index:-1; width:100%; height:100%; background-color:#e8f5ff;}
+.facility_info .scheduler .area_calendar .calendar_table tbody td .disabled_btn:before {display:block; position:absolute; top:0; left:0; z-index:-1; width:100%; height:100%; background-color:#f7f8fb;}
+
+.facility_info .scheduler .area_calendar .calendar_table tbody td .disabled_btn span{position:relative; font-weight:600;}
+.facility_info .scheduler .area_calendar .calendar_table tbody td .disabled_btn span:before{display:block; position:absolute; bottom:-4px; left:1px; width:12px; height:2px; background-color:#000;}
+
+.facility_info .scheduler .area_calendar .calendar_table tbody td .over_cont{margin-top:15px; margin-bottom:5px; font-size:14px; line-height:16px;}
+.facility_info .scheduler .area_calendar .calendar_table tbody td .impossible_btn .over_cont{margin-top:6px;}
+
+
+.facility_info .scheduler .detail_list{float:right; width:40%;}
+.facility_info .scheduler .detail_list .title{display:block; padding:26px 15px 27px; background-color:#4d5980; text-align:center;}
+.facility_info .scheduler .detail_list .title h4{display:inline-block; color:#fff; font-size:20px; line-height:24px;}
+.facility_info .scheduler .detail_list .title h4 span{font-size:18px; letter-spacing:-0.03em;}
+
+.facility_info .scheduler .detail_list .select_box{padding:22px 19px 17px; border-width:0 1px 1px; border-style:solid; border-color:#dfdfdf;}
+.facility_info .scheduler .detail_list .select_box h4{margin-top:10px; margin-bottom:20px;}
+.facility_info .scheduler .detail_list .select_box ul{overflow:hidden; margin-left:-12px;}
+.facility_info .scheduler .detail_list .select_box ul li{display:block; float:left; width:calc(50% - 12px); margin-bottom:10px; margin-left:12px; margin-right:0;}
+.facility_info .scheduler .detail_list .select_box ul li .p-form-checkbox__label{display:block; width:100%; padding:7px; background-color:#fff; border-color:#d2d2d2; color:#111; font-size:15px; line-height:18px; letter-spacing:-0.03em; text-align:center; text-decoration:none;}
+.facility_info .scheduler .detail_list .select_box ul li .p-form-checkbox__label:hover{background-color:#f7f8fb; border-color:#959595;}
+.facility_info .scheduler .detail_list .select_box ul li .p-form-checkbox__input[disabled]~.p-form-checkbox__label{background-color:#394159; border-color:transparent; color:#fff;}
+.facility_info .scheduler .detail_list .select_box ul li .p-form-checkbox__input:checked~.p-form-checkbox__label{border-color:#2e87d3; background-color:#fff; color:#115fca;}
+.facility_info .scheduler .detail_list .select_box .more{display:inline-block; position:relative; padding:11px 37px 13px 19px; border-width:1px; border-style:solid; border-color:#959595; color:#111; font-size:16px; line-height:18px; letter-spacing:-0.02em; text-decoration:none; transition:all 0.25s linear;}
+.facility_info .scheduler .detail_list .select_box div.more{padding:0;}
+.facility_info .scheduler .detail_list .select_box div.more label{padding:11px 37px 13px 19px;}
+.facility_info .scheduler .detail_list .select_box div.more input{position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0;}
+.facility_info .scheduler .detail_list .select_box .more:before{content:'+'; display:block; position:absolute; top:11px; right:20px; color:#111; font-size:18px; line-height:18px;}
+.facility_info .scheduler .detail_list .select_box .more.on,
+.facility_info .scheduler .detail_list .select_box .more:hover{border-color:#2e87d3; color:#115fca;}
+.facility_info .scheduler .detail_list .select_box .more.on:after,
+.facility_info .scheduler .detail_list .select_box .more.hover:after{color:#115fca;}
+
+.facility_info .payment_btn{display:inline-block; position:relative; padding:18px 54px 17px 30px; border-color:transparent; background-color:#0092b9; color:#fff; font-size:18px; line-height:18px; text-decoration:none;}
+.facility_info .payment_btn:before{display:block; position:absolute; top:calc(50% - 10px); right:27px; width:18px; height:18px; background:url("/site/reservation/images/contents/reservation_titbox_btn.png") 0 0 no-repeat;}
+.facility_info .payment_btn.gray{background-color:#5f6a89;}
+
+.facility_info .list_btn{padding:11px 34px 12px; border-width:1px; border-style:solid; border-color:#959595; color:#111; font-size:16px; line-height:19px;}
+.facility_info .list_btn.type2{border-color:#2e87d3; color:#115fca;}
+.facility_info .list_btn.small{padding:4px 26px 5px;}
+.facility_info a.list_btn{color:#111; text-decoration:none;}
+.facility_info a.list_btn.type2{color:#115fca;}
+
+
+
+@media only screen and (max-width:1000px){
+    .facility_info .scheduler .area_calendar .area_year .year .text{font-size:18px;}
+    .facility_info .scheduler .area_calendar .area_year .year .text strong{margin:0 7px;}
+}
+
+@media only screen and (max-width:800px){
+    .facility_info .scheduler .area_calendar{float:none; width:100%; border:0;}
+    .facility_info .scheduler .detail_list{width:100%;}
+}
+@media only screen and (max-width:640px){
+    .facility_info .scheduler .area_calendar .area_year .year{font-size:20px;}
+    .facility_info .scheduler .area_calendar .calendar_table thead th{font-size:15px;}
+    .facility_info .scheduler .detail_list .title{padding:19px 15px 20px;}
+    .facility_info .scheduler .detail_list .title h4{font-size:17px;}
+    .facility_info .scheduler .detail_list .select_box ul li .btn{font-size:14px;}
+    .facility_info .scheduler .detail_list .select_box .more{font-size:14px;}
+    .facility_info .payment_btn{padding:15px 54px 16px 30px; font-size:16px;}
+
+}
+@media only screen and (max-width:400px){
+    .facility_info .scheduler .area_calendar{padding:5% 3%;}
+    .facility_info .scheduler .area_calendar .area_year .year .prev{width:45px; height:45px;}
+    .facility_info .scheduler .area_calendar .area_year .year .text strong{margin:0 7px;}
+    .facility_info .scheduler .area_calendar .area_year .year .next{width:45px; height:45px;}
+    .facility_info .scheduler .detail_list{padding:30px 0 25px;}
+    .facility_info .scheduler .detail_list .title h4:before{display:none;}
+    .facility_info .scheduler .detail_list .title h4:after{display:none;}
+}
+
+.facility_info .week_schedul{margin-top:50px;}
+.facility_info .scheduler .area_calendar .possible_list span{font-size:14px;}
+.facility_info .week_schedul .btn_box{margin-top:-80px; text-align:right;}
+.facility_info .week_schedul .btn_box button{width:100px;}
+.facility_info .week_schedul .btn_box button:first-child{margin-right:7px;}
+.facility_info .week_schedul table{margin-top:50px;}
+
+@media only screen and (max-width:640px){
+    .facility_info .week_schedul .btn_box{margin-top:-10px; text-align:left;}
+    .facility_info .week_schedul table{margin-top:20px;}
+}
+
+
+/* (주)한신정보기술 김의향 2020-05-12 */
+
+/* 통합예약 > 시설대관신청_개인정보이용동의 */
+.program .facility_rental{letter-spacing:-0.01em;}
+.program .facility_rental .top_box{position:relative; padding:35px 0; background:linear-gradient(to right, rgba(62,132,210,1) 0%,rgba(73,103,194,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */}
+.ie9 .program .facility_rental .top_box{background:#3e84d2;}/*ie9*/
+.program .facility_rental .top_box:before{display:block; position:absolute; top:0; right:0; width:194px; height:93px; background:url('/site/reservation/images/contents/apply_bg.png') no-repeat;}
+.program .facility_rental .top_box span{position:absolute; top:50%; left:0; width:100px; height:40px; background-color:#0361b2; font-size:15px; line-height:40px; color:#fff; text-align:center; transform:translateY(-50%);}
+.program .facility_rental .top_box .title{padding-left:134px; font-size:20px; line-height:22px; color:#fff; }
+
+.program .facility_rental .apply_step_box{margin:16px 0 43px; padding:28px 0 38px; background-color:#f5f6fa; text-align:center;}
+.program .facility_rental .apply_step_box ul{margin-left:90px; }
+.program .facility_rental .apply_step_box ul li{display:inline-block; position:relative; width:25%; padding-right:138px;}
+.program .facility_rental .apply_step_box ul li:last-child{}
+.program .facility_rental .apply_step_box ul li:before{display:block; position:absolute; top:calc(50% - 19px); right:23px; width:85px; height:1px; background-color:#d0d1d5;}
+.program .facility_rental .apply_step_box ul li:last-child:before{display:none;}
+.program .facility_rental .apply_step_box ul li .step{position:relative; width:83px; height:83px; border:1px solid #dedede; border-radius:50%;}
+.program .facility_rental .apply_step_box ul li.on .step{border:0; background:linear-gradient(to right, rgba(70,72,183,1) 0%,rgba(3,97,178,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */}/*활성화*/
+.ie9 .program .facility_rental .apply_step_box ul li.on .step{background:#0361B2;}/*ie9*//*활성화*/
+
+.program .facility_rental .apply_step_box ul li .step:before{display:block; position:absolute; top:17px; left:calc(50% - 12px); width:24px; height:26px; background-image:url('/site/reservation/images/contents/apply_sprite.png'); background-repeat:no-repeat; background-position:left top; }
+.program .facility_rental .apply_step_box ul li:nth-child(2) .step:before{top:18px; width:23px; height:24px; background-position:left -72px;}
+.program .facility_rental .apply_step_box ul li:nth-child(3) .step:before{top:18px; left:calc(50% - 8px); width:16px; height:24px; background-position:left -217px;}
+.program .facility_rental .apply_step_box ul li:last-child .step:before{top:18px; left:calc(50% - 14px); width:28px; height:26px; background-position:left -140px;}
+.program .facility_rental .apply_step_box ul li.on .step:before{background-position:left -36px;}/*활성화*/
+.program .facility_rental .apply_step_box ul li:nth-child(2).on .step:before{background-position:left -106px;}/*활성화*/
+.program .facility_rental .apply_step_box ul li:nth-child(3).on .step:before{background-position:left -252px;}/*활성화*/
+.program .facility_rental .apply_step_box ul li:last-child.on .step:before{background-position:left -176px;}/*활성화*/
+
+.program .facility_rental .apply_step_box ul li .step em{margin-top:51px; font-size:12px; line-height:14px; color:#115592; font-weight:600;}
+.program .facility_rental .apply_step_box ul li.on .step em{color:#fff;}
+.program .facility_rental .apply_step_box ul li .text{display:block; margin-top:13px; font-size:17px; line-height:19px; color:#000; white-space:nowrap;}
+.program .facility_rental .apply_step_box ul li:first-child .text{margin-left:8px;}
+.program .facility_rental .apply_step_box ul li:nth-child(2) .text{margin-left:-12px;}
+.program .facility_rental .apply_step_box ul li:nth-child(3) .text{margin-left:-28px;}
+.program .facility_rental .apply_step_box ul li:nth-child(4) .text{margin-left:-12px;}
+
+.program .facility_rental.apply .agreement_box{padding-bottom:30px; border-bottom:1px solid #ebebeb;}
+.program .facility_rental.apply .agreement_box.last{border-bottom:0;}
+.program .facility_rental.apply .agreement_box .inner_box{text-align:center;}
+.program .facility_rental.apply .p-agree.dot_box{margin:28px 0 30px; padding:1px;}
+.program .facility_rental.apply .p-agree__condents{border:0; background-color:unset;}
+.program .facility_rental .p-form-checkbox__input:checked~.p-form-checkbox__label:before{border-color:#0092b9; background-color:#0092b9;}
+.program .facility_rental.apply h3, .program .facility_rental.apply .h3{margin-top:42px;}
+.program .facility_rental.apply h4, .program .facility_rental.apply .h4{padding-left:0;}
+
+
+.program .facility_rental.apply .check_box{margin-top:15px; padding:30px; background-color:#f7f8fb; text-align:center;}
+
+.program .facility_rental .bottom_box{text-align:center;}
+
+.program .facility_rental .bottom_box div.btn{display:inline-block; padding:0;}
+.program .facility_rental .bottom_box div.btn label{padding:12px 35px 12px 20px;}
+.program .facility_rental .bottom_box div.btn input{font-size:0; line-height:0;}
+.program .facility_rental .bottom_box .btn{position:relative; padding:12px 35px 12px 20px;}
+.program .facility_rental .bottom_box .btn:before{content:""; right:18px;}
+.program .facility_rental .bottom_box .btn.prev{padding:12px 20px 12px 35px;}
+.program .facility_rental .bottom_box .btn.prev:before{left:18px; right:auto; transform:rotate(180deg);}
+
+.program .facility_rental .bottom_box .btn.complete{padding:12px 28px 12px 27px;}
+
+@media all and (max-width:1240px) {
+    .program .facility_rental .apply_step_box ul{position:relative; margin-left:0; padding:0 50px 0 50px;}
+    .program .facility_rental .apply_step_box ul li{padding-right:0;}
+    .program .facility_rental .apply_step_box ul li:before{left:50%; right:auto; width:200px;}
+    .program .facility_rental .apply_step_box ul li .step{background-color:#f5f6fa;}
+    .program .facility_rental .apply_step_box ul li .text{font-size:15px;}
+    .program .facility_rental .apply_step_box ul li:first-child .text{margin-left:0;}
+    .program .facility_rental .apply_step_box ul li:nth-child(2) .text{margin-left:0;}
+    .program .facility_rental .apply_step_box ul li:nth-child(3) .text{margin-left:0;}
+    .program .facility_rental .apply_step_box ul li:nth-child(4) .text{margin-left:0;}
+}
+
+@media all and (max-width:1000px) {
+    .program .facility_rental .apply_step_box ul li:before{width:100%;}
+}
+
+@media all and (max-width:640px) {
+    .program .facility_rental .top_box{padding:35px 20px; text-align:center;}
+    .program .facility_rental .top_box span{top:0; transform:unset; height:30px; font-size:14px; line-height:30px;}
+    .program .facility_rental .top_box .title{padding-left:0;}
+
+    .program .facility_rental .apply_step_box{padding:15px 0 20px;}
+    .program .facility_rental .apply_step_box ul{padding:0;}
+    .program .facility_rental .apply_step_box ul li .text{font-size:14px; line-height:17px;}
+    .program .facility_rental.apply .agreement_box .inner_box{text-align:left;}
+}
+@media all and (max-width:550px) {
+    .program .facility_rental .apply_step_box ul li{width:50%; margin-bottom:30px;}
+    .program .facility_rental .apply_step_box ul li:nth-child(2n):before{display:none;}
+}
+
+@media all and (max-width:480px) {
+    .program .facility_rental .apply_step_box ul li .step{width:75px; height:75px;}
+    .program .facility_rental .apply_step_box ul li .step em{margin-top:48px;}
+    .program .facility_rental .apply_step_box ul li:last-child .step:before{left:calc(50% - 11px);}
+    .program .facility_rental .apply_step_box ul li .text{font-size:13px; line-height:15px;}
+    .program .facility_rental .apply_step_box ul li:nth-child(2) .text{margin-left:-6px;}
+}
+
+/* 시설대관신청_예약일시,비용확인 */
+.program .facility_rental.reserve{}
+.program .facility_rental.reserve .area_cost{float:right; margin-right:6px; color:#000; font-size:18px; letter-spacing:-0.02em; line-height:26px; text-align:right;}
+.program .facility_rental.reserve .area_cost .cost span{position:relative; margin-left:10px; color:#2d53a1; font-size:22px; font-weight:600; letter-spacing:-0.02em;}
+.program .facility_rental.reserve .area_cost .cost span:before{display:block; position:absolute; bottom:-5px; left:-6px; width:calc(100% + 12px); height:16px; background-color:#e0e8ff; border-radius:10px; z-index:-1;}
+.program .facility_rental.reserve .area_cost .point{margin-top:13px; letter-spacing:-0.03em;}
+.program .facility_rental.reserve .area_cost_box{padding:23px 5%; border:1px solid #2d53a1;}
+.program .facility_rental.reserve .area_cost_box{color:#000; font-size:20px; letter-spacing:-0.03em; line-height:26px; text-align:center;}
+.program .facility_rental.reserve .area_cost_box .cost span{position:relative; margin-left:10px; color:#2d53a1; font-size:24px; font-weight:600; letter-spacing:-0.03em;}
+.program .facility_rental .reservation_list_btn{float:none; padding:11px 25px 12px; font-size:15px;}
+.program .facility_rental .item{display:inline-block; height:45px;}
+.program .facility_rental > .item{min-width:273px;}
+.program .facility_rental .p-input{height:45px;}
+.program .facility_rental .input_text_area{height:auto;}
+.program .facility_rental .input_box{display:table;}
+.program .facility_rental .input_box input{}
+.program .facility_rental .input_box .reservation_list_btn{display:inline-block;}
+.program .facility_rental .point{letter-spacing:-0.04em;}
+
+@media all and (max-width:640px){
+    .program .facility_rental.reserve .area_cost .cost{font-size:17px;}
+    .program .facility_rental.reserve .area_cost .cost span{font-size:17px; line-height:24px;}
+    .program .facility_rental.reserve .area_cost_box{font-size:16px; line-height:24px;}
+    .program .facility_rental.reserve .area_cost_box .cost span{font-size:20px; line-height:24px;}
+}
+
+/* 시설대관신청_예약일시,비용확인 */
+.program .facility_rental.write{}
+.program .facility_rental.write .p-input{height:40px;}
+.program .facility_rental.write .p-input.disabled{border-color:#d7d7d7; background-color:#fff;}
+.program .facility_rental.write .p-input.search{width:20%;}
+.program .facility_rental.write .p-input.person{width:15%;}
+.program .facility_rental.write .input_text_area{height:auto;}
+.program .facility_rental.write .table_unit{margin:20px 0;}
+.program .facility_rental.write .p-form__required--icon, .program .facility_rental.write .p-icon__asterisk{color:#2d53a1; width:6px; height:5px; background-image:url('/site/reservation/images/contents/rental_ico.png'); background-position:center center; background-repeat:no-repeat;}
+.program .facility_rental.write .table tr th{text-align:center;}
+.program .facility_rental.write .table tr td{text-align:left;}
+.program .facility_rental.write .table .p-form__label{color:#14296b; line-height:22px;}
+.program .facility_rental.write .table .p-form__label:before{display:none;}
+.program .facility_rental.write .table .point{margin-top:5px; font-size:15px; }
+.program .facility_rental.write .table .point:before{top:2px;}
+.program .facility_rental.write .table .point.grey{color:#636363;}
+.program .facility_rental.write .table .inner_box{margin-top:5px;}
+.program .facility_rental.write .table .inner_box .form_text{vertical-align:middle;}
+.program .facility_rental.write .p-table{border-collapse:unset;}
+.program .facility_rental.write .p-table td, .program .facility_rental.write .p-table th{border-bottom:0;}
+.program .facility_rental.write .p-table colgroup+tbody tr:first-child th, .program .facility_rental.write .p-table colgroup+tbody tr:first-child td{border-top:0;}
+.program .facility_rental.write .reservation_list_btn{padding:9px 23px 10px; vertical-align:middle;}
+.program .facility_rental.write .file_ico{font-size:0; line-height:0;}
+.program .facility_rental.write .file_ico a{width:calc(33.3% - 5px); margin-right:5px; font-size:15px;}
+
+.program .facility_rental.write .p-upload .p-form-group{margin-bottom:5px; padding-right:190px;}
+.program .facility_rental.write .p-form-radio__label:after{top:8px; left:7px; width:6px; height:6px; background-color:#fff;}
+.program .facility_rental.write .p-form-radio__input:checked~.p-form-radio__label:before{background-color:#0092b9; border-color:#0092b9;}
+/* .program .facility_rental.write .p-form-radio__input:focus~.p-form-radio__label:before{background-color:#0092b9; border-color:#0092b9;} */
+.program .facility_rental.write .p-form-checkbox__input:checked~.p-form-checkbox__label:before{}
+
+.program .facility_rental.write .p-form-group__name{display:table-cell; width:110px;}
+.program .facility_rental.write .p-form-group__upload{width:auto;}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi){
+    .program .facility_rental.write .p-form__required--icon, .program .facility_rental.write .p-icon__asterisk{background-size:unset;}
+}
+
+@media all and (max-width:765px) {
+    .program .facility_rental.write .table tr th{text-align:left;}
+    .program .facility_rental.write .p-table.block:after{display:none;}
+    .program .facility_rental.write .p-input.person{width:100%;}
+}
+
+@media all and (max-width:640px) {
+    .program .facility_rental.write .table .inner_box .form_text{display:block;}
+    .program .facility_rental.write .file_ico a{width:100%; margin-right:0; margin-bottom:5px;}
+    .program .facility_rental.write .p-upload .p-form-group{padding-right:0;}
+}
+
+/* 시설대관신청_신청완료 */
+.program .facility_rental.final{}
+.program .facility_rental.final .final_box{padding:45px 20px 50px; background-color:rgba(247,248,251,0.7); text-align:center;}
+.program .facility_rental.final .final_box .title{position:relative; padding-top:93px; font-size:24px; line-height:26px; color:#4648b7; font-weight:600;}
+.program .facility_rental.final .final_box .title:before{display:block; position:absolute; top:0; left:50%; width:68px; height:67px; background:url('/site/reservation/images/contents/final_ico.png') no-repeat; transform:translateX(-50%);}
+.program .facility_rental.final .final_box .sub_title{margin-top:30px; color:#222; font-size:18px; letter-spacing:-0.03em; font-weight:600; line-height:22px;}
+.program .facility_rental.final .final_box .text{margin:30px 0 50px; font-size:16px; line-height:26px; color:#222;}
+.program .facility_rental.final .final_box .btn_box .btn{width:140px;}
+
+@media all and (max-width:765px) {
+    .program .facility_rental.final .final_box .text{}
+}
+
+
+/* 한신정보기술 이지은 2020-06-04*/
+
+/*사용자_행사일정_목록화면(달력형)*/
+.program .p-calendar .p-calendar-header {height:78px; background-color:#f7f8fb; padding:23px 0;}
+.program .p-calendar .p-calendar-header .p-calendar-header__inner {display:block; margin:0 58px;}
+.program .p-calendar .p-calendar-header .p-calendar-header__inner .p-calendar__prev-month {width:39px; height:39px; background-color:#fff; border:1px solid #e0e2e9; border-radius:50%;}
+.program .p-calendar .p-calendar-header .p-calendar-header__inner .p-calendar__prev-month img, .program .p-calendar .p-calendar-header .p-calendar-header__inner .p-calendar__next-month img{margin-top:4px;}
+.program .p-calendar .p-calendar-header .p-calendar-header__inner .p-calendar__next-month {width:39px; height:39px; background-color:#fff; border:1px solid #e0e2e9; border-radius:50%;}
+.program .p-calendar .p-calendar-header .p-calendar-header__inner .p-calendar__month {font-size:28px; color:#000000; line-height:35px;}
+.program .row {margin-left:0; margin-right:0;}
+.program .p-calendar .row .col-20{width:100%;}
+.program .p-calendar .row .col-20 .p-regend {margin-bottom:20px; padding-top:15px; text-align:center;}
+.program .p-calendar .row .col-20 .p-regend .p-regend__list .item {display:inline-block; margin-right:25px; margin-top:3px; margin-bottom:3px; font-size:0;}
+.program .p-calendar .row .col-20 .p-regend .p-regend__list .item .p-regend__item {font-size:15px; line-height:17px;}
+.program .p-calendar .p-badge--circle {min-width:25px; min-height:25px; border-radius:0; line-height:25px;}
+
+.program .ctyhllCldrItem {margin-top:5px; margin-bottom:5px; margin-right:10px;}
+
+
+/* 2020-07-02 추가 */
+.program .p-calendar .p-search {padding-top:25px; padding-bottom:25px; background-color:#f7f8fb; }
+
+
+/*아이콘*/
+.calendar_box .p-badge.type1 {background-color:#2e87d3;}
+.calendar_box .p-badge.type2 {background-color:#0092b9;}
+.calendar_box .p-badge.type3 {background-color:#12957b;}
+.calendar_box .p-badge.type4 {background-color:#b87600;}
+.calendar_box .p-badge.type5 {background-color:#b1357c;}
+.calendar_box .p-badge.type7 {background-color:#7844d3;}
+.calendar_box .p-badge.type8 {background-color:#472c8d;}
+.calendar_box .p-badge.type6 {background-color:#666666;}
+
+.calendar_box .p-calendar .search_box {background-color:#f9fafc; padding:30px 5%; margin-bottom:30px;}
+.calendar_box .p-calendar .search_box .col-12 {width:100%;}
+.calendar_box .p-calendar .search_box .p-input {width:249px; height:45px;}
+.calendar_box .p-calendar .search_box .p-button.primary {width:100px; height:45px; background-color:#0092b9; border:none;}
+.calendar_box .p-calendar .search_box .select {width:145px; height:45px; padding:0 60px 0 14px; background-repeat:no-repeat; background-position:right center; background-image:url('/common/images/template/select_bg.png'); -webkit-appearance:none; -moz-appearance:none;}
+
+.calendar_box .p-calendar .p-calendar-list {}
+.calendar_box .p-calendar .p-calendar-list thead tr:first-child th {border-top:1px solid #222; height:60px; background-color:#fff;}
+.calendar_box .p-calendar .p-calendar-list th {font-size:18px; color:#000; border:none;}
+.calendar_box .p-calendar .p-calendar-list .saturday .p-calendar-list__day {color:#4769b4;}
+.calendar_box .p-calendar .p-calendar-list .today {font-weight:600; color:#000000; border:1px solid #d1d1d1;}
+.calendar_box .p-calendar .p-calendar-list .today .p-calendar-list__day > span {border-bottom:2px solid #000;}
+
+.calendar_box .table tbody th {background-color:#fbfcfd;}
+.calendar_box .p-calendar-list button{text-align:left;}
+
+@media all and (max-width:1240px){
+    .calendar_box .p-calendar .row .col-20 .p-regend .p-regend__list .item{margin-right:10px;}
+}
+@media all and (max-width:800px){
+    .calendar_box .p-calendar .search_box .select{width:49%;}
+    .calendar_box .p-calendar .search_box .p-input[type=text]{width:calc(100% - 112px);}
+}
+@media all and (max-width:640px){
+    .calendar_box .p-calendar .row .col-20 .p-regend {margin:0; padding:15px 7%;}
+}
+@media all and (max-width:600px){
+    .calendar_box .p-calendar .p-calendar-header .p-calendar-header__inner {margin:0 17px;}
+    .calendar_box .p-calendar .p-calendar-header .p-calendar-header__inner .p-calendar__month {font-size:25px; line-height:32px;}
+    .calendar_box .p-calendar .search_box {padding:20px 2%;}
+
+    .calendar_box .p-calendar .search_box .p-input[type=text]{width:calc(100% - 67px);}
+    .calendar_box .p-calendar .search_box .p-button.primary {width:60px;}
+    .calendar_box .p-calendar .search_box .p-form__split {padding:0 3px;}
+    .calendar_box .p-calendar .row .col-20 .p-regend {padding:15px 0;}
+}
+/*사용자_행사일정_목록화면(목록형)*/
+.calendar_list .search_box {background-color:#f9fafc; padding:30px 5%; margin-bottom:20px;}
+.calendar_list .row .col-20.type2 {float:none; width:540px; padding:0; margin-bottom:20px; margin-left:auto; margin-right:auto;}
+.calendar_list .search_box .col-12 {width:100%;}
+.calendar_list .search_box .p-date {position:relative;}
+.calendar_list .search_box .p-input {width:145px; height:45px; padding-right:30px;}
+.calendar_list .search_box .p-button.primary {width:100px; height:45px; background-color:#0092b9; border:none;}
+.calendar_list .search_box .select {width:145px; height:45px; padding:0 60px 0 14px; background-repeat:no-repeat; background-position:right center; background-image:url('/common/images/template/select_bg.png'); -webkit-appearance:none; -moz-appearance:none;}
+.calendar_list .search_box .col-12.center {padding:0;}
+.calendar_list .search_box .col-12 .select {margin-right:15px;}
+.calendar_list .search_box .col-12 .p-input.type2 {width:249px;}
+.calendar_list .search_box .p-input__split {position:absolute; top:10px; right:40px;}
+.calendar_list .search_box .p-input__item { background-color:transparent; border:none;}
+.calendar_list .search_box .p-input__item:before {width:20px; height:20px; background:#fff url('/site/www/images/contents/calendar_icon.png') no-repeat center center;}
+.calendar_list .search_box .p-form__split {padding:0 13px;}
+
+.calendar_list .p-form__label:before {display:none;}
+
+.calendar_list .row {margin-left:0; margin-right:0;}
+.calendar_list .row.dot_box.type2 {padding:30px 0;}
+.calendar_list .row .col-20{width:100%;}
+.calendar_list .row .col-20 .p-regend{text-align:center;}
+.calendar_list .row .col-20 .p-regend .p-regend__list .item {display:inline-block; margin-left:12px; margin-right:13px;}
+.calendar_list .p-badge--circle {min-width:25px; min-height:25px; margin-top:0; border-radius:0; line-height:25px;}
+/*아이콘*/
+.calendar_list .p-badge.type1 {background-color:#2e87d3;}
+.calendar_list .p-badge.type2 {background-color:#0092b9;}
+.calendar_list .p-badge.type3 {background-color:#12957b;}
+.calendar_list .p-badge.type4 {background-color:#b87600;}
+.calendar_list .p-badge.type5 {background-color:#b1357c;}
+.calendar_list .p-badge.type7 {background-color:#513795;}
+.calendar_list .p-badge.type6 {background-color:#666666;}
+
+.calendar_list .bbs_list {font-size:0;}
+.calendar_list .bbs_list > ul > li {display:inline-block; width:calc(33.3% - 20px); margin-right:30px; margin-bottom:20px;border:1px solid #d2d2d2; text-align:center;}
+.calendar_list .bbs_list > ul > li .image {overflow:hidden; width:100%; height:297px;}
+.calendar_list .bbs_list > ul > li .image img {}
+.calendar_list .bbs_list > ul > li:nth-child(3n) {margin-right:0;}
+.calendar_list .bbs_list > ul > li .cont_area {height:144px; padding:22px 17px; border-top:1px solid #d2d2d2;}
+.calendar_list .bbs_list > ul > li .cont_area .tit {position:relative; margin-bottom:20px; font-size:18px; letter-spacing:-0.01em; color:#000;}
+.calendar_list .bbs_list > ul > li .cont_area .p-badge {position:absolute; top:0; left:0;}
+.calendar_list .bbs_list > ul > li .cont_area .tit .tit_text {width:100%; padding-left:35px; text-align: left;}
+.calendar_list .bbs_list > ul > li .cont_area .tit .tit_text a {display:block; overflow:hidden; width:100%; text-overflow: ellipsis; white-space: nowrap; vertical-align:top;}
+.calendar_list .bbs_list .dl li {padding-left:0;}
+.calendar_list .bbs_list .dl li:before{display:none;}
+.calendar_list .bbs_list .dl .dt{padding-right:25px; font-size:15px; letter-spacing:-0.05em; color:#2c2c2c;}
+.calendar_list .bbs_list .dl .dd{font-size:15px; line-height:17px; letter-spacing:-0.05em; color:#444444;}
+
+@media all and (max-width:1240px){
+    /*.calendar_list .p-form-group {display:block;}*/
+    /*.calendar_list .row .col-20.type2 {margin-left:14%;}*/
+    .calendar_list .bbs_list > ul > li {width:calc(33.3% - 10px); margin-right:15px;}
+}
+@media all and (max-width:1000px){
+    /*.calendar_list .row .col-20.type2 {margin-left:154px;}*/
+}
+@media all and (max-width:800px){
+    /*.calendar_list .row .col-20.type2 {margin-left:70px;}*/
+    .calendar_list .row.dot_box.type2 {padding:30px 1%;}
+    .calendar_list .row .col-20 .p-regend .p-regend__list .item {margin-right:15px;}
+    .calendar_list .bbs_list > ul > li .cont_area {height:auto;}
+    .calendar_list .bbs_list > ul > li {width:calc(50% - 8px);}
+    .calendar_list .bbs_list > ul > li:nth-child(2n) {margin-right:0;}
+    .calendar_list .bbs_list > ul > li:nth-child(3) {margin-right:15px;}
+}
+@media all and (max-width:640px){
+    .calendar_list .row .col-20.type2 {margin-left:5px;}
+    .calendar_list .row.dot_box.type2 {padding:30px 5%;}
+    .calendar_list .bbs_list > ul > li {width:calc(50% - 8px);}
+    .calendar_list .bbs_list > ul > li:nth-child(2n) {margin-right:0;}
+    .calendar_list .bbs_list > ul > li:nth-child(3) {margin-right:15px;}
+    .calendar_list .search_box .col-12.center {text-align:left;}
+}
+@media all and (max-width:620px){
+    .calendar_list .p-form-group {display:block;}
+    .calendar_list .row .col-20.type2 {width:auto;}
+    .calendar_list .search_box .select {display:block; width:100%;}
+    .calendar_list .search_box .p-form-group__label {padding:0;}
+    .calendar_list .search_box .p-form-group.p-date {display:inline-block;}
+    .calendar_list .search_box .p-form-group.p-date .p-input {width:127px;}
+    .calendar_list .search_box .p-form-group .p-form__split {display:inline-block;}
+    .calendar_list .search_box .col-12 .p-input.type2 {width:calc(100% - 105px);}
+
+    .calendar_list .bbs_list {text-align:center;}
+    .calendar_list .bbs_list > ul > li {width:299px; margin-right:0;}
+    .calendar_list .bbs_list > ul > li:nth-child(3) {margin-right:0;}
+}
+/*사용자_행사일정_목록화면(연간일정형)*/
+
+/*아이콘*/
+.calendar_year_box .p-badge.type1 {background-color:#2e87d3;}
+.calendar_year_box .p-badge.type2 {background-color:#0092b9;}
+.calendar_year_box .p-badge.type3 {background-color:#12957b;}
+.calendar_year_box .p-badge.type4 {background-color:#b87600;}
+.calendar_year_box .p-badge.type5 {background-color:#b1357c;}
+.calendar_year_box .p-badge.type7 {background-color:#513795;}
+.calendar_year_box .p-badge.type6 {background-color:#666666;}
+
+.calendar_year_box .p-calendar .search_box {background-color:#f9fafc; padding:30px 5%; margin-bottom:30px;}
+.calendar_year_box .p-calendar .search_box .col-12 {width:100%;}
+.calendar_year_box .p-calendar .search_box .p-input {width:249px; height:45px;}
+.calendar_year_box .p-calendar .search_box .p-button.primary {width:100px; height:45px; background-color:#0092b9; border:none;}
+.calendar_year_box .p-calendar .search_box .select {width:145px; height:45px; padding:0 60px 0 14px; background-repeat:no-repeat; background-position:right center; background-image:url('/common/images/template/select_bg.png'); -webkit-appearance:none; -moz-appearance:none;}
+
+.calendar_year_box .table tbody th {background-color:#fbfcfd;}
+
+@media all and (max-width:1240px){
+    .calendar_year_box .p-calendar .row .col-20 .p-regend .p-regend__list .item{margin-right:10px;}
+}
+@media all and (max-width:800px){
+    .calendar_year_box .p-calendar .search_box .select{width:49%;}
+}
+@media all and (max-width:640px){
+    .calendar_year_box .p-calendar .row .col-20 .p-regend {margin:0; padding:15px 7%;}
+}
+@media all and (max-width:600px){
+    .calendar_year_box .p-calendar .p-calendar-header .p-calendar-header__inner {margin:0 17px;}
+    .calendar_year_box .p-calendar .p-calendar-header .p-calendar-header__inner .p-calendar__month {font-size:25px; line-height:32px;}
+    .calendar_year_box .p-calendar .search_box {padding:20px 2%;}
+
+    .calendar_year_box .p-calendar .search_box .p-button.primary {width:60px;}
+    /*.calendar_box .p-calendar .search_box .p-form-group {display:block;}*/
+    .calendar_year_box .p-calendar .search_box .p-form__split {padding:0 3px;}
+    .calendar_year_box .p-calendar .row .col-20 .p-regend {padding:15px 0;}
+}
+
+/* 사용자_행사일정_상세화면 */
+.detail_screen_box {border:1px solid #d2d2d2; margin-bottom:25px; padding:60px; font-size:0;}
+.detail_screen_box .image{display:inline-block; width:300px; height:324px; margin-right:77px; border:1px solid #d2d2d2; background:#f7f8fb url("/common/images/template/noimg.png") center center no-repeat; text-align:center;}
+.detail_screen_box .cont_list {display:inline-block; width:calc(100% - 385px); vertical-align:top;}
+.detail_screen_box .cont_list .tit {margin-bottom:30px; font-size:28px; line-height:33px; letter-spacing:-0.01em; color:#000;}
+.detail_screen_box .cont_list .dl li {line-height:30px;}
+.detail_screen_box .cont_list .dl li:before {top:13px;}
+.detail_screen_box .cont_list .dl .dt {width:90px;}
+
+@media all and (min-width:1001px) and (max-width:1240px){
+    .detail_screen_box {padding:50px 5%;}
+    .detail_screen_box .image {margin-right:40px;}
+    .detail_screen_box .cont_list {width:calc(100% - 342px);}
+}
+@media all and (max-width:858px){
+    .detail_screen_box {padding:40px 5%; text-align:center;}
+    .detail_screen_box .image {margin-right:0;}
+    .detail_screen_box .cont_list {width:100%; text-align:left;}
+    .detail_screen_box .cont_list .tit{margin-top:20px; margin-bottom:15px; font-size:18px; line-height:24px; text-align:center;}
+}
+@media all and (max-width:378px){
+    .detail_screen_box .image{width:100%;}
+}
+
+/* 비밀번호 입력 화면 */
+.pass_box{}
+.pass_box .box{text-align:center;}
+.pass_box .box .box_wrap .title{margin-bottom:12px; font-size:20px; line-height:22px; color:#14296b;}
+.pass_box .box .box_wrap .text p{margin-bottom:15px;}
+.pass_box .cont input.temp_textbox{height:40px;}
+
+@media all and (max-width:640px){
+    .pass_box .cont label{margin-bottom:5px;}
+    .pass_box .cont input{display:block; width:100%;}
+    .pass_box .cont input.temp_textbox{margin-bottom:5px;}
+}
+
+.program .noimage {position:relative; background-color:#f7f8fb;}
+.program .noimage:before{display:block; position:absolute; top:calc(50% - 13px); left:calc(50% - 17px); width:35px; height:26px; background-repeat:no-repeat; background-position:center center; background-image:url(/common/images/program/noimage.png); content:'';}
+
+.program .noimage.type2 .inner_photo:before {top:calc(50% - 31px); left:calc(50% - 22px); width:43px; height:62px; background-image:url(/common/images/program/noimage2.png)} /*음식*/
+.program .noimage.type3 .inner_photo:before {top:calc(50% - 30px); left:calc(50% - 28px); width:55px; height:61px; background-image:url(/common/images/program/noimage3.png)} /*숙박*/
+
+
+/* 온라인접수목록 */
+.temp_agree {margin-bottom:45px; padding:35px 38px 40px; border:1px solid #cfcfcf;}
+.temp_agree .title  {margin-bottom:20px; font-size:20px; font-weight:600; color:#1d1d1d;}
+.temp_agree .text_cts {overflow-y:scroll; height:240px; padding-bottom:30px; margin-bottom:20px; border-bottom:1px solid #e4e4e4;}
+.temp_agree.online{margin-bottom:0;}
+@media all and (max-width:640px){
+    .temp_agree {margin-bottom:30px; padding:20px;}
+}
+
+/* 온라인접수 신청 */
+/* 통합예약 - 온라인접수 */
+/* 목록 */
+.online_receptionist .list .top_btn_cts {position:relative; margin-bottom:35px;}
+.online_receptionist .list .top_btn_cts a {position:absolute; top:50%; width:39px; height:39px; margin-top:-17px; border:2px solid #000; border-radius:50%; background-repeat:no-repeat; background-position:center; font-size:0; z-index:100;}
+.online_receptionist .list .top_btn_cts a.prev {left:50%; margin-left:-152px; background-image:url('/common/images/program/online_receptionist_prev.png');}
+.online_receptionist .list .top_btn_cts a.next {right:50%; margin-right:-152px; background-image:url('/common/images/program/online_receptionist_next.png');}
+.online_receptionist .list .top_btn_cts h3 {font-size:35px; font-weight:600; color:#000; letter-spacing:-0.03em; text-align:center;}
+.online_receptionist .list .p-table td{color:#737373;}
+.online_receptionist .list  .p-table td.p-subject a {color:#737373;}
+.online_receptionist .list  .p-table td .state {width:80px; box-sizing:border-box; font-size:15px; line-height:30px; text-align:center;}
+.online_receptionist .list  .p-table td em {color:#000;}
+.online_receptionist .list  .p-table td .state.ing {background-color:#5193e9; color:#fff;}
+.online_receptionist .list  .p-table td .state.end {border:1px solid #8a8a8a; background-color:#fff; color:#656565;}
+
+/* 설문조사 레이어팝업 */
+.program .poll .text_area{}
+.program .poll .text_area .img_btn{position:relative; max-width:840px;}
+.program .poll .layer_pop {display:none; }
+.program .poll .overlay {position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0, 0, 0, 0.8); z-index:9999; }
+.program .poll .layer_pop .layer{position:fixed; top:50%; left:50%; transform: translate(-50%, -50%); z-index:10000; }
+.program .poll .layer_pop .layer .close{position:absolute; top:-60px; right:5px; font-size:0; line-height:0;}
+.program .poll .layer_pop .layer img{max-height:500px;}
+.not_scroll{position:fixed; overflow:hidden; width:100%; height:100%;}
+
+@media all and (max-width:1240px){
+    .program .poll .text_area .img_btn{max-width:600px;}
+    .program .poll .layer_pop .layer .close{top:0; right:-50px;}
+    .program .poll .layer_pop .layer img{max-width:800px;}
+}
+
+@media all and (max-width:1000px){
+    .program .poll .layer_pop .layer img{max-width:540px;}
+}
+
+@media all and (max-width:640px){
+    .program .poll .layer_pop .layer{width:480px; overflow:auto;}
+    .program .poll .layer_pop .layer img{max-width:800px; max-height:400px;}
+    /*.program .poll .layer_pop .layer .close{top:0; right:-100px;}*/
+    .program .poll .text_area .img_btn{max-width:360px;}
+}
+
+@media all and (max-width:480px){
+    .program .poll .layer_pop .layer{width:400px;}
+    /*.program .poll .layer_pop .layer .close{top:0; right:-190px;}*/
+}
+
+@media all and (max-width:400px){
+    .program .poll .layer_pop .layer{width:320px;}
+    /*.program .poll .layer_pop .layer .close{right:-280px;}*/
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* 본고딕 NotoKR */
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 400;
+	src:url("../font/SpoqaHanSans-Regular.woff2") format('woff2'),
+	url("../font/SpoqaHanSans-Regular.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoKr';
+	font-weight: 600;
+	src:url("../font/SpoqaHanSans-Bold.woff2") format('woff2'),
+	url("../font/SpoqaHanSans-Bold.woff") format('woff');
+}
+
+
+@font-face{
+	font-family: 'NanumM';
+	font-weight: 400;
+	src: url("../font/NanumMyeongjo.woff") format('woff');
+}
+
+
+@font-face{
+	font-family: 'NanumG';
+	font-weight: 400;
+	src: url("../font/NanumGothic.woff2") format('woff2'),
+	url("../font/NanumGothic.woff") format('woff');
+}
+
+@font-face{
+	font-family: 'Opensans';
+	font-weight: 600;
+	src: url("../font/OpensansB.woff2") format('woff2'),
+	url("../font/OpensansB.woff") format('woff');
+}
+
+
+@font-face{
+	font-family:'TMONBlack';
+	font-weight: 400;
+	src:url("../font/TMONBlack.woff") format('woff');
+}
+
+@font-face{
+	font-family:'NotoCJK';
+	font-weight: 300;
+	src:url("../font/NotoSansCJKkr-Light.woff2") format('woff2'),
+	url("../font/NotoSansCJKkr-Light.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoCJK';
+	font-weight: 400;
+	src:url("../font/NotoSansCJKkr-Regular.woff2") format('woff2'),
+	url("../font/NotoSansCJKkr-Regular.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoCJK';
+	font-weight: 500;
+	src:url("../font/NotoSansCJKkr-Medium.woff2") format('woff2'),
+	url("../font/NotoSansCJKkr-Medium.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoCJK';
+	font-weight: 600;
+	src:url("../font/NotoSansCJKkr-Bold.woff2") format('woff2'),
+	url("../font/NotoSansCJKkr-Bold.woff") format('woff');
+}
+@font-face{
+	font-family:'NotoCJK';
+	font-weight: 900;
+	src:url("../font/NotoSansCJKkr-Black.woff2") format('woff2'),
+	url("../font/NotoSansCJKkr-Black.woff") format('woff');
+}
+
+@font-face{
+	font-family:'YUniverse';
+	font-weight: 600;
+	src:url("../font/YUniverse-B.woff2") format('woff2'),
+	url("../font/YUniverse-B.woff") format('woff');
+}
+
+@font-face{
+	font-family:'RIDIBatang';
+	font-weight: 400;
+	src:url("../font/RIDIBatang.woff") format('woff');
+}
+/* 에스코어드림 */
+@font-face{
+	font-family:'s-coredream';
+	font-weight: 400;
+	src:url("../font/S-CoreDream-4Regular.woff2") format('woff2'),
+	url("../font/S-CoreDream-4Regular.woff") format('woff');
+}
+@font-face{
+	font-family:'s-coredream';
+	font-weight: 500;
+	src:url("../font/S-CoreDream-5.woff2") format('woff2'),
+	url("../font/S-CoreDream-5.woff") format('woff');
+}
+@font-face{
+	font-family:'s-coredream';
+	font-weight: 600;
+	src:url("../font/S-CoreDream-6Bold.woff2") format('woff2'),
+	url("../font/S-CoreDream-6Bold.woff") format('woff');
+}
+@font-face{
+	font-family:'s-coredream';
+	font-weight: 700;
+	src:url("../font/S-CoreDream-7ExtraBold.woff") format('woff');
+}
