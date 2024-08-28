@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* 학교안심지우개 폰트 */
+@font-face {
+    font-family: 'TTHakgyoansimJiugaeR';
+    font-weight: normal;
+    src: url('../font/HakgyoansimJiugaeR.woff') format('woff');
+}
+
+/* DM Serif Display 폰트 */
+@font-face {
+    font-family: 'DM Serif Display';
+    font-weight: normal;
+    font-style: italic;
+    src: url('../font/DMSerifDisplay-Italic.woff') format('woff');
+}
