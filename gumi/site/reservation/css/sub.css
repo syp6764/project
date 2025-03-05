@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-@import url('/common_2024/css/default.css');
-@import url('/common_2024/css/layout.css');
-@import url('/common_2024/css/program.css');
+@import url('/project/gumi/common_2024/css/default.css');
+@import url('/project/gumi/common_2024/css/layout.css');
+@import url('/project/gumi/common_2024/css/program.css');
 @import url('font.css');
 @import url('common.css');
 @import url('sub_layout.css');
