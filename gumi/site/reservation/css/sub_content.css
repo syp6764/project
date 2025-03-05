@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+/* 예매안내 */
+.cts3-3_wrap .ticket_list{margin-bottom:30px; font-size:0; line-height:0; box-sizing:border-box;}
+.cts3-3_wrap .ticket_list .ticket_item{display:inline-block; position:relative; width:calc((100% - 120px) / 7); height:160px; margin-right:20px; padding:32px 10px 35px; border-radius:25px; background:#f5f7fc; text-align:center; vertical-align:top;}
+.cts3-3_wrap .ticket_list .ticket_item:last-child{margin-right:0;}
+.cts3-3_wrap .ticket_list .ticket_item .text{position:relative; width:100%; padding-top:65px; color:#545b82; font-size:19px; font-weight:500; font-family:'SBAggro'; line-height:28px; letter-spacing:-0.025em;word-break:keep-all;}
+.cts3-3_wrap .ticket_list .ticket_item .text:before{display:block; position:absolute; top:0; left:0; right:0; width:50px; height:50px; margin:0 auto; background:url("/site/reservation/images/contents/cts93_img01.png") no-repeat; filter:drop-shadow(10px 17px 10px rgba(208,218,244,0.5));}
+.cts3-3_wrap .ticket_list .ticket_item.n2 .text:before{background-position-x:-50px;}
+.cts3-3_wrap .ticket_list .ticket_item.n3 .text:before{background-position-x:-100px;}
+.cts3-3_wrap .ticket_list .ticket_item.n4 .text:before{background-position-x:-150px;}
+.cts3-3_wrap .ticket_list .ticket_item.n5 .text:before{background-position-x:-200px;}
+.cts3-3_wrap .ticket_list .ticket_item.n6 .text:before{background-position-x:-250px;}
+.cts3-3_wrap .ticket_list .ticket_item.n7 .text:before{background-position-x:-300px;}
+.cts3-3_wrap .ticket_box{display:block; position:relative; width:100%; padding:40px 50px 40px 40px; border:1px solid #cfd5e7; border-radius:25px; box-sizing:border-box;}
+.cts3-3_wrap .ticket_box ol.num li:not(:last-child){padding-bottom:17px;}
+.cts3-3_wrap .ticket_box ol.num > li + li{margin-top:19px;}
+.cts3-3_wrap .ticket_box ol.num li:not(:last-child):after{display:block; position:absolute; left:0; bottom:0; width:100%; height:1px; background:url("data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAABCAYAAAAb4BS0AAAAAXNSR0IArs4c6QAAABRJREFUGFdj3LRp038/Pz9GBiAAACZuBAIHZI+XAAAAAElFTkSuQmCC") repeat-x;}
+@media all and (max-width:1400px){
+    .cts3-3_wrap .ticket_list .ticket_item{width:calc((100% - 60px) / 4);}
+    .cts3-3_wrap .ticket_list .ticket_item:nth-child(4n){margin-right:0;}
+    .cts3-3_wrap .ticket_list .ticket_item:nth-child(n+5){margin-top:20px;}
+}
+@media all and (max-width:1000px){
+    .cts3-3_wrap .ticket_list .ticket_item{height:140px; padding:24px 10px 25px;}
+    .cts3-3_wrap .ticket_list .ticket_item .text{font-size:17px; line-height:24px;}
+}
+@media all and (max-width:640px){
+    .cts3-3_wrap .ticket_list .ticket_item{width:calc((100% - 10px) / 2); height:120px; margin-right:10px; padding:20px 10px; border-radius:15px;}
+    .cts3-3_wrap .ticket_list .ticket_item:nth-child(2n){margin-right:0;}
+    .cts3-3_wrap .ticket_list .ticket_item:nth-child(n+3){margin-top:10px;}
+    .cts3-3_wrap .ticket_list .ticket_item .text{padding-top:55px; font-size:16px; line-height:24px;}
+    .cts3-3_wrap .ticket_list .ticket_item .text:before{transform:scale(0.8);}
+    .cts3-3_wrap .ticket_box{padding:25px 20px; border-radius:15px;}
+    .cts3-3_wrap .ticket_box ol.num li:not(:last-child){padding-bottom:13px;}
+    .cts3-3_wrap .ticket_box ol.num > li + li{margin-top:12px;}
+}
+
+/* 예매확인 및 취소 */
+.link_list_box{position:relative; margin-top:20px; font-size:0; line-height:0;}
+.link_list_box .link_item{display:inline-block; position:relative; width:calc(50% - 5px); margin-right:10px; padding:16px 20px; border:1px solid #cfd5e7; border-radius:12px; font-size:0; line-height:0; vertical-align:top; box-sizing:border-box;}
+.link_list_box .link_item:nth-child(2n){margin-right:0;}
+.link_list_box .link_item:nth-child(n+3){margin-top:10px;}
+.link_list_box .link_item.block{width:100%; margin-right:0;}
+.link_list_box .link_item.type2{padding:16px 140px 16px 20px;}
+.link_list_box .link_item .title_box{display:inline-block; position:relative; padding-left:44px; vertical-align:middle;}
+.link_list_box .link_item .title_box:before{display:block; position:absolute; top:0; left:0; width:36px; height:36px; border-radius:50%; background:url("/site/public/images/template/link_box_icon.png") top left no-repeat, linear-gradient(120deg, #e83fa6, #ff7765);}
+.link_list_box .link_item .title_box.n1:before{background-position-x:0;}
+.link_list_box .link_item .title_box.n2:before{background-position-x:-36px;}
+.link_list_box .link_item .title_box.n3:before{background-position-x:-72px;}
+.link_list_box .link_item .title_box.n4:before{background-position-x:-108px;}
+.link_list_box .link_item .title_box.n5:before{background-position-x:-144px;}
+.link_list_box .link_item .title_box.n6:before{background-position-x:-180px;}
+.link_list_box .link_item .title_box.n7:before{background-position-x:-216px;}
+.link_list_box .link_item .title_box span{color:#2f3648; font-size:17px; font-weight:500; line-height:36px; letter-spacing:-0.025em;}
+.link_list_box .link_item .text_box{display:inline-block; position:relative; padding-left:34px; vertical-align:middle;}
+.link_list_box .link_item .text_box:before{display:block; position:absolute;  top:3px; left:17px; width:1px; height:19px; background:url("data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAADCAYAAABS3WWCAAAAAXNSR0IArs4c6QAAABBJREFUGFdj2LRp038GOAAAJiIDFnIFn0YAAAAASUVORK5CYII=") repeat-y;}
+.link_list_box .link_item .text_box span{position:relative; color:#414651; font-size:16px; line-height:24px; letter-spacing:-0.025em;}
+.link_list_box .link_item .text_box span:not(:last-child){margin-right:45px;}
+.link_list_box .link_item .text_box span:not(:last-child):before{display:block; position:absolute; top:0; right:-25px; bottom:0; width:4px; height:4px; margin:auto 0; border-radius:50%; background:#e7e9ef;}
+.link_list_box .link_item.type2 .btn_box{display:inline-block; position:absolute; top:calc((100% - 38px)/2); right:20px; vertical-align:middle;}
+@media all and (max-width:1600px){
+    .link_list_box .link_item .text_box{width:calc(100% - 140px);}
+}
+@media all and (max-width:1200px){
+    .link_list_box .link_item{width:100%; margin-right:0; padding:15px;}
+    .link_list_box .link_item:nth-child(n+2){margin-top:10px;}
+}
+@media all and (max-width:640px){
+    .link_list_box .link_item{text-align:center;}
+    .link_list_box .link_item.type2{padding:15px;}
+    .link_list_box .link_item .title_box{display:block; width:100%; padding-top:35px; padding-left:0;}
+    .link_list_box .link_item .title_box:before{left:0; right:0; margin:0 auto; transform:scale(0.85);}
+    .link_list_box .link_item .title_box span{font-size:16px; line-height:24px;}
+    .link_list_box .link_item .text_box{display:block; width:100%; margin-top:10px; padding-left:0;}
+    .link_list_box .link_item .text_box:before{display:none;}
+    .link_list_box .link_item .text_box span{font-size:15px;}
+    .link_list_box .link_item.type2 .btn_box{display:block; position:relative; top:0; right:auto; width:100%; margin-top:10px;}
+}
+@media all and (max-width:480px){
+    .link_list_box .link_item .text_box span{display:block;}
+    .link_list_box .link_item .text_box span:not(:last-child){margin-right:0;}
+    .link_list_box .link_item .text_box span:not(:last-child):before{display:none;}
+}
+
+/* 공용차량 무료이용 신청 - 사업안내 */
+.cts4-3-1_wrap .link_list_box .link_item .text_box small{font-size:14px;}
+
+/* 공용차량 무료이용 신청 - 자주묻는질문 */
+.cts4-3-2_wrap .qna_box{}
+.cts4-3-2_wrap .qna_list{}
+.cts4-3-2_wrap .qna_item{position:relative; font-size:0; line-height:0; box-sizing:border-box;}
+.cts4-3-2_wrap .qna_item + .qna_item{margin-top:60px;}
+.cts4-3-2_wrap .qna_item .question{position:relative; padding:20px; border-top:1px solid #e7e9ef;}
+.cts4-3-2_wrap .qna_item .question .icon{position:relative; width:44px; height:44px; border-radius:50%; background:#078bf1; vertical-align:middle;}
+.cts4-3-2_wrap .qna_item .question .icon:before{display:block; content:'Q'; color:#fff; font-size:21px; font-weight:600; font-family:'Montserrat'; text-align:center; line-height:44px; letter-spacing:-0.02em;}
+.cts4-3-2_wrap .qna_item .question .text{width:calc(100% - 58px); margin-top:10px; margin-left:14px; color:#078bf1; font-size:22px; font-weight:500; font-family:'SBAggro'; line-height:28px; vertical-align:top; letter-spacing:-0.02em;}
+.cts4-3-2_wrap .qna_item .answer{position:relative; padding:20px 50px 20px 20px; border-radius:15px; background:#f5f7fc;}
+.cts4-3-2_wrap .qna_item .answer .icon{position:relative; width:44px; height:44px; border-radius:50%; background:linear-gradient(120deg, #4254c4, #e83fa6); vertical-align:top;}
+.cts4-3-2_wrap .qna_item .answer .icon:before{display:block; content:'A'; color:#fff; font-size:21px; font-weight:600; font-family:'Montserrat'; text-align:center; line-height:44px; letter-spacing:-0.02em;}
+.cts4-3-2_wrap .qna_item .answer .text{width:calc(100% - 58px); margin-top:8px; margin-left:14px; color:#414651; font-size:16px; line-height:28px; vertical-align:top; letter-spacing:-0.02em; word-break:keep-all;}
+@media all and (max-width:1000px){
+    .cts4-3-2_wrap .qna_item + .qna_item{margin-top:40px;}
+    .cts4-3-2_wrap .qna_item .question .icon,
+    .cts4-3-2_wrap .qna_item .answer .icon{width:40px; height:40px;}
+    .cts4-3-2_wrap .qna_item .question .icon:before,
+    .cts4-3-2_wrap .qna_item .answer .icon:before{font-size:20px; line-height:40px;}
+    .cts4-3-2_wrap .qna_item .question .text{font-size:19px; line-height:26px;}
+    .cts4-3-2_wrap .qna_item .answer .text{margin-top:5px; font-size:15px; line-height:24px;}
+}
+@media all and (max-width:640px){
+    .cts4-3-2_wrap .qna_item + .qna_item{margin-top:20px;}
+    .cts4-3-2_wrap .qna_item .question,
+    .cts4-3-2_wrap .qna_item .answer{padding:15px;}
+    .cts4-3-2_wrap .qna_item .question .icon,
+    .cts4-3-2_wrap .qna_item .answer .icon{width:30px; height:30px;}
+    .cts4-3-2_wrap .qna_item .question .icon:before,
+    .cts4-3-2_wrap .qna_item .answer .icon:before{font-size:16px; line-height:30px;}
+    .cts4-3-2_wrap .qna_item .question .text{width:calc(100% - 44px); margin-top:0; font-size:17px; line-height:24px;}
+    .cts4-3-2_wrap .qna_item .answer .text{width:calc(100% - 44px); margin-top:0; font-size:14px; line-height:22px;}
+}
+
+/* 공용차량 무료이용 신청 - 주의사항 */
+.caution_list{position:relative; font-size:0; line-height:0; box-sizing:border-box;}
+.caution_list .caution_item{padding:32px 36px; border-radius:10px; background:#f5f7fc;}
+.caution_list .caution_item + .caution_item{margin-top:10px;}
+.caution_list .caution_item .num{width:40px; color:#4254c4; font-size:30px; font-weight:600; font-family:'Montserrat'; line-height:36px; vertical-align:middle; letter-spacing:-0.025em;}
+.caution_list .caution_item .text{width:calc(100% - 70px); margin-left:27px; color:#414651; font-size:16px; line-height:28px; vertical-align:middle; letter-spacing:-0.025em;word-break:keep-all;}
+@media all and (max-width:640px){
+    .caution_list .caution_item{padding:24px;}
+    .caution_list .caution_item .num{width:32px; font-size:24px; line-height:30px;}
+    .caution_list .caution_item .text{width:calc(100% - 52px); margin-left:20px; font-size:14px; line-height:24px;}
+}
+
+/* 공용차량 무료이용 신청 - 주의사항 */
+.cts4-3-4_wrap .caution_list{margin-top:36px;}
