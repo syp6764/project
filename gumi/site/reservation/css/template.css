@@ -63,7 +63,7 @@
 @media all and (max-width:800px){
     .tab > .tab_menu{position:relative; margin:30px 0;}
     .tab > .tab_menu > .tab_select{display:block; position:relative; width:100%; background:#2f3467; border-radius:5px; color:#fff; text-align:left;}
-    .tab > .tab_menu > .tab_select:before{display:block; position:absolute; top:0; right:18px; bottom:0; width:12px; height:12px; margin-top:auto; margin-bottom:auto; background:url("/site/public/images/sub/side_sprite.png") no-repeat left top -35px; background-size:12px auto; transition:transform .25s;}
+    .tab > .tab_menu > .tab_select:before{display:block; position:absolute; top:0; right:18px; bottom:0; width:12px; height:12px; margin-top:auto; margin-bottom:auto; background:url("/project/gumi/site/public/images/sub/side_sprite.png") no-repeat left top -35px; background-size:12px auto; transition:transform .25s;}
     .tab > .tab_menu.active > .tab_select:before{transform:rotateX(180deg);}
     .tab > .tab_menu > .tab_select > span{display:block; padding:12px 28px 12px 19px; font-size:14px; line-height:18px;}
     
