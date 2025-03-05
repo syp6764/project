@@ -1,0 +1,76 @@
+@media screen and (max-width:450px){
+.fl,.fr{float:none;padding-bottom:10px;}
+}
+
+
+
+
+/* 일정 달력 */
+.calendar{display:block;position:relative;min-height:550px;background-color:#fff;border-bottom:0;}
+.calendar .leg_today{display:inline-block;width:25px;height:25px;margin:0 10px 0 0;background:url('../images/board/today.png') no-repeat 50%;vertical-align:middle;}
+.calendar .plan{color:#42a3cf;font-size:13px;line-height:17px;font-weight:bold;}
+.calendar .plan p{color:#646464;}
+.calendar_t{width:100%;/* height:100%; */}
+.calendar_t thead th{width:14.285714%; padding:20px 0; background:url('../images/board/brd_line.png') #f5f5f5 no-repeat left 50%;border-top:2px solid #454545;border-bottom:1px solid #969696;color:#353535;}
+.calendar_t thead th:first-child{background-image:none;}
+.calendar_t tbody td{height:90px;padding:0;border:1px solid #e0e0e0;border-top:0;border-right:0;vertical-align:top;}
+.calendar_t tbody td:first-child{border-left:0;}
+.calendar_t tbody td div.cal_box {width:100%; height:100%; padding:10px 0 0 30px; position:relative;}
+/* .calendar_t tbody td a{display:block;position:absolute;top:0;left:0;width:100%;height:90px;padding:10px 0 0 10px;vertical-align:top;box-sizing:border-box;} */
+.calendar_t tbody td a .cal_cate{height:14px;text-align:left;}
+.calendar_t tbody td a .cal_cate span{width:14px;height:14px;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999px;overflow:hidden;}
+.calendar_t tbody td span, .calendar_t tbody td button{display:block;position:absolute;top:7px;left:5px;width:25px;height:25px;margin:0;padding:0;border:none;color:#313131;font-size:14px;line-height:25px;text-align:center;}
+.calendar_t tbody td.holi span,.calendar_t tbody td.holi .plan p {color:#d53535;font-weight:bold;}
+.calendar_t tbody td.sun {background:#fff9f9; font-weight:bold}
+.calendar_t tbody td.sat {background:#f4fcff;font-weight:bold;}
+.calendar_t tbody td.today a{background-color:#f9f9f9;border:3px solid #0a4f9a;}
+.calendar_t tbody td.disabled a{background:url('../images/board/disable_pattern.png') repeat;}
+.calendar_t tbody td.today{border:2px solid #454545;}
+.calendar_t tbody td > .day{background:url('../images/board/cal_mask.png') no-repeat 50%;color:#fff;text-align:center;}
+.calendar_t tbody td > .today{background-color:#ee6b1c;border-radius:13px;color:#fff;}
+.calendar_t tbody td > .today a{color:#fff;}
+.calendar_t tbody td > .poss{background-color:#43aee8;}
+.calendar_t tbody td > img{margin:0;}
+/*.calendar_t tbody tr.last td{border-bottom:0;}*/
+.calendar .plan_list{float:left;position:relative;width:45%;height:100%;padding:70px 0 0 0;box-sizing:border-box;}
+
+.org_search{margin:30px 0;padding:15px 0;border:1px solid #e5e5e5;background-color:#f8f8f8;text-align: center;}
+.org_search select{height:36px;line-height:36px;}
+.org_search .input_text{width:150px;height:32px;line-height:32px;}
+.org_search .submit{padding:0 20px;border:1px solid #666;background-color:#686868;color:#fff;height:34px;line-height:34px;}
+.org_search .submit:hover{border-color:#111;background-color:#151515;}
+.org_search .reset{padding:0 20px;border:1px solid #666;background-color:#7b7b7b;color:#fff;height:34px;line-height:34px;}
+.org_search .reset:hover{border-color:#444;background-color:#4b4b4b;}
+
+@media only screen and (max-width:640px) {
+  .org_search{padding:0;}
+  .org_search form{margin:15px 3%}
+  .org_search select{width:100%;margin:2px 0;}
+  .org_search span{display:block}
+  .org_search .input_text {width:100%;margin:2px 0;padding-left:0;padding-right:0;text-align: center;}
+  .org_search .submit{width:100%;margin:2px 0;}
+  .org_search.type_left {margin-top:0;margin-bottom:10px}
+  #contents .org_search .margin_l_15 {margin:0px !important}
+  #contents .org_search label {display:none}
+  
+    .org_table  colgroup{display:none}
+    .org_table  thead th{display:none;}
+    .org_table  tbody {border-top: 1px solid #151515;}
+    .org_table  tbody tr{display:block;padding:4px 0;border-bottom:1px solid #d9d9d9;}
+    .org_table  tbody tr:after{display:block; clear:both; content:"."; visibility:hidden; height:0;}
+    .org_table  tbody tr{display: inline-block;}
+    .org_table  tbody tr{display: block;}
+    .org_table  tbody tr:nth-child(odd) {background:#f8f8f8}
+    #contents .org_table  tbody td{display:block;float:left;clear:left;width:100%;padding: 3px 10px 3px;border:none;text-align:left;box-sizing:border-box; border:none}
+
+
+
+    .bbs_search {padding:0;}
+    .bbs_search form{margin:15px 3%}
+    .bbs_search select{width:100%;margin:2px 0;}
+    .bbs_search .inputText {width:100%;margin:2px 0;padding-left:0;padding-right:0;text-align: center;}
+    .bbs_search .submit{width:100%;margin:2px 0;}
+
+}
+
+
