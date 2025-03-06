@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes" />
+    <meta name="keywords" content="@@{siteInfo.siteKwrd}" />
+    <meta name="description" content="@@{siteInfo.siteDc}" />
+    <link rel="stylesheet" href="/site/global/css/sub.css">
+    <script src="/common/js/jquery-1.12.4.min.js"></script>
+    <script src="/site/global/js/plugins.js"></script>
+    <script src="/common/js/program.min.js"></script>
+    <script src="/site/global/js/common.js"></script>
+    <script src="/site/global/js/sub.js"></script>
+    <title>@@{menuInfo.cntntsNm} - @@{siteInfo.siteNm}</title>
+</head>
+
+<body id="${siteInfo.tmplatId}" class="@@{siteInfo.siteId} page@@{key}">
+<div id="wrapper">
+    
+    
+    <header id="header">
+        <div class="accessibility">
+            <a href="#contents">본문 바로가기</a>
+        </div>
+        
+        <div class="wrap">
+            <div class="gnb">
+                <div class="logo">
+                    <a href="./index.do" class="logo_anchor">
+                        <img src="/site/global/images/common/logo.png" alt="Bigger Pocheon, Greater Happiness 더 큰 포천, 더 큰 행복" class="logo_img">
+                        <span class="logo_text">외국인주민지원센터</span>
+                    </a>
+                </div>
+                <div class="link">
+                    <ul class="link_list">
+                        <li class="link_item login"><a href="#" class="link_anchor">로그인</a></li>
+                        <!-- <li class="link_item logout"><a href="#" class="link_anchor">로그아웃</a></li> -->
+                        <li class="link_item sitemap"><a href="#" class="link_anchor">sitemap</a></li>
+                        <li class="link_item language"><!-- 구글 언어 선택 -->
+                            <div id="google_translate_element" class="google_language">
+                                <i class="select_icon"></i>
+                            </div>
+                            <script type="text/javascript">
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement({
+                                        pageLanguage: 'ko', /*layout: google.translate.TranslateElement.InlineLayout.SIMPLE,*/
+                                        multilanguagePage: true,
+                                        gaTrack:true,
+                                    },'google_translate_element');
+                                }
+                            </script>
+                            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="lnb">
+            
+            <div class="menu_show">
+                <button type="button" class="menu_btn">주메뉴 열기</button>
+            </div>
+            
+            <nav class="menu after eachdown">
+                <h2 class="skip">주메뉴</h2>
+                
+                <div class="menu_header">
+                    <div class="link">
+                        <ul class="link_list">
+                            <li class="link_item language"></li><!-- 구글 언어 선택 -->
+                            <li class="link_item login"><a href="#" class="link_anchor">로그인</a></li>
+                            <!-- <li class="link_item logout"><a href="#" class="link_anchor">로그아웃</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="wrap">
+                    <div class="depth depth1"><!-- 차수에 맞는 숫자와 조합하여 클래스를 넣어주세요 (예 : depth#, depth#_#) -->
+                        <ul class="depth_list depth1_list cut">
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text"><span>기관소개</span></a>
+                                <div class="depth depth2">
+                                    <div class="depth2_content">
+                                        <div class="depth_title depth2_title">
+                                            <div class="depth2_info">
+                                                <span class="depth2_subject">기관소개</span><!-- 현재 1차메뉴명 들어오게 개발 부탁드립니다. -->
+                                                <span class="depth2_slogan">함께 만드는 미래,<br/> 화합하는 글로벌 포천</span><!-- 공통 텍스트 -->
+                                            </div>
+                                        </div>
+                                        <ul class="depth_list depth2_list cut">
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴명</span></a>
+                                                <div class="depth depth3">
+                                                    <ul class="depth_list depth3_list">
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                            <!-- 4차메뉴까지 개발 부탁드립니다 -->
+                                                            <!-- 새창으로 열리는 경우 a.depth_text 에 target="_blank" title="새창" rel="noopener noreferrer" 속성 필수 개발 부탁드립니다 -->
+                                                            <div class="depth depth4">
+                                                                <ul class="depth_list depth4_list cut">
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth4_text">4차메뉴명(새창)</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth3_text">3차메뉴(새창)</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴 길어질 경우 2차메뉴명 길어요</span></a>
+                                                <div class="depth depth3">
+                                                    <ul class="depth_list depth3_list">
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth2_text"><span>2차메뉴(새창)</span></a>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                                <div class="depth depth3">
+                                                    <ul class="depth_list depth3_list">
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth1_text"><span>1차메뉴(새창)</span></a>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text"><span>1차메뉴</span></a>
+                                <div class="depth depth2">
+                                    <div class="depth2_content">
+                                        <div class="depth_title depth2_title">
+                                            <div class="depth2_info">
+                                                <span class="depth2_subject">현재메뉴명</span>
+                                                <span class="depth2_slogan">함께 만드는 미래,<br/> 화합하는 글로벌 포천</span>
+                                            </div>
+                                        </div>
+                                        <ul class="depth_list depth2_list cut">
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                                <div class="depth depth3">
+                                                    <ul class="depth_list depth3_list">
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                            <div class="depth depth4">
+                                                                <ul class="depth_list depth4_list cut">
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth4_text">4차메뉴명(새창)</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                    <li class="depth_item depth4_item">
+                                                                        <a href="#n" target="_self" class="depth_text depth4_text">4차메뉴명</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth3_text">3차메뉴(새창)</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="#n" target="_self" class="depth_text depth3_text">3차메뉴</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text"><span>1차메뉴</span></a>
+                                <div class="depth depth2">
+                                    <div class="depth2_content">
+                                        <div class="depth_title depth2_title">
+                                            <div class="depth2_info">
+                                                <span class="depth2_subject">현재메뉴명</span>
+                                                <span class="depth2_slogan">함께 만드는 미래,<br/> 화합하는 글로벌 포천</span>
+                                            </div>
+                                        </div>
+                                        <ul class="depth_list depth2_list cut">
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="depth_item depth1_item">
+                                <a href="#n" target="_self" class="depth_text depth1_text"><span>1차메뉴</span></a>
+                                <div class="depth depth2">
+                                    <div class="depth2_content">
+                                        <div class="depth_title depth2_title">
+                                            <div class="depth2_info">
+                                                <span class="depth2_subject">현재메뉴명</span>
+                                                <span class="depth2_slogan">함께 만드는 미래,<br/> 화합하는 글로벌 포천</span>
+                                            </div>
+                                        </div>
+                                        <ul class="depth_list depth2_list cut">
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                            </li>
+                                            <li class="depth_item depth2_item">
+                                                <a href="#n" target="_self" class="depth_text depth2_text"><span>2차메뉴</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu_hide">
+                    <button type="button" class="menu_btn">주메뉴 닫기</button>
+                </div>
+            </nav>
+        
+        </div>
+    
+    </header>
+    
+    
+    <div id="container">
+        <div class="wrap clearfix">
+            <main class="colgroup">
+                <article>
+                    
+                    <header class="sub_head">
+                        <div class="sub_title">
+                            <h2>현재 콘텐츠명</h2>
+                        </div>
+                        <div class="breadcrumbs">
+                            <ol class="breadcrumbs_list">
+                                <!-- 차수에 맞게 링크 추가해주세요! -->
+                                <li class="breadcrumbs_item home"><a href="./index.do" class="breadcrumbs_anchor">홈</a></li>
+                                <li class="breadcrumbs_item n1"><a href="#n" class="breadcrumbs_anchor">1차메뉴명</a></li>
+                                <li class="breadcrumbs_item n2"><a href="#n" class="breadcrumbs_anchor">2차메뉴명</a></li>
+                                <li class="breadcrumbs_item n3"><a href="#n" class="breadcrumbs_anchor">3차메뉴명</a></li>
+                                <li class="breadcrumbs_item n4">4차메뉴명</li><!-- 마지막 차수 링크 없음 -->
+                            </ol>
+                        </div>
+                        <div class="addons">
+                            <ul class="addons_list">
+                                <li class="addons_item share toggle">
+                                    <button type="button" title="sns 공유하기 열기" class="addons_button share_show">공유하기</button>
+                                    <div class="share_panel">
+                                        <ul class="share_list clearfix">
+                                            <li class="share_item n1">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">페이스북</a>
+                                            </li>
+                                            <li class="share_item n2">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">블로그</a>
+                                            </li>
+                                            <li class="share_item n3">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">유튜브</a>
+                                            </li>
+                                            <li class="share_item n4">
+                                                <a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="share_anchor">트위터</a>
+                                            </li>
+                                        </ul>
+                                        <button type="button" title="sns 공유하기 닫기" class="share_hide">닫기</button>
+                                    </div>
+                                </li>
+                                <li class="addons_item print"><button type="button" onclick="window.print();" class="addons_button">인쇄</button></li>
+                            </ul>
+                        </div>
+                    </header>
+                    
+                    <div class="cms_tab">
+                        <div class="tab type1">
+                            <button class="tab_select"><span>탭메뉴</span></button><!-- 현재메뉴명 입력해주세요 -->
+                            <div class="tab_panel">
+                                <ul class="tab_list">
+                                    <li class="tab_item active"><a href="#n" class="tab_button"><span>탭메뉴</span></a></li>
+                                    <li class="tab_item"><a href="#n" class="tab_button"><span>탭메뉴 탭메뉴 탭메뉴 탭메뉴</span></a></li>
+                                    <li class="tab_item"><a href="#n" class="tab_button"><span>탭메뉴</span></a></li>
+                                    <li class="tab_item"><a href="#n" class="tab_button"><span>탭메뉴</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cms_tab">
+                        <div class="tab type2">
+                            <button class="tab_select"><span>탭메뉴</span></button><!-- 현재메뉴명 입력해주세요 -->
+                            <div class="tab_panel">
+                                <ul class="tab_list">
+                                    <li class="tab_item"><a href="#n" class="tab_button"><span>탭메뉴</span></a>
+                                        <!-- 하위메뉴 있을 경우 -->
+                                        <ul class="tab_inner_list">
+                                            <li class="tab_inner_item active"><a href="#n" class="tab_inner_button">중첩 탭메뉴_active</a></li><!-- 활성화된 메뉴에 active 클래스 넣어주세요 -->
+                                            <li class="tab_inner_item"><a href="#n" class="tab_inner_button">중첩 탭메뉴_off</a></li>
+                                            <li class="tab_inner_item"><a href="#n" class="tab_inner_button">중첩 탭메뉴_off</a></li>
+                                            <li class="tab_inner_item"><a href="#n" class="tab_inner_button">중첩 탭메뉴_off</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="tab_item active"><a href="#n" class="tab_button"><span>탭메뉴 탭메뉴 탭메뉴 탭메뉴</span></a>
+                                        <!-- 하위메뉴 있을 경우 -->
+                                        <ul class="tab_inner_list">
+                                            <li class="tab_inner_item active"><a href="#n" class="tab_inner_button">중첩 탭메뉴_active</a></li><!-- 활성화된 메뉴에 active 클래스 넣어주세요 -->
+                                            <li class="tab_inner_item"><a href="#n" class="tab_inner_button">중첩 탭메뉴_off</a></li>
+                                            <li class="tab_inner_item"><a href="#n" class="tab_inner_button">중첩 탭메뉴_off</a></li>
+                                            <li class="tab_inner_item"><a href="#n" class="tab_inner_button">중첩 탭메뉴_off</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="tab_item"><a href="#n" class="tab_button"><span>탭메뉴</span></a></li>
+                                    <li class="tab_item"><a href="#n" class="tab_button"><span>탭메뉴</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="contents" class="cts@@{key}">
+                        
+                        <div class="tab type1">
+                            <button class="tab_select"><span>탭메뉴</span></button><!-- 현재메뉴명 입력해주세요 -->
+                            <div class="tab_panel">
+                                <ul class="tab_list">
+                                    <li class="tab_item active"><button type="button" class="tab_button"><span>제목 및 본문</span></button></li>
+                                    <li class="tab_item"><button type="button" class="tab_button"><span>박스</span></button></li>
+                                    <li class="tab_item"><button type="button" class="tab_button"><span>목록</span></button></li>
+                                    <li class="tab_item"><button type="button" class="tab_button"><span>안내 문구</span></button></li>
+                                    <li class="tab_item"><button type="button" class="tab_button"><span>테이블</span></button></li>
+                                    <li class="tab_item"><button type="button" class="tab_button"><span>버튼</span></button></li>
+                                    <li class="tab_item"><button type="button" class="tab_button"><span>폼요소</span></button></li>
+                                </ul>
+                            </div>
+                            <div class="tab_content active">
+                                <!-- 제목 -->
+                                <h3 data-copy="yes"><span>H3 타이틀 32px SUITE, 상단과의 거리 60px(최상단 제외)</span></h3>
+                                <h4 data-copy="yes"><span>H4 타이틀 25px SUITE, SemiBold #284cd1</span></h4>
+                                <h5 data-copy="yes">H5 타이틀 22px SUITE, SemiBold #183499</h5>
+                                
+                                <!-- 본문 -->
+                                <h3><span>본문</span></h3>
+                                <p>P 본문 17pt, 프리텐다드, Regular  #444754, line-height:28px;
+                                    국가안전보장회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 국민경제자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다.
+                                    대법관의 임기는 6년으로 하며, 법률이 정하는 바에 의하여 연임할 수 있다.
+                                    국무총리는 국회의 동의를 얻어 대통령이 임명한다. 국군의 조직과 편성은 법률로 정한다.
+                                    제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다.
+                                    국회는 상호원조 또는 안전보장에 관한 조약, 중요한 국제조직에 관한 조약, 우호통상항해조약, 주권의 제약에 관한 조약,
+                                    강화조약, 국가나 국민에게 중대한 재정적 부담을 지우는 조약 또는 입법사항에 관한 조약의 체결·비준에 대한 동의권을 가진다.</p>
+                                <br/>
+                                <em class="em_skyblue" data-copy="yes">강조컬러1 #1579df; (.em_skyblue)</em>
+                                <em class="em_green" data-copy="yes">강조컬러2 #008266; (.em_green)</em>
+                                <br/>
+                                <em class="em_b_skyblue" data-copy="yes">강조컬러1 #1579df; (.em_b_skyblue)</em>
+                                <em class="em_b_green" data-copy="yes">강조컬러2 #008266; (.em_b_green)</em>
+                                <br/>
+                                <a href="#n" class="text_btn blank" data-copy="yes">www.naver.com</a>
+                            </div>
+                            <div class="tab_content">
+                                <!--상단 개요박스 -->
+                                <h3><span>상단박스 .temp_box</span></h3>
+                                <div class="temp_box" data-copy="yes">
+                                    <div class="box_wrap">
+                                        <h3 class="box_title">최상단 박스 (개요박스) - 타이틀 22px / #1f41bf</h3>
+                                        <p class="box_text">본문 기본폰트는 17px,  프리텐다드, #444754, line-heigh:28px; 입니다.<br/>
+                                            두번째줄까지 현재 높이값으로 적용되며 세번째줄부턴 유동성있게 조절가능합니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_content">
+                                <!-- 목록 -->
+                                <h3><span>목록</span></h3>
+                                <h4><span>순서 없는 목록 ul.bu</span></h4>
+                                <ul class="bu" data-copy="yes">
+                                    <li>순서 없는 목록형 17pt, 프리텐다드, Regular  #444754, line-height:28px;</li>
+                                    <li>순서 없는 목록형</li>
+                                    <li>순서 없는 목록형 두줄일때는 이렇게 해주세요 line-height:24px;<br/>
+                                        이렇게요 line-height:24px; 이렇게요 line-height:24px; ol도 동일해요
+                                        <ul>
+                                            <li>순서 없는 중첩 목록형</li>
+                                            <li>순서 없는 중첩 목록형</li>
+                                            <li>순서 없는 중첩 목록형
+                                                <ul>
+                                                    <li>순서 없는 중첩 목록형 16pt, line-height:24px;</li>
+                                                    <li>순서 없는 중첩 목록형</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>순서 없는 목록형</li>
+                                </ul>
+                                
+                                <h4><span>순서 없는 목록(정의형) .bu.dl</span></h4>
+                                <ul class="bu dl" data-copy="yes">
+                                    <li>
+                                        <span class="dt">컬러타이틀 #e44264</span>
+                                        <span class="dd">내용 17px, Pretendard, Regular #444754, line-height:28px;</span>
+                                    </li>
+                                    <li>
+                                        <span class="dt">컬러타이틀 #e44264</span>
+                                        <span class="dd">내용 17px, Pretendard, Regular #444754, line-height:28px;</span>
+                                    </li>
+                                    <li>
+                                        <span class="dt">홈페이지</span>
+                                        <span class="dd"><a href="#n" class="text_btn blank">www.naver.com</a></span>
+                                    </li>
+                                </ul>
+                                
+                                <h4><span>순서 있는 목록 ol.num</span></h4>
+                                <ol class="num" data-copy="yes">
+                                    <li><span class="count">1</span>순서 있는 목록형</li>
+                                    <li><span class="count">2</span>순서 있는 목록형</li>
+                                    <li><span class="count">3</span>순서 있는 목록형</li>
+                                    <li><span class="count">4</span>순서가 있는 목록입니다. 순서가 있는 목록입니다. <br>두줄인 경우 두줄인 경우 두줄인 경우 두줄인 경우</li>
+                                    <li><span class="count">5</span>순서가 있는 목록입니다.
+                                        <ol>
+                                            <li><span class="count">1</span>순서가 있는 목록입니다.</li>
+                                            <li><span class="count">2</span>순서가 있는 목록입니다.</li>
+                                            <li><span class="count">3</span>순서가 있는 목록입니다.</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                                
+                                <h4><span>목록(ul/ol) 아닌곳에 블릿 .blt</span></h4>
+                                <p class="blt" data-copy="yes">목록(ul/ol) 아닌곳에 블릿 블릿 블릿 블릿 블릿 블릿</p>
+                                <p class="blt" data-copy="yes">
+                                    <span class="dt">컬러타이틀 #e44264</span>
+                                    <span class="dd">내용 17px, Pretendard, Regular #444754, line-height:28px;</span>
+                                </p>
+                            </div>
+                            <div class="tab_content">
+                                <!-- 안내사항 -->
+                                <h3><span>안내 문구</span></h3>
+                                <h4><span>문구 .warning (.type1,2)</span></h4>
+                                <p class="warning type1" data-copy="yes"><span class="skip">유의사항</span>유의사항 또는 경고문구 16pt, Light #e23652, line-height:26px; 상단과의 거리 15px</p>
+                                <p class="warning type2" data-copy="yes"><span class="skip">안내</span>일반안내문구 16pt, Light #616c90, line-height:26px; 상단과의 거리 15px</p>
+                                
+                                <h4><span>박스 .warning_box (.type1,2)</span></h4>
+                                <div class="warning_box type1" data-copy="yes">
+                                    <div class="box_wrap">
+                                        <div class="box_title">유의사항 타이틀</div>
+                                        <ul class="bu">
+                                            <li>순서 없는 중첩 목록형</li>
+                                            <li>순서 없는 중첩 목록형</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="warning_box type2" data-copy="yes">
+                                    <div class="box_wrap">
+                                        <div class="box_title">안내사항 타이틀</div>
+                                        <ul class="bu">
+                                            <li>순서 없는 중첩 목록형</li>
+                                            <li>순서 없는 중첩 목록형</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab_content">
+                                <!-- 테이블 -->
+                                <em class="em_green">▶ .table_unit을 제목요소와 같이 사용할 경우 .table_title로 묶어 주세요 (.table_title > h3, .table_title > .table_unit)</em>
+                                <div class="table_title" data-copy="yes">
+                                    <h3><span>H3 타이틀과 테이블 간격 25px</span></h3>
+                                    <p class="table_unit">테이블 상단에 내용이 있을 경우 16pt / #5e6377</p>
+                                </div>
+                                <table class="table" data-copy="yes">
+                                    <caption>테이블제목 - 순으로 정보를 제공</caption>
+                                    <colgroup>
+                                        <col class="w15p">
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">테이블 제목1</th>
+                                        <th scope="col">테이블 제목2</th>
+                                        <th scope="col">테이블 제목3</th>
+                                        <th scope="col">테이블 제목4</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">테이블 내용1</th>
+                                        <td class="text_left">테이블 내용1</td>
+                                        <td>테이블 내용1</td>
+                                        <td class="text_right">테이블 내용1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">테이블 내용2</th>
+                                        <td class="text_left">테이블 내용2</td>
+                                        <td>테이블 내용2</td>
+                                        <td class="text_right">테이블 내용2</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">테이블 내용3</th>
+                                        <td class="text_left">테이블 내용3</td>
+                                        <td>테이블 내용3</td>
+                                        <td class="text_right">테이블 내용3</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h3><span>H3 타이틀과 H4 타이틀 간격 30px</span></h3>
+                                <h4><span>테이블(세로형) .table.type2</span></h4>
+                                <table class="table type2" data-copy="yes">
+                                    <caption>테이블제목 - 순으로 정보를 제공</caption>
+                                    <colgroup>
+                                        <col class="w15p">
+                                        <col>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">테이블 제목1</th>
+                                        <td>테이블 내용1</td>
+                                        <td>테이블 내용1</td>
+                                        <td>테이블 내용1</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">테이블 제목2</th>
+                                        <td>테이블 내용2</td>
+                                        <td>테이블 내용2</td>
+                                        <td>테이블 내용2</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">테이블 제목3</th>
+                                        <td>테이블 내용3</td>
+                                        <td>테이블 내용3</td>
+                                        <td>테이블 내용3</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">테이블 제목4</th>
+                                        <td>테이블 내용4</td>
+                                        <td>테이블 내용4</td>
+                                        <td>테이블 내용4</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <p class="warning type1"><span class="skip">유의사항</span>유의사항 또는 경고문구 16pt, Light #e23652, line-height:26px; 상단과의 거리 15px</p>
+                                
+                                <h4>테이블(반응형) .table.responsive</h4>
+                                <table class="table responsive" data-copy="yes">
+                                    <caption>테이블제목 - 순으로 정보를 제공</caption>
+                                    <colgroup>
+                                        <col class="w25p">
+                                        <col class="w25p">
+                                        <col class="w25p">
+                                        <col class="w25p">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">테이블 제목</th>
+                                        <th scope="col">테이블 제목</th>
+                                        <th scope="col">테이블 제목</th>
+                                        <th scope="col">테이블 제목</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row" data-content="테이블 제목">테이블 내용</th>
+                                        <td data-content="테이블 제목">테이블 내용</td>
+                                        <td data-content="테이블 제목">테이블 내용</td>
+                                        <td data-content="테이블 제목">테이블 내용</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" data-content="테이블 제목">테이블 내용</th>
+                                        <td data-content="테이블 제목">테이블 내용</td>
+                                        <td data-content="테이블 제목">테이블 내용</td>
+                                        <td data-content="테이블 제목">테이블 내용</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h4>테이블(스크롤) .table_scroll > .table</h4>
+                                <div class="table_scroll" data-copy="yes">
+                                    <table class="table">
+                                        <caption>테이블제목 - 순으로 정보를 제공</caption>
+                                        <colgroup>
+                                            <col class="w25p">
+                                            <col class="w25p">
+                                            <col class="w25p">
+                                            <col class="w25p">
+                                        </colgroup>
+                                        <thead>
+                                        <tr>
+                                            <th scope="col">테이블 제목</th>
+                                            <th scope="col">테이블 제목</th>
+                                            <th scope="col">테이블 제목</th>
+                                            <th scope="col">테이블 제목</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">테이블 내용</th>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">테이블 내용</th>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                            <td>테이블 내용</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab_content">
+                                <!-- 버튼 -->
+                                <h3><span>버튼</span></h3>
+                                <h4><span>기본 버튼 .btn (.type1~4)</span></h4>
+                                <a href="#n" class="btn" data-copy="yes">버튼1</a>
+                                <a href="#n" class="btn type2" data-copy="yes">버튼 .type2</a>
+                                <a href="#n" class="btn type3" data-copy="yes">버튼 .type3</a>
+                                <a href="#n" class="btn type4" data-copy="yes">강조 버튼 .type4</a>
+                                
+                                <h5>작은 버튼 .btn.small</h5>
+                                <a href="#n" class="btn small" data-copy="yes">작은 버튼1</a>
+                                <a href="#n" class="btn type2 small" data-copy="yes">작은 버튼2</a>
+                                <a href="#n" class="btn type3 small" data-copy="yes">작은 버튼3</a>
+                                <a href="#n" class="btn type4 small" data-copy="yes">작은 강조</a>
+                                
+                                <h5>아이콘 버튼 .btn.icon_type (.arrow .down .blank .search .print .home)</h5>
+                                <a href="#n" class="btn icon_type arrow" data-copy="yes"><span>바로가기</span></a>
+                                <a href="#n" class="btn icon_type down" data-copy="yes"><span>다운로드</span></a>
+                                <a href="#n" target="_blank" title="새창" class="btn icon_type blank" data-copy="yes"><span>새창</span></a>
+                                <a href="#n" class="btn icon_type search" data-copy="yes"><span>검색</span></a>
+                                <a href="#n" class="btn icon_type print" data-copy="yes"><span>프린트</span></a>
+                                <a href="#n" class="btn icon_type home" data-copy="yes"><span>홈</span></a>
+                                <br/>
+                                <br/>
+                                <a href="#n" class="btn type2 icon_type arrow"><span>바로가기</span></a>
+                                <a href="#n" class="btn type2 icon_type down"><span>다운로드</span></a>
+                                <a href="#n" target="_blank" title="새창" class="btn type2 icon_type blank"><span>새창</span></a>
+                                <a href="#n" class="btn type2 icon_type search"><span>검색</span></a>
+                                <a href="#n" class="btn type2 icon_type print"><span>프린트</span></a>
+                                <a href="#n" class="btn type2 icon_type home"><span>홈</span></a>
+                                <br/>
+                                <br/>
+                                <a href="#n" class="btn small icon_type arrow"><span>바로가기</span></a>
+                                <a href="#n" class="btn small icon_type down"><span>다운로드</span></a>
+                                <a href="#n" target="_blank" title="새창" class="btn small icon_type blank"><span>새창</span></a>
+                                <a href="#n" class="btn small type2 icon_type search"><span>검색</span></a>
+                                <a href="#n" class="btn small type2 icon_type print"><span>프린트</span></a>
+                                <a href="#n" class="btn small type2 icon_type home"><span>홈</span></a>
+                            </div>
+                            <div class="tab_content">
+                                <!-- 폼요소 -->
+                                <h3><span>공통 입력폼</span></h3>
+                                <h4><span>체크박스</span></h4>
+                                <span class="pocheon_input" data-copy="yes">
+                                    <input type="checkbox" name="checkbox" id="check1" value="">
+                                    <label for="check1">체크박스</label>
+                                </span>
+                                <span class="pocheon_input" data-copy="yes">
+                                    <input type="checkbox" name="checkbox" id="check2" value="" checked>
+                                    <label for="check2">체크박스</label>
+                                </span>
+                                <span class="pocheon_input" data-copy="yes">
+                                    <input type="checkbox" name="checkbox" id="check3" value="" disabled>
+                                    <label for="check3">체크박스</label>
+                                </span>
+                                <h4><span>라디오버튼</span></h4>
+                                <span class="pocheon_input" data-copy="yes">
+                                    <input type="radio" name="radio" id="radio1" value="">
+                                    <label for="radio1">라디오버튼</label>
+                                </span>
+                                <span class="pocheon_input" data-copy="yes">
+                                    <input type="radio" name="radio" id="radio2" value="" checked>
+                                    <label for="radio2">라디오버튼</label>
+                                </span>
+                                <span class="pocheon_input" data-copy="yes">
+                                    <input type="radio" name="radio" id="radio3" value="" disabled>
+                                    <label for="radio3">라디오버튼</label>
+                                </span>
+                                
+                                <h4><span>인풋박스</span></h4>
+                                <div class="pocheon_input" data-copy="yes">
+                                    <input type="text" title="" placeholder="인풋박스">
+                                </div>
+                                <span class="pocheon_input search" data-copy="yes">
+                                    <input type="search" placeholder="인풋-검색" title="">
+                                    <button type="button" class="search_btn">검색</button>
+                                </span>
+                                <div class="pocheon_input" data-copy="yes">
+                                    <input type="text" title="" placeholder="인풋박스 비활성" disabled="">
+                                </div>
+                                
+                                <h4><span>스타일 셀렉트</span></h4>
+                                <div class="style_select_box" data-copy="yes">
+                                    <button type="button" class="search_select" title="하위메뉴 열기">셀렉트박스 선택</button>
+                                    <div class="search_list">
+                                        <ul>
+                                            <li class="select_item active"><button type="button" class="select_anchor">샐렉트 목록(선택됨)</button></li>
+                                            <li class="select_item"><button type="button" class="select_anchor">샐렉트 목록1</button></li>
+                                            <li class="select_item"><button type="button" class="select_anchor">샐렉트 목록2</button></li>
+                                            <li class="select_item"><button type="button" class="select_anchor">샐렉트 목록3</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h4><span>셀렉트</span></h4>
+                                <div class="pocheon_input" data-copy="yes">
+                                    <select title="">
+                                        <option>셀렉트 박스</option>
+                                        <option>옵션 1</option>
+                                        <option>옵션 2</option>
+                                        <option>옵션 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                
+                </article>
+            </main>
+        
+        </div>
+    </div>
+    
+    <footer id="footer">
+        <div class="wrap">
+            
+            <div class="banner">
+                <h2 class="banner_title">배너모음</h2>
+                <div class="banner_list">
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                    <div class="banner_item"><a href="#n" target="_blank" title="새창" rel="noopener noreferrer" class="banner_anchor">배너모음링크</a></div>
+                </div>
+                <div class="banner_control">
+                    <button type="button" class="banner_prev">이전</button>
+                    <button type="button" class="banner_auto"></button>
+                    <button type="button" class="banner_next">다음</button>
+                </div>
+            </div>
+            <div class="link">
+                <h2 class="skip">바로가기</h2>
+                <ul class="link_list">
+                    <li class="link_item n1"><a href="#n" class="link_anchor">개인정보처리방침</a></li>
+                    <li class="link_item n2"><a href="#n" class="link_anchor">이메일무단수집거부</a></li>
+                    <li class="link_item n3"><a href="#n" class="link_anchor">홈페이지오류신고</a></li>
+                    <li class="link_item n4"><a href="#n" class="link_anchor">저작권보호정책</a></li>
+                    <li class="link_item n5"><a href="#n" class="link_anchor">오시는길</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer_content">
+                <div class="info">
+                    <address>
+                        <span class="info_address">[11147] 경기도 포천시 군내면 용정리 483-1<br/> 비즈니스센터 4층</span>
+                        <span class="info_tel">TEL : 031-538-2114 / FAX : 031-538-3266</span>
+                    </address>
+                    <p class="info_copyright">COPYRIGHT (C) Pocheon-si. ALL RIGHTS RESERVED.</p>
+                    <p class="info_warning">본 사이트에 게시된 이메일주소는 자동수집을 거부하며,<br/> 이를 위반 시 정보통신망법에 의해 처벌될 수 있습니다.</p>
+                </div>
+                <!--
+                <div class="wa">
+                    <a href="http://webwatch.or.kr/certification/situation.html" target="_blank" title="새창" rel="noopener noreferrer" class="wa_anchor">
+                        <img src="/common/images/layout/wa_mark.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)">
+                    </a>
+                </div>
+                -->
+            </div>
+            <button type="button" class="up_btn">top</button>
+        </div>
+        <!--
+        cms 정보 불러오기
+        <div class="footer_info">
+            <address><span class="info_address">@@{siteInfo.insttAdres}</span><span class="info_tel">TEL : @@{siteInfo.insttTelno}</span></address>
+            <p class="info_copyright">@@{siteInfo.siteCpyrht}</p>
+        </div>
+        -->
+    </footer>
+
+
+</div>
+<textarea id="ClipBoard" style="display: none;"></textarea>
+<div class="copy_clone" style="display:none;"></div>
+<script>
+    $("[data-copy='yes']").on('click', function(){
+        var findHtml = $(this).clone();
+        $('.copy_clone').append(findHtml);
+
+        $('.copy_clone *').removeAttr('data-copy style');
+
+        var copyHtml = $('.copy_clone').html();
+
+
+        $('#ClipBoard').css('display', 'block').val(copyHtml).select();
+
+        var succeed;
+        try {
+            succeed = document.execCommand("copy");
+            $('#ClipBoard').css('display', 'none');
+            $('.copy_clone').html('');
+        } catch(e) {
+            succeed = false;
+        }
+        if(succeed){
+            alert('복사 되었습니다');
+        }
+        return false;
+    });
+</script>
+<style>
+    *[data-copy]{cursor:pointer; transition:.25s all ease-in-out;}
+    *[data-copy]:hover{box-shadow:3px 4px 5px 0 rgba(0, 0, 0, 0.75); transition:.25s all ease-in-out;}
+</style>
+</body>
+</html>
