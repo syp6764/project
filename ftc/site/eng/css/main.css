@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* 디지털 정부서비스 ui/ux css */
+@import url("../../guide/css/output/kds.css");
+@import url("../../guide/css/output/initialize.css");
+@import url("../../guide/css/output/components.css");
+@import url("../../guide/css/output/forms.css");
+@import url("../../guide/css/output/common.css");
+@import url("../../guide/css/output/layout.css");
+
+/* main css */
+@import url("layout.css");
+@import url("main_layout.css");

@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* ***** Layout ***** */
+#header .lnb .lnb-list .li .mn{
+    font-size: var(--krds-fz-body-md);
+}
+/*#header .w-lnb-wrap .w-lnb-menu .menu-wrap{
+    width: 28rem;
+}*/
+#header .m-lnb-wrap .m-lnb-menu .menu-wrap{
+    width: 15.2rem;
+}
+#header .m-lnb-wrap .m-lnb-menu .menu-wrap .mn{
+    font-size: 1.5rem;
+}
+#header .m-lnb-wrap .m-lnb-menu .submenu-wrap .dl dt{
+    font-size: 1.5rem;
+}
+#header .m-lnb-wrap .m-lnb-menu .submenu-wrap .dl .sm{
+    font-size: 1.5rem;
+}
+#header .m-lnb-wrap .m-lnb-menu .submenu-wrap .dl .sub-ul .subm{
+    font-size:1.4rem;
+}
+@media (max-width:1309px){
+    #header .lnb .lnb-list{
+        gap: var(--krds-spacer-1);
+    }
+}
+@media (max-width:1141px){
+    #header .lnb .lnb-list{
+        gap: 0;
+    }
+    #header .lnb .lnb-list .li .mn{
+        font-size: var(--krds-fz-body-sm);
+    }
+}
+#footer > .wrap{position:relative;}
+#footer .footer-bottom .footer-bottom-text{margin-left:auto;height: 4rem;}
+#footer .footer-link{
+    position: absolute;
+    top: 129px;
+    right: 0;
+    width: 300px;
+    background-color: #f5f5f5;
+}
+#footer .footer-link .drop-btn{
+    height: 52px;
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 32px;
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background-color 0.4s ease-in-out;
+}
+#footer .footer-link .drop-btn:hover{background-color:var(--krds-secondary-5);}
+#footer .footer-link .drop-btn:before{content:'';display:block;position: absolute;top: 22px;right: 21px;background: url(../img/layout/footer-link-arr.svg) no-repeat;width: 12px;height: 8px; /*transition:transform .25s ease-in-out;*/}
+#footer .footer-link .drop-btn.active:before{transform:rotate(180deg);}
+#footer .footer-link .drop-menu{
+    top: auto;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    transform: none;
+    box-shadow: none;
+    margin-top: 0;
+    padding: 0;
+    border-radius: 0;
+    border-color: #d8d8d8;
+    background-color: #f5f5f5;
+    border-bottom-width: 0;
+}
+#footer .footer-link .drop-menu::before{display:none;}
+#footer .footer-link .drop-menu .drop-in{}
+#footer .footer-link .drop-menu .drop-in .drop-list{}
+#footer .footer-link .drop-menu .drop-in .drop-list li{}
+#footer .footer-link .drop-menu .drop-in .drop-list li + li{border-top:1px solid #d8d8d8;}
+#footer .footer-link .drop-menu .drop-in .drop-list li a{
+    color: #515151;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 16px 20px 16px 31px;
+    position: relative;
+    word-break: break-word;
+    display: block;
+    transition: background-color 0.4s ease-in-out;
+}
+#footer .footer-link .drop-menu .drop-in .drop-list li a:hover{background-color:var(--krds-secondary-5);}
+#footer .footer-link .drop-menu .drop-in .drop-list li a:before{content:'';position: absolute;left: 18px;top: 21px;width: 5px;height: 5px;border-radius: 50%;background-color: #a0a0a0;}
+
+@media (max-width:1309px){
+    #header .lnb .lnb_list .li .mn{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width:1280px){
+    #header .lnb .lnb_list{gap:0;}
+    #header .lnb .lnb_list .li .mn{
+        font-size: 1.5rem;
+    }
+}
+@media (min-width:1024px){
+    #footer .footer-contents .footer-info{min-height:auto;}
+}
+@media (max-width:1023px){
+    #footer{
+        margin-top: 60px;
+    }
+    #footer .footer-link{background-color: #fff;top: -56px;left: 0;width: 100%;}
+    #footer .footer-link .drop-btn{
+        border-left-width: 0;
+        border-right-width: 0;
+        height: 56px;
+        font-size: 17px;
+        padding: 0 var(--krds-spacer-4);
+    }
+    #footer .footer-link .drop-btn:before{
+        width: 2rem;
+        height: 2rem;
+        background: url(/site/guide/img/layout/foot_ico_plus.svg) no-repeat center;
+        right: var(--krds-spacer-4);
+        top: 18px;
+    }
+    #footer .footer-link .drop-menu{
+        background-color: #fff;
+    }
+    #footer .footer-link .drop-menu .drop-in .drop-list li + li{}
+    #footer .footer-link .drop-menu .drop-in .drop-list li a{font-size: 16px;line-height: 22px;}
+    #footer .footer-link .drop-menu .drop-in .drop-list li a:before{
+        top: 25px;
+    }
+}

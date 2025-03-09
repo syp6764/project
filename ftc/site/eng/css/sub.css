@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* 디지털 정부서비스 ui/ux css */
+@import url("/site/guide/css/output/kds.css");
+@import url("/site/guide/css/output/initialize.css");
+@import url("/site/guide/css/output/components.css");
+@import url("/site/guide/css/output/forms.css");
+@import url("/site/guide/css/output/layout.css");
+@import url("/site/guide/css/output/sub_layout.css");
+@import url("/site/guide/css/output/template.css");
+
+/* daterangepicker */
+@import url("/site/guide/css/daterangepicker.css");
+
+/* sub css */
+@import url("layout.css");
+@import url("sub_layout.css");
+@import url("sub_content.css");
+@import url("sub_content2.css");
