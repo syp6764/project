@@ -54,7 +54,7 @@ input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset}
 /* gnb 링크 */
 .gnb .link{position:absolute; top:30px; right:0; font-size:0; line-height:0;}
 .gnb .link_item{display:inline-block; position:relative; margin-left:30px; padding-left:21px; vertical-align:middle;}
-.gnb .link_item:before{display:block; position:absolute; top:4px; left:0; width:15px; height:18px; background:url("/site/global/images/common/gnb_link_icon.png") no-repeat; content:'';}
+.gnb .link_item:before{display:block; position:absolute; top:4px; left:0; width:15px; height:18px; background:url("/project/pocheon/site/global/images/common/gnb_link_icon.png") no-repeat; content:'';}
 .gnb .link_item.sitemap:before{top:5px; background-position-x:-20px;}
 .gnb .link_item.language{padding-left:0;}
 .gnb .link_item.language:before{display:none;}
@@ -68,7 +68,7 @@ input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset}
 .google_language .goog-te-gadget .goog-logo-link{display:none; color:transparent; font-size:0;}
 .google_language .goog-te-gadget > span{display:none;}
 .google_language .select_icon{display:none; position:absolute; top:1px; right:1px; width:38px; height:38px; border-left:1px solid #ddd; border-radius:0 4px 4px 0; background:#f6f6f6;}
-.google_language .select_icon:before{display:block; position:absolute; top:0; left:0; right:0; bottom:0; width:11px; height:6px; margin:auto; background:url("/site/global/images/common/gnb_link_icon.png") no-repeat top 0 left -40px;}
+.google_language .select_icon:before{display:block; position:absolute; top:0; left:0; right:0; bottom:0; width:11px; height:6px; margin:auto; background:url("/project/pocheon/site/global/images/common/gnb_link_icon.png") no-repeat top 0 left -40px;}
 .google_language .goog-te-combo:active .select_icon:before{transform:rotate(180deg);}
 
 @media all and (max-width:1000px){
@@ -93,7 +93,7 @@ input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset}
     
     /* 하단 배경 */
     .lnb .menu:before{display:block; position:absolute; top:70px; left:0; z-index:20; width:calc(50% - 340px); height:calc(100% - 70px); background:linear-gradient(to right, #fff2f2, #f4f6ff); content:'';}
-    .lnb .menu:after{display:block; position:absolute; left:0; bottom:0; width:620px; height:330px; background:url("/site/global/images/common/lnb_deco.png") no-repeat; content:'';}
+    .lnb .menu:after{display:block; position:absolute; left:0; bottom:0; width:620px; height:330px; background:url("/project/pocheon/site/global/images/common/lnb_deco.png") no-repeat; content:'';}
     
     /* 하단 배경 활성화 */
     .lnb_open .lnb .menu.after:after{opacity:1; visibility:visible;}
@@ -135,7 +135,7 @@ input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset}
     .lnb .menu .depth2_item{position:relative; width:calc((100% - 60px) / 4); margin-right:20px; vertical-align:top;}
     .lnb .menu .depth2_item:nth-child(4n){margin-right:0;}
     .lnb .menu .depth2_item:nth-child(n+5){margin-top:40px;}
-    .lnb .menu .depth2_item:after{display:block; position:absolute; top:0; right:25px; bottom:0; width:7px; height:12px; margin:auto 0; background:url("/site/global/images/common/lnb_arrow.png") no-repeat; content:''; transition:none;}
+    .lnb .menu .depth2_item:after{display:block; position:absolute; top:0; right:25px; bottom:0; width:7px; height:12px; margin:auto 0; background:url("/project/pocheon/site/global/images/common/lnb_arrow.png") no-repeat; content:''; transition:none;}
     .lnb .menu .depth2_item:hover:after{background-position-y:-15px;}
     
     .lnb .menu .depth2_text{display:block; position:relative; width:100%; height:50px; padding:0 45px 0 19px; border:1px solid #ddd; border-radius:5px; color:#444; font-size:16px; font-weight:500; line-height:22px; letter-spacing:-0.02em;word-break:break-all;box-sizing:border-box;}
@@ -180,12 +180,12 @@ input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset}
     /* 열기 버튼 */
     .lnb .menu_show{position:absolute; top:0; right:15px; bottom:0; z-index:30; width:15px; height:15px; margin-top:auto; margin-bottom:auto;}
     .lnb .menu_show .menu_btn{position:relative; width:inherit; height:inherit;}
-    .lnb .menu_show .menu_btn:before{display:block; position:absolute; top:0; left:0; right:0; bottom:0; width:14px; height:12px; margin:auto; background:url("/site/global/images/common/lnb_menu.png") no-repeat;}
+    .lnb .menu_show .menu_btn:before{display:block; position:absolute; top:0; left:0; right:0; bottom:0; width:14px; height:12px; margin:auto; background:url("/project/pocheon/site/global/images/common/lnb_menu.png") no-repeat;}
     
     /* 닫기 버튼 */
     .lnb .menu_hide{position:absolute; top:28px; right:100%; width:15px; height:15px;}
     .lnb .menu_hide .menu_btn{display:block; position:relative; width:inherit; height:inherit;}
-    .lnb .menu_hide .menu_btn:before{display:block; position:absolute; top:0; left:0; right:0; bottom:0; width:14px; height:14px; margin:auto; background:url("/site/global/images/common/lnb_menu.png") no-repeat top -15px left 0;}
+    .lnb .menu_hide .menu_btn:before{display:block; position:absolute; top:0; left:0; right:0; bottom:0; width:14px; height:14px; margin:auto; background:url("/project/pocheon/site/global/images/common/lnb_menu.png") no-repeat top -15px left 0;}
     .lnb_show .menu_hide{right:15px;}
     
     /* 메뉴 상단 */
@@ -196,7 +196,7 @@ input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset}
     .lnb .link_item{display:inline-block; position:relative; margin-left:20px; vertical-align:middle;}
     .lnb .link_item:first-child{margin-left:15px;}
     .lnb .link_item.login{padding-left:21px;}
-    .lnb .link_item.login:before{display:block; position:absolute; top:4px; left:0; width:15px; height:18px; background:url("/site/global/images/common/gnb_link_icon.png") no-repeat; content:'';}
+    .lnb .link_item.login:before{display:block; position:absolute; top:4px; left:0; width:15px; height:18px; background:url("/project/pocheon/site/global/images/common/gnb_link_icon.png") no-repeat; content:'';}
     .lnb .link_anchor,.lnb .link_button{color:#666; font-size:16px; line-height:24px; letter-spacing:-0.02em;}
     
     /* lnb 언어 */
@@ -215,7 +215,7 @@ input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset}
     /*.lnb .menu .depth1_text[target='_blank']:after{width:15px; height:15px; background-color:#000; transition:none}
  */
     .lnb .menu .depth1_item.has .depth1_text:before{display:block; opacity:0; position:absolute; top:0; right:-15px; bottom:0; width:30px; height:30px; margin:auto 0; border-radius:50%; background-image:linear-gradient(to right, #ed282f, #1c3eeb); transition:opacity 0.3s ease-in-out;}
-    .lnb .menu .depth1_item.has .depth1_text:after{width:7px; height:11px; background:url("/site/global/images/common/lnb_arrow_m.png") no-repeat top -15px left 0; transition:right 0.3s ease-in-out;}
+    .lnb .menu .depth1_item.has .depth1_text:after{width:7px; height:11px; background:url("/project/pocheon/site/global/images/common/lnb_arrow_m.png") no-repeat top -15px left 0; transition:right 0.3s ease-in-out;}
     
     /* 1차 메뉴 활성화 */
     .lnb .menu .depth1_item.active .depth1_text{}
@@ -230,7 +230,7 @@ input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset}
     .lnb .menu .depth2_text{display:block; position:relative; padding:11px 20px 11px 0; color:#444; font-size:15px; text-decoration:none; line-height:22px; letter-spacing:-0.02em;box-sizing:border-box;transition-property:padding-top,padding-bottom,color}
     .lnb .menu .depth2_text:after{display:block; position:absolute; top:0; right:0; bottom:0; margin:auto 0; transition:none}
     /*.lnb .menu .depth2_text[target='_blank']:after{width:0; height:0; background-color:#000}*/
-    .lnb .menu .depth2_item.has .depth2_text:after{width:11px; height:7px; background:url("/site/global/images/common/lnb_arrow_m.png") no-repeat top -30px left 0;}
+    .lnb .menu .depth2_item.has .depth2_text:after{width:11px; height:7px; background:url("/project/pocheon/site/global/images/common/lnb_arrow_m.png") no-repeat top -30px left 0;}
     
     /* 2차 메뉴 활성화 */
     .lnb_show .lnb .menu .depth1_item.active .depth2{visibility:visible; opacity:1}
@@ -288,7 +288,7 @@ input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset}
 #footer .banner_anchor{display:inline-block; position:relative; color:#fff; font-size:16px; line-height:26px; letter-spacing:-0.02em;}
 #footer .banner_anchor:hover{text-decoration:underline;}
 #footer .banner_control{position:absolute; top:0; left:85px; bottom:0; height:20px; margin:auto 0; font-size:0; line-height:0;}
-#footer .banner_control button{display:inline-block; width:20px; height:20px; background:url("/site/global/images/common/footer_banner_sprite.png") no-repeat;}
+#footer .banner_control button{display:inline-block; width:20px; height:20px; background:url("/project/pocheon/site/global/images/common/footer_banner_sprite.png") no-repeat;}
 #footer .banner_control .banner_prev{background-position-x:0;}
 #footer .banner_control .banner_auto{background-position-x:-20px;}
 #footer .banner_control .banner_next{background-position-x:-40px;}
@@ -312,7 +312,7 @@ input:-webkit-autofill{-webkit-box-shadow:0 0 0 1000px white inset}
 
 /* up_button */
 #footer .up_btn{display:block; position:absolute; right:0; bottom:0; width:70px; height:70px; padding-top:22px; border-radius:50%; background:linear-gradient(#2e4081, rgba(255, 255, 255, 0) 75%); content:''; color:#ccd3ee; font-size:15px; line-height:25px; letter-spacing:-0.02em;}
-#footer .up_btn:before{display:block; position:absolute; top:22px; left:0; right:0; width:9px; height:4px; margin:0 auto; background:url('/site/global/images/common/up_btn.png') no-repeat; content:'';}
+#footer .up_btn:before{display:block; position:absolute; top:22px; left:0; right:0; width:9px; height:4px; margin:0 auto; background:url('/project/pocheon/site/global/images/common/up_btn.png') no-repeat; content:'';}
 
 @media all and (max-width:1200px){
     #footer .banner_list{padding-left:200px;}
