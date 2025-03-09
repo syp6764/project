@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* 디지털 정부서비스 ui/ux css */
+@import url("output/kds.css");
+@import url("output/initialize.css");
+@import url("output/components.css");
+@import url("output/forms.css");
+@import url("output/layout.css");
+@import url("output/sub_layout.css");
+@import url("output/template.css");
+@import url("output/program.css");
+
+/* daterangepicker */
+@import url("daterangepicker.css");
