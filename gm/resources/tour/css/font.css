@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* s-core */
+@font-face {
+    font-family: 'SCDream';
+    font-weight: 200;
+    src: url("../fonts/SCDream-Light.woff2") format('woff2'),
+    url("../fonts/SCDream-Light.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'SCDream';
+    font-weight: 400;
+    src: url("../fonts/SCDream-Regular.woff2") format('woff2'),
+    url("../fonts/SCDream-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: 'SCDream';
+    font-weight: 500;
+    src: url("../fonts/SCDream-Medium.woff2") format('woff2'),
+    url("../fonts/SCDream-Medium.woff") format('woff');
+}
+@font-face {
+    font-family: 'SCDream';
+    font-weight: 600;
+    src: url("../fonts/SCDream-Bold.woff2") format('woff2'),
+    url("../fonts/SCDream-Bold.woff") format('woff');
+}
+@font-face {
+    font-family: 'SCDream';
+    font-weight: 900;
+    src: url("../fonts/SCDream-Black.woff2") format('woff2'),
+    url("../fonts/SCDream-Black.woff") format('woff');
+}
+
+/* jalnangothic */
+@font-face{
+    font-family: 'jalnangothic';
+    font-weight: 400;
+    src: url("../fonts/JalnanGothic.woff2") format('woff2'),
+    url("../fonts/JalnanGothic.woff") format('woff');
+}
+
+
+/* HakgyoansimMulgyeolR */
+@font-face {
+    font-family: 'HakgyoansimMulgyeol';
+    font-weight: 400;
+    src: url("../fonts/HakgyoansimMulgyeolR.woff2") format('woff2'),
+    url("../fonts/HakgyoansimMulgyeolR.woff") format('woff');
+}
+
+/* Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 200;
+    src: url("../fonts/Montserrat-Light.woff2") format('woff2'),
+    url("../fonts/Montserrat-Light.woff") format('woff');
+}
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    src: url("../fonts/Montserrat-Regular.woff2") format('woff2'),
+    url("../fonts/Montserrat-Regular.woff") format('woff');
+}

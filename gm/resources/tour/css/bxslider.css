@@ -1,0 +1,278 @@
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+}
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME===================================*/
+.bx-wrapper .bx-viewport {
+	
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+
+/* PAGER */
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+}
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #666;
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background:none;
+	border:3px solid #f89e45;
+}
+.bx-wrapper .bx-prev:hover {background-position: 0 0;}
+.bx-wrapper .bx-next:hover {background-position: 0 0;}
+.bx-wrapper .bx-controls-direction a.disabled {display: none;}
+
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {text-align: center;}
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	background: url(images/controls.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {background-position: 0 0;}
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	background: url(images/controls.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position:0;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+/* IMAGE CAPTIONS */
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
+
+/* íƒ‘ ë¹„ì£¼ì–¼ */
+.visual .bx-wrapper .bxslider li a{display: block;}
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 50%;
+	margin-top: -16px;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	z-index: 500;
+}
+.visual .bx-wrapper .bx-pager.bx-default-pager a:hover{border:0}
+.visual .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background-color:#f89e45;
+	width:45px;
+	border:0;
+}
+
+.bg-arr{position:absolute;top:0;display:block;width:1200px;height:550px;background:url("/resources/tour/images/main/back23.png") repeat;}
+.bg-arr.left{left:-1200px}
+.bg-arr.right{right:-1200px}
+
+
+.visual  .bx-wrapper .bx-pager .bx-pager-item,
+.visual  .bx-wrapper .bx-controls-auto .bx-controls-auto-item {display: inline-block;}
+
+.visual .bx-wrapper .bx-pager.bx-default-pager a {
+	background-color:#fff;
+	text-indent: -9999px;
+	display: block;
+	width: 13px;
+	height: 14px;
+	margin: 0 3px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+.visual .bx-wrapper .bx-pager,
+.visual .bx-wrapper .bx-controls-auto {
+	position: relative;
+	bottom:0;
+	width: auto;
+}
+
+/* ë¹„ì£¼ì–¼ ì»¨í‹€ë¡¤ */
+.bg-ctr{position:absolute;display:block;width:250px;height:39px;bottom:20px;left:50%;margin: 0 0 0 -125px;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;background:url("/resources/tour/images/main/back23.png") repeat;}
+.visual .bx-wrapper .bx-controls-direction a{display:block;width:27px;height:46px;}
+.visual .bx-wrapper .bx-controls-direction a.bx-prev {background:url("/resources/tour/images/main/arr01.png") no-repeat;left:-50px;}
+.visual .bx-wrapper .bx-controls-direction a.bx-next {right:-50px;background:url("/resources/tour/images/main/arr02.png") no-repeat;}
+.visual .bx-wrapper .bx-controls-auto .bx-start {width:12px;height:17px;margin: 0 6px 0 0 ;background:url("/resources/tour/images/main/sd_play.png") repeat;}
+.visual .bx-wrapper .bx-controls-auto .bx-start.active {background:url("/resources/tour/images/main/sd_play_on.png") repeat;}
+.visual .bx-wrapper .bx-controls-auto .bx-stop {width:11px;height:17px;background:url("/resources/tour/images/main/sd_stop.png") repeat;}
+.visual .bx-wrapper .bx-controls-auto .bx-stop.active {background:url("/resources/tour/images/main/sd_stop_on.png") repeat;}
+.visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {position:absolute;display:inline-block;text-align: center;width:auto;left:487px;bottom:32px;z-index:10000}
+.visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {position:absolute;display:block;bottom:30px;left:674px;z-index:10000;}
+
+/* ì•Œë¦¼ */
+.noti-slide .bx-wrapper .bxslider2 li a{display: block;}
+.noti-slide .bx-wrapper .bx-prev {
+	right: 48px;
+	background: url("/resources/tour/images/main/btn_bn_prev.png") no-repeat left top;
+}
+.noti-slide .bx-wrapper .bx-next {
+	right: 0px;
+	background: url("/resources/tour/images/main/btn_bn_next.png") no-repeat left top;
+}
+.noti-slide .bx-wrapper .bx-controls-auto a{
+	display: block;
+	overflow:hidden;
+	text-indent: -9999px;
+	width: 23px;
+	height: 25px;
+	background:none;
+	margin: 0 0px;
+}
+.noti-slide .bx-wrapper .bx-controls-auto .bx-stop {background: url("/resources/tour/images/main/btn_bn_stop.png") no-repeat -1px top;}
+.noti-slide .bx-wrapper .bx-controls-auto .bx-start {display:none;background: url("/resources/tour/images/main/btn_bn_play.png") no-repeat -1px top;}
+.noti-slide .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	display: block;
+	top:21px;
+	right:84px;
+	width: auto;
+	height: 11px
+}
+.noti-slide .bx-wrapper .bx-pager.bx-default-pager a {
+	background: #676767;
+	text-indent: -9999px;
+	display: block;
+	width: 11px;
+	height: 11px;
+	margin: 0 3px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.noti-slide .bx-wrapper .bx-pager.bx-default-pager a:hover{border:0}
+.noti-slide .bx-wrapper .bx-pager.bx-default-pager a.active {
+	width:22px;
+	background: #f7b05b !important;
+	border: 0;
+}
+.noti-slide .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	top:13px;
+	right: 25px;
+	width: 23px;
+	height: 25px
+}
+.noti-slide .bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 13px;
+	width: 25px;
+	height: 25px;
+	text-indent: -9999px;
+	z-index: 500;
+	margin-top:0;
+}
+
+@media screen and (max-width : 1350px) {
+	.bg-arr.left{left:-1150px}
+	.bg-arr.right{right:-1150px}
+	.visual .bx-wrapper .bx-controls-direction a.bx-prev {left:10px}
+	.visual .bx-wrapper .bx-controls-direction a.bx-next {right:10px;}
+}
+
+
+@media screen and (max-width : 640px) {
+	.visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{display:none;}
+	.visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{display:none}
+	.bg-arr{position:absolute;top:50%;margin-top:-90px;display:block;width:30px;height:180px;}
+	.bg-arr.left{left:0;}
+	.bg-arr.right{right:0}
+	.visual .bx-wrapper .bx-controls-direction a.bx-prev {left:0;background-size:22px 38px;}
+	.visual .bx-wrapper .bx-controls-direction a.bx-next {right:0;background-size:22px 38px;}
+	.bg-ctr{display:none}
+}
+
