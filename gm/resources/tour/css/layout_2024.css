@@ -203,7 +203,7 @@ body{overflow-x:hidden; background-color:#fff; color:#444; font-size:16px; line-
 .language_panel{display:none; position:absolute; top:100%; left:50%; z-index:30; width:100%; transform:translateX(-50%)}
 a.language_anchor{font-size:13px; line-height:22px; color:#fff; cursor:pointer; font-family: 'Montserrat'; font-weight:100;}
 .language.active .language_panel{display:block; width:66px; padding:10px 0 7px; background-color:#1822a2; border-radius:8px; text-align:center;}
-.language.active .language_panel:before{display:block; position:absolute; top:-6px; left:50%; width:14px; height:6px; background-image:url(/resources/tour/images/common/language_bg.png); background-repeat:no-repeat; transform:translateX(-50%); content:'';}
+.language.active .language_panel:before{display:block; position:absolute; top:-6px; left:50%; width:14px; height:6px; background-image:url(../images/common/language_bg.png); background-repeat:no-repeat; transform:translateX(-50%); content:'';}
 
 /* lnb_open */
 .lnb_open .gnb .link_item.www:before{background-color:rgba(87,97,109,0.3);}
@@ -371,7 +371,7 @@ a.language_anchor{font-size:13px; line-height:22px; color:#fff; cursor:pointer; 
 
     /* 메뉴 고정 높이 */
     .lnb .menu .depth2_title{position:absolute; top:1px; left:0; width:515px; height:100%; }
-    .lnb .menu .depth2_title:before{display:block; position:absolute; top:0; left:-100%; width:200%; height:100%; background-image:url(/resources/tour/images/common/lnb_bg.png); background-repeat:repeat; content:'';}
+    .lnb .menu .depth2_title:before{display:block; position:absolute; top:0; left:-100%; width:200%; height:100%; background-image:url(../images/common/lnb_bg.png); background-repeat:repeat; content:'';}
     .lnb .menu .depth2_info{position:relative; width:auto; height:auto; padding-top:56px; padding-left:165px; text-align:left; font-weight:400; z-index:1;}
     .lnb .menu .depth2_slogan{display:block; font-size:17px; line-height:20px; letter-spacing:-0.03em; color:#666666; visibility:visible;}
     .lnb .menu .depth2_subject{display:block; position:relative; margin-top:6px; padding-right:30px; font-size:48px; line-height:52px; letter-spacing:-0.025em; word-break:keep-all; font-family: 'HakgyoansimMulgyeol'; color:#112362;}
@@ -431,12 +431,12 @@ a.language_anchor{font-size:13px; line-height:22px; color:#fff; cursor:pointer; 
 
     /* 열기 버튼 */
     .lnb .menu_show{position:absolute; top:22px; width:23px; height:21px; right:3%; z-index:30; margin-top:auto; margin-bottom:auto}
-    .lnb .menu_show .menu_btn{position:relative; width:25px; height:25px; background-image:url(/resources/tour/images/common/lnb_open.png); background-repeat:no-repeat; background-color:transparent; font-size:0; line-height:0;}
+    .lnb .menu_show .menu_btn{position:relative; width:25px; height:25px; background-image:url(../images/common/lnb_open.png); background-repeat:no-repeat; background-color:transparent; font-size:0; line-height:0;}
     .lnb .menu_show .menu_btn:before{display:block; position:absolute; top:0; right:0; bottom:0; left:0; width:15px; height:15px; margin:auto; background-color:#000}
 
     /* 닫기 버튼 */
     .lnb .menu_hide{position:absolute; top:14px; right:100%; width:30px; height:30px}
-    .lnb .menu_hide .menu_btn{display:block; position:relative; width:inherit; height:inherit; background-color:transparent; background-image:url(/resources/tour/images/common/lnb_close.png); background-position:center center; background-repeat:no-repeat; font-size:0; line-height:0;}
+    .lnb .menu_hide .menu_btn{display:block; position:relative; width:inherit; height:inherit; background-color:transparent; background-image:url(../images/common/lnb_close.png); background-position:center center; background-repeat:no-repeat; font-size:0; line-height:0;}
     .lnb_show .menu_hide{right:15px}
 
     /* 메뉴 상단 */
@@ -566,7 +566,7 @@ a.language_anchor{font-size:13px; line-height:22px; color:#fff; cursor:pointer; 
 #footer .link_item{display:inline-block; position:relative; padding-right:18px; padding-left:18px}
 #footer .link_item:last-child{padding-right:6px;}
 #footer .link_item.n1{padding-left:30px;}
-#footer .link_item.n1:before{display:block; position:absolute; top:0; bottom:0; left:0; width:23px; height:23px; margin-top:auto; margin-bottom:auto; background-image:url(/resources/tour/images/common/common_sprite.png); background-repeat:no-repeat; background-position:left -378px; content:'';}
+#footer .link_item.n1:before{display:block; position:absolute; top:0; bottom:0; left:0; width:23px; height:23px; margin-top:auto; margin-bottom:auto; background-image:url(../images/common/common_sprite.png); background-repeat:no-repeat; background-position:left -378px; content:'';}
 #footer .link_anchor{color:#000; font-size:17px; line-height:20px;}
 #footer .link_anchor:hover{color:#1822a2;}
 #footer .link_item.n1:hover:before{background-position:left -411px;}
