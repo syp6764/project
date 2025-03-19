@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+body{position:relative; height:100%; padding-bottom:100px; background:url('../images/login_top_bg.jpg') no-repeat center top; color:#4d4d4d; font-size:16px; font-weight:200; font-family:'SCoreDream','NotoKr','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif; line-height:24px; letter-spacing:-0.03em;}
+
+/*공통*/
+.wrap{position:relative; width:1200px; margin:0 auto;}
+.skip{overflow:hidden;}
+a.btn{text-decoration:none;}
+.line.type2{width:64%; margin-right:auto; margin-left:auto;}
+
+@media all and (max-width:1400px){
+    .wrap{width:1000px;}
+}
+@media all and (max-width:1000px){
+    .wrap{width:auto; padding:0 20px;}
+}
+@media all and (max-width:640px){
+    .wrap{width:auto; padding:0 15px;}
+}
+
+/* 상단 */
+.first_box{position:relative; padding-top:40px; text-align:center;}
+.first_box .home_link{display:block; position:absolute; top:27px; left:0;}
+.first_box .home_link .home_btn{position:absolute; top:0; left:0; width:127px; padding:4px 7px 7px 30px; border:1px solid #fff; border-radius:50px; background:transparent;}
+.first_box .home_link .home_btn:before{display:block; position:absolute; top:calc(50% - 6px); left:15px; width:12px; height:12px; background:url('/login/images/login_icon01.png') no-repeat;}
+.first_box .home_link .home_btn > span{color:#fff; font-size:16px; font-weight:400; font-family:'OneMobile'; letter-spacing:-0.02em;}
+.first_box .title_box{position:relative; margin-bottom:44px; font-size:0; line-height:0;}
+.first_box .title_box .title{position:relative; padding-top:50px; padding-left:185px; color:#fff; font-size:36px; font-weight:400; font-family:'OneMobile'; line-height:36px; vertical-align:bottom;}
+.first_box .title_box .title:before{display:inline-block; position:absolute; top:0; left:0; width:170px; height:84px; background:url("../images/logo_white.png") no-repeat;}
+.first_box .desc_box p{color:#fff; font-size:17px; font-weight:400; font-family:'NotoKr'; line-height:26px; letter-spacing:-0.025em; word-break:keep-all;}
+.first_box .desc_box p span{margin-bottom:12px; font-size:22px; font-weight:500;}
+
+@media all and (max-width:640px){
+    .first_box .title_box{margin-top:30px; margin-bottom:20px;}
+    .first_box .title_box .title{padding-top:47px; padding-left:146px; font-size:24px;}
+    .first_box .title_box .title:before{left:-15px; transform:scale(0.8);}
+    .first_box .desc_box p{font-size:15px; line-height:22px;}
+    .first_box .desc_box p span{font-size:18px;}
+}
+
+/* 박스 */
+.form_box{margin-top:58px;}
+.form_box .form_wrap .form_list{position:relative; font-size:0; line-height:0;}
+.form_box .form_wrap .form_list .form_item{display:inline-block; position:relative; width:calc((100% - 40px) / 3); height:505px; margin-right:20px; padding:48px 16px; border-radius:28px; background-color:#fff; box-shadow:rgba(85, 108, 144, 0.12) 5px 9px 21px; text-align:center; vertical-align:top;}
+.form_box .form_wrap .form_list .form_item:last-child{margin-right:0;}
+.form_box .form_wrap .form_list .form_item .form_title{color:#000; font-size:24px; font-weight:bold; font-family:'NotoKr'; line-height:42px; letter-spacing:-0.01em;}
+.form_box .form_wrap .form_list .form_item .point{margin-top:10px; color:#969696; font-size:17px; font-weight:400; font-family:'NotoKr'; line-height:25px; letter-spacing:-0.01em;}
+
+.form_box .form_wrap .form_list .form_item .btn_box{margin-top:28px; margin-bottom:32px;}
+.form_box .form_wrap .form_list .form_item .btn_box .check_btn{position:relative; width:220px; height:50px; color:#fff; font-size:16px; font-weight:bold; line-height:22px; letter-spacing:-0.025em;}
+.form_box .form_wrap .form_list .form_item .btn_box .check_btn:last-child{margin-top:10px;}
+.form_box .form_wrap .form_list .form_item.n01 .btn_box .check_btn{background-color:#f26f0b;}
+.form_box .form_wrap .form_list .form_item.n01 .btn_box .check_btn:hover{border:3px solid #f26f0b; background-color:#fff; color:#f95200;}
+
+.form_box .form_wrap .form_list .form_item.n02 .btn_box .dh_input input[type="text"]{width:220px; height:50px; padding:9px 20px 10px; border:1px solid #c8c8c8; border-radius:0; color:#4d4d4d; font-size:16px; font-weight:300; line-height:22px;}
+.form_box .form_wrap .form_list .form_item.n02 .btn_box .dh_input input[type="text"]::placeholder{color:#4d4d4d; font-size:16px; font-weight:300; line-height:22px;}
+.form_box .form_wrap .form_list .form_item.n02 .btn_box .check_btn.digital{padding-left:26px; border:3px solid #0b3d6e; background-color:#0b3d6e;}
+.form_box .form_wrap .form_list .form_item.n02 .btn_box .check_btn.digital:before{display:inline-block; position:absolute; top:10px; left:20px; width:25px; height:25px; background-image:url("../images/login_icon_sprite.png"); background-position:top left;}
+.form_box .form_wrap .form_list .form_item.n02 .btn_box .check_btn.digital:hover{border:3px solid #0b3d6e; background-color:#fff; color:#0b3d6e;}
+.form_box .form_wrap .form_list .form_item.n02 .btn_box .check_btn.digital:hover:before{background-position-x:-25px;}
+
+.form_box .form_wrap .form_list .form_item.n03 .btn_box .check_btn.naver{border:3px solid #129b3c; background-color:#129b3c;}
+.form_box .form_wrap .form_list .form_item.n03 .btn_box .check_btn.naver:before{display:inline-block; position:absolute; top:10px; left:20px; width:25px; height:25px; background-image:url("../images/login_icon_sprite.png"); background-position:-50px;}
+.form_box .form_wrap .form_list .form_item.n03 .btn_box .check_btn.naver:hover{border:3px solid #129b3c; background-color:#fff; color:#129b3c;}
+.form_box .form_wrap .form_list .form_item.n03 .btn_box .check_btn.naver:hover:before{background-position-x:-75px;}
+.form_box .form_wrap .form_list .form_item.n03 .btn_box .check_btn.kakao{padding-left:12px; border:3px solid #f8da33; background-color:#f8da33; color:#1a1919;}
+.form_box .form_wrap .form_list .form_item.n03 .btn_box .check_btn.kakao:before{display:inline-block; position:absolute; top:10px; left:20px; width:25px; height:25px; background-image:url("../images/login_icon_sprite.png"); background-position:-100px;}
+.form_box .form_wrap .form_list .form_item.n03 .btn_box .check_btn.kakao:hover{border:3px solid #f8da33; background-color:#fff;}
+
+.form_box .form_wrap .form_list .form_item .login_caution{color:#666; font-size:16px; font-weight:200; line-height:20px; letter-spacing:-0.035em;}
+.form_box .form_wrap .form_list .form_item .login_caution .title{position:relative; margin-bottom:6px; padding-left:26px; color:#666; font-size:17px; font-weight:500; line-height:26px; letter-spacing:0;}
+.form_box .form_wrap .form_list .form_item .login_caution .title:before{display:block; position:absolute; top:2px; left:0; width:20px; height:20px; border:1px solid #666; border-radius:9px; background:url("../images/login_icon02.png") no-repeat center; box-shadow:rgba(194, 194, 194, 0.3) 0 3px 1px;}
+
+@media all and (max-width:1000px){
+    .form_box .form_wrap .form_list .form_item{width:calc((100% - 20px) / 2); margin-right:20px; margin-bottom:20px;}
+    .form_box .form_wrap .form_list .form_item:nth-child(2n){margin-right:0;}
+    .form_box .form_wrap .form_list .form_item:last-child{width:100%;}
+    .form_box .form_wrap .form_list .form_item.n03{height:410px;}
+    .form_box .form_wrap .form_list .form_item.n03 .btn_box .check_btn:last-child{margin-top:0; margin-left:10px;}
+}
+
+@media all and (max-width:640px){
+    .form_box .form_wrap .form_list .form_item{width:100%; height:440px;}
+    .form_box .form_wrap .form_list .form_item .btn_box .check_btn, .form_box .form_wrap .form_list .form_item.n02 .btn_box .dh_input input[type="text"]{width:210px;}
+    .form_box .form_wrap .form_list .form_item .btn_box .check_btn:last-child{margin-top:0; margin-left:10px;}
+}
+
+@media all and (max-width:500px){
+    .form_box .form_wrap .form_list .form_item{width:100%; height:505px;}
+    .form_box .form_wrap .form_list .form_item.n03{height:505px;}
+    .form_box .form_wrap .form_list .form_item .btn_box .check_btn, .form_box .form_wrap .form_list .form_item.n02 .btn_box .dh_input input[type="text"]{width:220px;}
+    .form_box .form_wrap .form_list .form_item .btn_box .check_btn:last-child{margin-top:10px; margin-left:0;}
+    .form_box .form_wrap .form_list .form_item.n03 .btn_box .check_btn:last-child{margin-top:10px; margin-left:0;}
+}
+
+/* 푸터 */
+.footer_inner{margin-top:70px; font-size:15px; text-align:center;}
+.footer_inner .footer_info{color:#4d4d4d; font-weight:400; font-family:'ONEMobile'; line-height:24px; letter-spacing:-0.035em;}
+.footer_inner .text{word-break:keep-all;}
+.footer_inner .copyright{margin-top:40px; letter-spacing:0; word-break:keep-all;}
+
+/* sns */
+.form_box.wide{width:100%; min-height:505px; padding:48px 16px; border-radius:28px; background-color:#fff; box-shadow:rgba(85, 108, 144, 0.12) 5px 9px 21px; text-align:center;}
+.form_box.wide .form_wrap .login_sns .title{margin-bottom:30px; color:#111; font-size:32px; font-weight:500; line-height:40px; word-break:keep-all;}
+.form_box.wide .form_wrap .login_sns .sub_title{margin-bottom:20px; color:#111; font-size:16px; font-weight:400; line-height:25px; word-break:keep-all;}
+.form_box.wide .form_wrap .login_sns .sns_box{width:50%; margin:20px auto; padding:30px; border:1px solid #d5d5d5; border-radius:10px;}
+.form_box.wide .form_wrap .login_sns .sns_box .sns_title{margin-bottom:10px; color:#000; font-size:24px; font-weight:500; line-height:29px; letter-spacing:-0.025em;}
+.form_box.wide .form_wrap .login_sns .sns_box .sns_ul .dt{color:#0f3977; font-size:16px; line-height:24px; font-weight:500;}
+.form_box.wide .form_wrap .login_sns .sns_box .sns_ul .dd{color:#404040; font-size:16px; line-height:24px; font-weight:400;}
+.form_box.wide .form_wrap .login_sns .desc{font-size:16px; line-height:24px;}
+.form_box.wide .form_wrap .login_sns .btn_box{display:inline-block; position:relative; margin-top:20px; font-size:0; line-height:0;}
+.form_box.wide .form_wrap .login_sns .btn_box .check_btn{width:220px; height:50px; margin-right:20px; border:3px solid #f26f0b; background-color:#f26f0b; color:#fff; font-size:16px; font-weight:500; line-height:44px; letter-spacing:-0.025em;}
+.form_box.wide .form_wrap .login_sns .btn_box .check_btn:last-child{margin-right:0;}
+.form_box.wide .form_wrap .login_sns .btn_box .check_btn:hover{border:3px solid #f26f0b; background-color:#fff; color:#f95200;}
+
+@media all and (max-width:800px){
+    .form_box.wide .form_wrap .login_sns .btn_box .check_btn{width:190px; margin-right:10px; font-size:15px;}
+}
+
+@media all and (max-width:640px){
+    .form_box.wide{padding:30px 16px;}
+    .form_box.wide .form_wrap .login_sns .title{margin-bottom:16px; font-size:20px; line-height:24px;}
+    .form_box.wide .form_wrap .login_sns .sub_title{margin-bottom:16px; font-size:15px; line-height:20px;}
+    .form_box.wide .form_wrap .login_sns .sns_box{width:100%;}
+    .form_box.wide .form_wrap .login_sns .sns_box .sns_title{font-size:20px; line-height:24px;}
+    .form_box.wide .form_wrap .login_sns .sns_box .sns_ul .dt, .form_box.wide .form_wrap .login_sns .sns_box .sns_ul .dd{font-size:15px; line-height:20px;}
+    .form_box.wide .form_wrap .login_sns .desc{font-size:15px; line-height:20px;}
+    .form_box.wide .form_wrap .login_sns .btn_box .check_btn{display:block; width:220px; margin-right:0; margin-bottom:10px;}
+}
+
+.form_box.wide .form_wrap .login_sns{font-size:0; line-height:0;}
+.form_box.wide .form_wrap .login_sns .sns_box.type2, .form_box.wide .form_wrap .login_sns .sns_box.type3{display:inline-block; width:40%; min-height:255px; margin-right:20px; vertical-align:top;}
+.form_box.wide .form_wrap .login_sns .sns_box.type3{margin-right:0;}
+.form_box.wide .form_wrap .login_sns .sns_box.type3 .sns_title{color:#969696;}
+.form_box.wide .form_wrap .login_sns .sns_box.type3 .desc{color:#969696; font-size:16px; line-height:24px;}
+.form_box.wide .form_wrap .login_sns .sns_box.type3 .btn_box .check_btn{display:block; margin-right:0; margin-bottom:10px;}
+.form_box.wide .form_wrap .login_sns .sns_box.type3 .btn_box .check_btn:last-child{margin-bottom:0;}
+
+@media all and (max-width:800px){
+    .form_box.wide .form_wrap .login_sns .sns_box.type2, .form_box.wide .form_wrap .login_sns .sns_box.type3{display:block; width:100%;}
+}
