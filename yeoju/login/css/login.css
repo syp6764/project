@@ -21,7 +21,7 @@ a.btn{text-decoration:none;}
 /* 상단 */
 .first_box{position:relative; padding-top:40px; text-align:center;}
 .first_box .home_link{display:block; position:absolute; top:27px; left:0;}
-.first_box .home_link .home_btn{position:absolute; top:0; left:0; width:127px; padding:4px 7px 7px 30px; border:1px solid #fff; border-radius:50px; background:transparent;}
+.first_box .home_link .home_btn{position:absolute; z-index:1; top:0; left:0; width:127px; padding:4px 7px 7px 30px; border:1px solid #fff; border-radius:50px; background:transparent;}
 .first_box .home_link .home_btn:before{display:block; position:absolute; top:calc(50% - 6px); left:15px; width:12px; height:12px; background:url('/project/yeoju/login/images/login_icon01.png') no-repeat;}
 .first_box .home_link .home_btn > span{color:#fff; font-size:16px; font-weight:400; font-family:'OneMobile'; letter-spacing:-0.02em;}
 .first_box .title_box{position:relative; margin-bottom:44px; font-size:0; line-height:0;}
