@@ -1660,7 +1660,8 @@ h3 + .num, h4 + .num, h5 + .num, h6 + .num{margin-top:0}
 .btn.blank:after,
 .btn.down:after,
 .btn.view:after{display:inline-block; position:relative; top:2px; margin-left:16px; background-repeat:no-repeat; background-size:cover}
-.btn.blank:after{width:16px; height:16px; background-image:url(/site/public/images/template/blank1.svg)}
+/*.btn.blank:after{width:16px; height:16px; background-image:url(/site/public/images/template/blank1.svg)}*/
+.btn.blank:after{width:16px; height:16px; background-image:url(../images/blank1.svg)}
 .btn.down:after{width:16px; height:17px; background-image:url(/site/public/images/template/down1.svg)}
 .btn.view:after{width:15px; height:15px; background-image:url(/site/public/images/template/search1.svg)}
 
