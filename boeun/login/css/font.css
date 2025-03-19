@@ -1,0 +1,34 @@
+/* 넥센타이어 */
+@font-face{
+    font-family: 'Nexen';
+    font-weight: 400;
+    src: url("../font/NEXEN-TIRE_Regular.woff2") format('woff2'),
+    url("../font/NEXEN-TIRE_Regular.woff") format('woff');
+}
+@font-face{
+    font-family: 'Nexen';
+    font-weight: 600;
+    src: url("../font/NEXEN-TIRE_Bold.woff2") format('woff2'),
+    url("../font/NEXEN-TIRE_Bold.woff") format('woff');
+}
+
+/* 어그로체 */
+@font-face{
+    font-family: 'SBAggroB';
+    font-weight: 500;
+    src: url("../font/sbaggro.woff") format('woff');
+}
+
+
+
+/* 에스코어드림 */
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 100;
+    src: url("../font/S-CoreDream-1Thin.woff2") format('woff2');
+}
+@font-face {
+    font-family: 'S-CoreDream';
+    font-weight: 400;
+    src: url("../font/S-CoreDream-4Regular.woff2") format('woff2');
+}
